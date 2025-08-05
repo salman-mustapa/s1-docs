@@ -84,13 +84,13 @@ Jika Anda baru dalam menggunakan SentinelOne EDR, ikuti urutan rekomendasi berik
     - **Proper Exclusions**: Implementasikan eksklusi yang tepat untuk menghindari impact pada performa sistem
     - **Proactive Hunting**: Lakukan aktivitas threat hunting secara rutin untuk meningkatkan security posture
 
-## 📞 Support & Contact
+## 📞 Support & Contact
 
 Untuk dukungan teknis dan pertanyaan lebih lanjut:
 
-- **Security Team**: salman-mustapa@dikstrasolusi.com
-- **Internal Documentation**: https://salman-mustapa.github.io/s1-docs
-- **SentinelOne Official Support**: https://dikstrasolusi.com
+- **Security Team**: [salman-mustapa@dikstrasolusi.com](mailto:salman-mustapa@dikstrasolusi.com)
+- **Internal Documentation**: [Internal Docs](https://salman-mustapa.github.io/s1-docs/)
+- **SentinelOne Official Support**: [SentinelOne Support](https://dikstrasolusi.com)
 
 ---
 
