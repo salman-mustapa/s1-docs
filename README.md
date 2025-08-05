@@ -238,4 +238,4 @@ Terima kasih kepada:
 
 ⭐ **Jika dokumentasi ini membantu, jangan lupa beri star!** ⭐
 
-[![GitHub stars](https://img.shields.io/github/stars/salman-mustapa/sentinelone-docs.svg?style=social&label=Star)](https://github.com/salman-mustapa/sentinelone-docs)
+[![GitHub stars](https://img.shields.io/github/stars/salman-mustapa/s1-docs.svg?style=social&label=Star)](https://github.com/salman-mustapa/s1-docs)
