@@ -1,0 +1,98 @@
+site_name: Dokumentasi SentinelOne EDR
+site_description: Dokumentasi sederhana untuk implementasi dan pengelolaan SentinelOne EDR
+site_author: Salman Mustapa
+site_url: https://salman-mustapa.github.io/s1-docs/
+
+theme:
+  name: material
+  language: id
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Page tree
+nav:
+  - Overview: index.md
+  - Installation and Configuration:
+    - Install EDR to Server/Endpoint: installation/edr-install.md
+    - File/Folder/App Exclusion from EDR: installation/edr-exclusion.md
+    - Update EDR Patch to Endpoint (Sensor Update): installation/sensor-update.md
+  - System Monitoring:
+    - Resource Utilization: monitoring/resource-utilization.md
+    - Bandwidth Utilization: monitoring/bandwidth-utilization.md
+  - Management:
+    - Uninstall EDR: management/uninstall-edr.md
+  - Integration:
+    - Integration to 3rd Party: integration/third-party-integration.md
+  - Security Operations:
+    - Real-time Telemetry: security/real-time-telemetry.md
+    - Threat Detection: security/threat-detection.md
+    - Threat Hunting: security/threat-hunting.md
+    - Offline Detection/Response: security/offline-detection-response.md
+
+# Extra
+repo_url: https://github.com/salman-mustapa/s1-docs
+repo_name: salman-mustapa/s1-docs
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/salman-mustapa
+    - icon: fontawesome/regular/envelope
+      link: mailto:salman.mustapa@dikstrasolusi.com
+  generator: false  # Hapus "Made with Material for MkDocs"
+
+copyright: |
+  <p>
+    © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
+    <br>
+    <small>
+      🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
+      <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
+    </small>
+    <br>
+    <small>
+      Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
+    </small>
+  </p>
