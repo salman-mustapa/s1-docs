@@ -36,7 +36,7 @@ Dokumentasi ini mencakup panduan teknis lengkap untuk:
 1. **Clone repository ini:**
    ```bash
    git clone https://github.com/salman-mustapa/s1-docs.git
-   cd sentinelone-docs
+   cd s1-docs
    ```
 
 2. **Install dependencies:**
@@ -145,8 +145,8 @@ pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
 
 ```bash
 # Clone repository
-git clone https://github.com/salman-mustapa/sentinelone-docs.git
-cd sentinelone-docs
+git clone https://github.com/salman-mustapa/s1-docs.git
+cd s1-docs
 
 # Install dependencies
 pip install -r requirements.txt
@@ -203,7 +203,7 @@ Dokumentasi ini dilisensikan di bawah [MIT License](LICENSE).
 Jika Anda mengalami masalah atau memiliki pertanyaan:
 
 1. Baca dokumentasi lengkap di [https://salman-mustapa.github.io/s1-docs/](https://salman-mustapa.github.io/s1-docs/)
-2. Buat [Issue](https://github.com/salman-mustapa/sentinelone-docs/issues) di GitHub
+2. Buat [Issue](https://github.com/salman-mustapa/s1-docs/issues) di GitHub
 3. Kirim email ke: salman.mustapa@dikstrasolusi.com
 
 ## 🎯 Target Audience
