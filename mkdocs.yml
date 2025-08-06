@@ -38,7 +38,11 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -53,7 +57,9 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Overview: index.md
+  - Overview:
+    - Home: index.md
+    - SentinelCtl Commands: commands/sentinelctl-reference.md
   - Installation and Configuration:
     - Install EDR to Server/Endpoint: installation/edr-install.md
     - File/Folder/App Exclusion from EDR: installation/edr-exclusion.md
@@ -70,6 +76,33 @@ nav:
     - Threat Detection: security/threat-detection.md
     - Threat Hunting: security/threat-hunting.md
     - Offline Detection/Response: security/offline-detection-response.md
+  - Testing & Validation:
+    - Testing Overview: testing/testing-overview.md
+    - Kategori A - Real-Time Protection: testing/kategori-a-realtime.md
+    - Kategori B - Offline Scenarios: testing/kategori-b-offline.md
+    - Kategori C - Operational Resilience: testing/kategori-c-operational.md
+    - Kategori D - Security Hardening: testing/kategori-d-security.md
+    - Kategori E - Performance Impact: testing/kategori-e-performance.md
+    - Kategori F - Integration Testing: testing/kategori-f-integration.md
+    - Windows Server Testing:
+      - Windows Overview: testing/windows/windows-overview.md
+      - Windows Offline Testing: testing/windows/windows-offline.md
+      - Windows Performance Testing: testing/windows/windows-performance.md
+      - Windows Enterprise Testing: testing/windows/windows-enterprise.md
+    - Linux Server Testing:
+      - Linux Overview: testing/linux/linux-overview.md
+      - Linux Offline Testing: testing/linux/linux-offline.md
+      - Linux Performance Testing: testing/linux/linux-performance.md
+      - Linux Container Testing: testing/linux/linux-containers.md
+    - Cross-Platform Scenarios: testing/cross-platform/cross-platform-testing.md
+  - Contoh Gambar & Visual: example-images.md
+
+# Extra CSS and JavaScript
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mermaid.js
 
 # Extra
 repo_url: https://github.com/salman-mustapa/s1-docs
@@ -86,11 +119,6 @@ extra:
 copyright: |
   <p>
     © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-    <br>
-    <small>
-      🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-      <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-    </small>
     <br>
     <small>
       Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
