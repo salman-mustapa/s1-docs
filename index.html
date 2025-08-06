@@ -16,7 +16,7 @@
       
       
       
-        <link rel="next" href="installation/edr-install/">
+        <link rel="next" href="commands/sentinelctl-reference/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Dokumentasi SentinelOne EDR</title>
+        <title>Home - Dokumentasi SentinelOne EDR</title>
       
     
     
@@ -49,6 +49,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Home
             
           </span>
         </div>
@@ -227,17 +229,18 @@
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -341,6 +344,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,6 +436,54 @@
   
   
   
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -407,7 +497,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    Home
     
   </span>
   
@@ -420,7 +510,7 @@
   
   
   <span class="md-ellipsis">
-    Overview
+    Home
     
   </span>
   
@@ -448,6 +538,30 @@
       🎯 Quick Navigation
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentinelctl-command-line-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 SentinelCtl Command Line Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 SentinelCtl Command Line Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-command-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Command Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -490,6 +604,37 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1008,6 +1153,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1040,6 +1733,30 @@
       🎯 Quick Navigation
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentinelctl-command-line-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 SentinelCtl Command Line Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 SentinelCtl Command Line Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-command-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Command Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1104,6 +1821,12 @@
 <div class="grid cards">
 <ul>
 <li>
+<p>:material-terminal:{ .lg .middle } <strong>Command Reference</strong></p>
+<hr />
+<p>Referensi lengkap semua perintah sentinelctl untuk mengelola EDR agent</p>
+<p><a href="commands/sentinelctl-reference/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Command Reference</a></p>
+</li>
+<li>
 <p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7z"/></svg></span> <strong>Installation &amp; Configuration</strong></p>
 <hr />
 <p>Panduan lengkap instalasi EDR agent, konfigurasi exclusion, dan update sensor</p>
@@ -1135,6 +1858,30 @@
 </li>
 </ul>
 </div>
+<h2 id="sentinelctl-command-line-interface">🔧 SentinelCtl Command Line Interface</h2>
+<p><code>sentinelctl</code> adalah command-line interface (CLI) utama untuk mengelola agen SentinelOne EDR. Tool ini menyediakan kontrol penuh terhadap agent, mulai dari instalasi, konfigurasi, monitoring, hingga troubleshooting.</p>
+<h3 id="quick-command-examples">Quick Command Examples</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Basic operations</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>status<span class="w">                    </span><span class="c1"># Cek status agent</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w">      </span><span class="c1"># Set site token</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>control<span class="w"> </span>start<span class="w">             </span><span class="c1"># Start agent service</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">50</span><span class="w">            </span><span class="c1"># Lihat log terakhir</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Advanced operations  </span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>scan<span class="w"> </span>full<span class="w"> </span>--background<span class="w">    </span><span class="c1"># Full system scan</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>troubleshoot<span class="w">              </span><span class="c1"># Collect debug info</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>update<span class="w"> </span>check<span class="w">              </span><span class="c1"># Check for updates</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">📖 Dokumentasi Command Lengkap</p>
+<p>Untuk referensi lengkap semua perintah <code>sentinelctl</code> dengan parameter dan contoh penggunaan, silakan kunjungi:</p>
+<p><strong>➡️ <a href="commands/sentinelctl-reference/">SentinelCtl Command Reference</a></strong></p>
+<p>Halaman tersebut mencakup:
+- ✅ <strong>150+ commands</strong> dengan kategorisasi lengkap
+- ✅ <strong>Parameter dan opsi</strong> untuk setiap perintah
+- ✅ <strong>Contoh penggunaan</strong> praktis
+- ✅ <strong>Best practices</strong> dan troubleshooting tips</p>
+</div>
 <h2 id="documentation-scope">📋 Documentation Scope</h2>
 <p>Dokumentasi ini mencakup seluruh aspek pengelolaan SentinelOne EDR:</p>
 <table>
@@ -1147,57 +1894,57 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Install EDR to Server/Endpoint</strong></td>
+<td><strong><a href="installation/edr-install/">Install EDR to Server/Endpoint</a></strong></td>
 <td>Panduan lengkap instalasi agen EDR pada server dan endpoint dengan berbagai sistem operasi</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>File/Folder/App Exclusion from EDR</strong></td>
+<td><strong><a href="installation/edr-exclusion/">File/Folder/App Exclusion from EDR</a></strong></td>
 <td>Konfigurasi eksklusi file, folder, dan aplikasi untuk menghindari false positive</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Update EDR Patch to Endpoint (Sensor Update)</strong></td>
+<td><strong><a href="installation/sensor-update/">Update EDR Patch to Endpoint (Sensor Update)</a></strong></td>
 <td>Prosedur update patch dan sensor secara manual maupun otomatis</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Resource Utilization</strong></td>
+<td><strong><a href="monitoring/resource-utilization/">Resource Utilization</a></strong></td>
 <td>Monitoring dan analisis penggunaan resource sistem oleh agen EDR</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Bandwidth Utilization</strong></td>
+<td><strong><a href="monitoring/bandwidth-utilization/">Bandwidth Utilization</a></strong></td>
 <td>Pengelolaan dan optimisasi penggunaan bandwidth untuk komunikasi EDR</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Uninstall EDR</strong></td>
+<td><strong><a href="management/uninstall-edr/">Uninstall EDR</a></strong></td>
 <td>Prosedur penghapusan agen EDR yang aman dan bersih</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Integration to 3rd Party</strong></td>
+<td><strong><a href="integration/third-party-integration/">Integration to 3rd Party</a></strong></td>
 <td>Integrasi dengan sistem keamanan dan monitoring pihak ketiga</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Real-time Telemetry</strong></td>
+<td><strong><a href="security/real-time-telemetry/">Real-time Telemetry</a></strong></td>
 <td>Setup dan konfigurasi telemetri real-time untuk monitoring kontinyu</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Threat Detection</strong></td>
+<td><strong><a href="security/threat-detection/">Threat Detection</a></strong></td>
 <td>Konfigurasi dan tuning aturan deteksi ancaman otomatis</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Threat Hunting</strong></td>
+<td><strong><a href="security/threat-hunting/">Threat Hunting</a></strong></td>
 <td>Teknik dan metodologi untuk investigasi ancaman secara proaktif</td>
 <td>✅ Ready</td>
 </tr>
 <tr>
-<td><strong>Offline Detection/Response</strong></td>
+<td><strong><a href="security/offline-detection-response/">Offline Detection/Response</a></strong></td>
 <td>Strategi deteksi dan respons dalam kondisi offline atau terputus</td>
 <td>✅ Ready</td>
 </tr>
@@ -1230,7 +1977,7 @@
 <li><strong>SentinelOne Official Support</strong>: <a href="https://dikstrasolusi.com">SentinelOne Support</a></li>
 </ul>
 <hr />
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 15:15:29 UTC">5 Agustus 2025</span></em></p>
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1251,7 +1998,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 15:15:29 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1289,11 +2036,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1344,6 +2086,8 @@
     
     
       <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="javascripts/mermaid.js"></script>
       
     
   </body>

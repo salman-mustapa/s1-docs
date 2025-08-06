@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monitoring-utilisasi-resource-untuk-sentinelone-edr" class="md-skip">
+        <a href="#resource-utilization-monitoring" class="md-skip">
           Lewati ke isi
         </a>
       
@@ -227,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -405,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -636,18 +754,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#memantau-resource" class="md-nav__link">
+  <a href="#konsep-resource-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
-      Memantau Resource
+      📊 Konsep Resource Monitoring
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mengoptimalkan-penggunaan" class="md-nav__link">
+  <a href="#monitoring-objectives" class="md-nav__link">
     <span class="md-ellipsis">
-      Mengoptimalkan Penggunaan
+      🎯 Monitoring Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-utilization-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 CPU Utilization Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 CPU Utilization Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#console-based-monitoring-management-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Console-Based Monitoring (Management Console)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-based-monitoring-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Endpoint-Based Monitoring (Command Line)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-utilization-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 Memory Utilization Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 Memory Utilization Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#console-memory-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Console Memory Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-memory-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Endpoint Memory Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disk-io-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      💿 Disk I/O Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-traffic-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Network Traffic Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-baselines-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Performance Baselines &amp; Thresholds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Related Testing &amp; Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-performance-check-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Quick Performance Check Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-monitoring-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Performance Monitoring Checklist
     </span>
   </a>
   
@@ -986,6 +1224,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1013,18 +1799,138 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#memantau-resource" class="md-nav__link">
+  <a href="#konsep-resource-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
-      Memantau Resource
+      📊 Konsep Resource Monitoring
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mengoptimalkan-penggunaan" class="md-nav__link">
+  <a href="#monitoring-objectives" class="md-nav__link">
     <span class="md-ellipsis">
-      Mengoptimalkan Penggunaan
+      🎯 Monitoring Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-utilization-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 CPU Utilization Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💻 CPU Utilization Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#console-based-monitoring-management-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Console-Based Monitoring (Management Console)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-based-monitoring-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Endpoint-Based Monitoring (Command Line)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-utilization-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 Memory Utilization Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 Memory Utilization Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#console-memory-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Console Memory Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint-memory-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Endpoint Memory Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disk-io-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      💿 Disk I/O Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-traffic-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Network Traffic Monitoring
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-baselines-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Performance Baselines &amp; Thresholds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Related Testing &amp; Validation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-performance-check-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Quick Performance Check Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-monitoring-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Performance Monitoring Checklist
     </span>
   </a>
   
@@ -1049,43 +1955,469 @@
   
 
 
-<h1 id="monitoring-utilisasi-resource-untuk-sentinelone-edr">Monitoring Utilisasi Resource untuk SentinelOne EDR</h1>
-<p>Dokumen ini menjelaskan cara memantau penggunaan resource (CPU, RAM, Disk) oleh agen SentinelOne EDR dan bagaimana cara mengoptimasinya.</p>
-<h2 id="memantau-resource">Memantau Resource</h2>
+<h1 id="resource-utilization-monitoring">Resource Utilization Monitoring</h1>
+<h2 id="konsep-resource-monitoring">📊 Konsep Resource Monitoring</h2>
+<p>Resource monitoring SentinelOne EDR melibatkan <strong>dual-layer monitoring</strong> antara Management Console (terpusat) dan Endpoint (lokal) untuk memastikan performa optimal dan deteksi dini masalah.</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph "SentinelOne Resource Monitoring Architecture"
+        CONSOLE["Management Console&lt;br/&gt;Centralized Monitoring"]
+
+        subgraph "Endpoint Monitoring"
+            AGENT["SentinelOne Agent"]
+            CPU["CPU Usage&lt;br/&gt;Real-time"]
+            MEM["Memory Usage&lt;br/&gt;RAM/Swap"]
+            DISK["Disk I/O&lt;br/&gt;Read/Write"]
+            NET["Network Traffic&lt;br/&gt;In/Out"]
+        end
+
+        subgraph "Monitoring Tools"
+            PS["ps/top/htop&lt;br/&gt;Process Monitor"]
+            FREE["free/vmstat&lt;br/&gt;Memory Monitor"]
+            IOSTAT["iostat/iotop&lt;br/&gt;Disk Monitor"]
+            NETSTAT["netstat/ss&lt;br/&gt;Network Monitor"]
+        end
+
+        AGENT --&gt; CPU
+        AGENT --&gt; MEM
+        AGENT --&gt; DISK
+        AGENT --&gt; NET
+
+        CPU --&gt; PS
+        MEM --&gt; FREE
+        DISK --&gt; IOSTAT
+        NET --&gt; NETSTAT
+
+        AGENT --&gt;|"Telemetry Data"| CONSOLE
+        CONSOLE --&gt;|"Alerts &amp; Reports"| AGENT
+    end
+
+    style CONSOLE fill:#e3f2fd
+    style AGENT fill:#f3e5f5
+    style CPU fill:#fff3e0
+    style MEM fill:#e8f5e8</code></pre>
+<h2 id="monitoring-objectives">🎯 Monitoring Objectives</h2>
+<div class="testing-scenario">
+<h4>🎯 Performance Targets</h4>
+<p><strong>CPU Usage:</strong> < 5% average, < 15% peak</p>
+<p><strong>Memory Usage:</strong> < 300MB resident, < 500MB virtual</p>
+<p><strong>Disk I/O:</strong> < 10MB/s sustained</p>
+<p><strong>Network:</strong> < 1MB/s telemetry upload</p>
+</div>
+
+<hr />
+<h2 id="cpu-utilization-monitoring">💻 CPU Utilization Monitoring</h2>
+<h3 id="console-based-monitoring-management-console">📊 Console-Based Monitoring (Management Console)</h3>
+<pre class="mermaid"><code>flowchart LR
+    A[Login to Console] --&gt; B[Navigate to Sentinels]
+    B --&gt; C[Select Target Endpoint]
+    C --&gt; D[System Performance]
+    D --&gt; E[Configure Alerts]
+
+    style A fill:#e3f2fd
+    style E fill:#ffebee</code></pre>
+<p><strong>Step-by-Step Console Monitoring:</strong></p>
 <ol>
-<li><strong>Gunakan Dashboard Monitoring</strong></li>
 <li>
-<p>Masuk ke Management Console dan buka bagian <strong>Monitoring</strong>.</p>
+<p><strong>Login ke Management Console</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>URL: https://your-tenant.sentinelone.net
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Navigate: Sentinels → [Select Endpoint]
+</code></pre></div></p>
 </li>
 <li>
-<p><strong>Setup Alert</strong></p>
+<p><strong>View CPU Performance</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Console Path: Sentinels → System Info → Performance Tab
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Real-time Graph: CPU Usage (last 24 hours)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Historical Data: Up to 30 days
+</code></pre></div></p>
 </li>
 <li>
-<p>"<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6zm-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10z"/></svg></span>" Atur alert untuk threshold tertentu (e.g., CPU &gt; 80%).</p>
-</li>
-<li>
-<p><strong>Inspect Detail Penggunaan</strong></p>
-</li>
-<li>Pada setiap endpoint, klik untuk melihat detail penggunaan resource.</li>
-<li><strong>Catatan Gambar/Video Here</strong><ul>
-<li>Tampilkan contoh screenshot detail penggunaan resource</li>
-</ul>
+<p><strong>Configure CPU Alerts</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Settings → Alerts → Performance
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>CPU Threshold: &gt; 15% for 5 minutes
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Notification: Email + Console Alert
+</code></pre></div></p>
 </li>
 </ol>
-<h2 id="mengoptimalkan-penggunaan">Mengoptimalkan Penggunaan</h2>
-<ul>
-<li><strong>Exclusion Tepat</strong></li>
-<li>
-<p>Pastikan exclusions sudah diterapkan untuk file/aplikasi yang sering diakses.</p>
-</li>
-<li>
-<p><strong>Update Berkala</strong></p>
-</li>
-<li>Lakukan update pada agent secara berkala untuk optimasi performa.</li>
-</ul>
+<h3 id="endpoint-based-monitoring-command-line">🔧 Endpoint-Based Monitoring (Command Line)</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux</label><label for="__tabbed_1_2">Windows</label><label for="__tabbed_1_3">Cross-Platform Script</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SENTINELONE CPU MONITORING SCRIPT (Linux) ===&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Monitor SentinelOne CPU usage</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Current SentinelOne processes and CPU usage:&quot;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{printf &quot;%-20s %s%%\n&quot;, $11, $3}&#39;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== Top CPU-consuming SentinelOne processes ===&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>ps<span class="w"> </span>-eo<span class="w"> </span>pid,ppid,cmd,pcpu<span class="w"> </span>--sort<span class="o">=</span>-pcpu<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-5
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== Real-time monitoring (5 seconds) ===&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Use &#39;top -p </span><span class="k">$(</span>pgrep<span class="w"> </span>-d,<span class="w"> </span>sentinelone<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="k">)</span><span class="s2">&#39; for interactive monitoring&quot;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="c1"># System load average</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== System Load Average ===&quot;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>uptime
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="c1"># CPU core information</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== CPU Information ===&quot;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>nproc<span class="w"> </span>--all
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>grep<span class="w"> </span><span class="s1">&#39;model name&#39;</span><span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-1
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c"># SentinelOne CPU Monitoring Script for Windows</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">Write-Host</span> <span class="s2">&quot;=== SENTINELONE CPU MONITORING SCRIPT (Windows) ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c"># Monitor SentinelOne CPU usage</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\nCurrent SentinelOne processes and CPU usage:&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">ProcessName</span> <span class="o">-like</span> <span class="s2">&quot;*Sentinel*&quot;</span><span class="p">}</span> <span class="p">|</span> 
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="nb">Select-Object</span> <span class="n">ProcessName</span><span class="p">,</span> <span class="n">CPU</span><span class="p">,</span> <span class="p">@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&quot;CPU%&quot;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="no">[math]</span><span class="p">::</span><span class="n">Round</span><span class="p">(</span><span class="nv">$_</span><span class="p">.</span><span class="n">CPU</span><span class="p">,</span><span class="n">2</span><span class="p">)}}</span> <span class="p">|</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c"># Top CPU-consuming SentinelOne processes</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== Top CPU-consuming SentinelOne processes ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">ProcessName</span> <span class="o">-like</span> <span class="s2">&quot;*Sentinel*&quot;</span><span class="p">}</span> <span class="p">|</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="nb">Sort-Object</span> <span class="n">CPU</span> <span class="n">-Descending</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-First</span> <span class="n">5</span> <span class="p">|</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    <span class="nb">Select-Object</span> <span class="n">ProcessName</span><span class="p">,</span> <span class="n">Id</span><span class="p">,</span> <span class="n">CPU</span><span class="p">,</span> <span class="n">WorkingSet</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c"># System performance counters</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== System CPU Information ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="nb">Get-WmiObject</span> <span class="n">-Class</span> <span class="n">Win32_Processor</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">NumberOfCores</span><span class="p">,</span> <span class="n">NumberOfLogicalProcessors</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c"># Current CPU usage</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== Current System CPU Usage ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="nb">Get-Counter</span> <span class="s2">&quot;\Processor(_Total)\% Processor Time&quot;</span> <span class="n">-SampleInterval</span> <span class="n">1</span> <span class="n">-MaxSamples</span> <span class="n">1</span> <span class="p">|</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="nb">Select-Object</span> <span class="n">-ExpandProperty</span> <span class="n">CounterSamples</span> <span class="p">|</span> 
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>    <span class="nb">Select-Object</span> <span class="p">@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&quot;CPU Usage %&quot;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="no">[math]</span><span class="p">::</span><span class="n">Round</span><span class="p">(</span><span class="n">100</span> <span class="p">-</span> <span class="nv">$_</span><span class="p">.</span><span class="n">CookedValue</span><span class="p">,</span><span class="n">2</span><span class="p">)}}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># Cross-platform SentinelOne monitoring script</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>detect_os<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;linux-gnu&quot;</span>*<span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;linux&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;darwin&quot;</span>*<span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;macos&quot;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;msys&quot;</span><span class="w"> </span><span class="o">]]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;cygwin&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;windows&quot;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;unknown&quot;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="o">}</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="nv">OS</span><span class="o">=</span><span class="k">$(</span>detect_os<span class="k">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SENTINELONE MONITORING - </span><span class="nv">$OS</span><span class="s2"> ===&quot;</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">case</span><span class="w"> </span><span class="nv">$OS</span><span class="w"> </span><span class="k">in</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="s2">&quot;linux&quot;</span><span class="o">)</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">        </span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">    </span><span class="s2">&quot;macos&quot;</span><span class="o">)</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">        </span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">    </span><span class="s2">&quot;windows&quot;</span><span class="o">)</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Use PowerShell script for Windows monitoring&quot;</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">    </span>*<span class="o">)</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Unsupported operating system: </span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="k">esac</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p><strong>Advanced CPU Monitoring:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Continuous CPU monitoring</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nv">SENTINEL_CPU</span><span class="o">=</span><span class="k">$(</span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{sum+=$3} END {print sum+0}&#39;</span><span class="k">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="k">)</span><span class="s2">: SentinelOne Total CPU: </span><span class="si">${</span><span class="nv">SENTINEL_CPU</span><span class="si">}</span><span class="s2">%&quot;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">((</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SENTINEL_CPU</span><span class="s2"> &gt; 15&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l<span class="k">)</span><span class="w"> </span><span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⚠️  HIGH CPU ALERT: SentinelOne using </span><span class="si">${</span><span class="nv">SENTINEL_CPU</span><span class="si">}</span><span class="s2">%&quot;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span>sleep<span class="w"> </span><span class="m">60</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">done</span>
+</code></pre></div>
 <hr />
-<p><em>Hubungi tim IT jika menemukan anomali pada penggunaan resource.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<h2 id="memory-utilization-monitoring">💾 Memory Utilization Monitoring</h2>
+<h3 id="console-memory-monitoring">📊 Console Memory Monitoring</h3>
+<pre class="mermaid"><code>flowchart TD
+    subgraph "Memory Monitoring Workflow"
+        DASH["Console Dashboard&lt;br/&gt;Memory Overview"]
+
+        subgraph "Memory Metrics"
+            RSS["Resident Memory&lt;br/&gt;Physical RAM"]
+            VSZ["Virtual Memory&lt;br/&gt;Virtual Space"]
+            SHARED["Shared Memory&lt;br/&gt;Shared Libraries"]
+        end
+
+        subgraph "Alert Conditions"
+            HIGH["High Memory Usage&lt;br/&gt;&gt; 500MB"]
+            LEAK["Memory Leak Detection&lt;br/&gt;Growing Trend"]
+            SWAP["Swap Usage&lt;br/&gt;Virtual Memory"]
+        end
+
+        DASH --&gt; RSS
+        DASH --&gt; VSZ
+        DASH --&gt; SHARED
+
+        RSS --&gt; HIGH
+        VSZ --&gt; LEAK
+        SHARED --&gt; SWAP
+    end
+
+    style DASH fill:#e3f2fd
+    style HIGH fill:#ffcdd2
+    style LEAK fill:#fff3e0</code></pre>
+<p><strong>Console Steps:</strong>
+1. <strong>Memory Dashboard</strong>: <code>Console → Sentinels → Performance → Memory Tab</code>
+2. <strong>Historical Analysis</strong>: View 7-day memory trend
+3. <strong>Alert Configuration</strong>: Set threshold &gt; 400MB for 10 minutes
+4. <strong>Memory Leak Detection</strong>: Monitor growing trend over time</p>
+<h3 id="endpoint-memory-analysis">🔧 Endpoint Memory Analysis</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SENTINELONE MEMORY ANALYSIS ===&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Overall system memory</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== System Memory Status ===&quot;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>free<span class="w"> </span>-h
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">echo</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># SentinelOne memory usage details</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SentinelOne Memory Usage ===&quot;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>ps<span class="w"> </span>-o<span class="w"> </span>pid,ppid,cmd,rss,vsz,pmem<span class="w"> </span>--sort<span class="o">=</span>-rss<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="nb">echo</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="c1"># Memory usage summary</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="nv">SENTINEL_RSS</span><span class="o">=</span><span class="k">$(</span>ps<span class="w"> </span>-o<span class="w"> </span>rss<span class="w"> </span>--no-headers<span class="w"> </span>--pid<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>sentinelone<span class="k">)</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{sum+=$1} END {print sum+0}&#39;</span><span class="k">)</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nv">SENTINEL_MB</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;scale=2; </span><span class="nv">$SENTINEL_RSS</span><span class="s2">/1024&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Total SentinelOne Memory Usage: </span><span class="si">${</span><span class="nv">SENTINEL_MB</span><span class="si">}</span><span class="s2"> MB&quot;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="c1"># Memory percentage</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="nv">TOTAL_MEM</span><span class="o">=</span><span class="k">$(</span>free<span class="w"> </span>-m<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;NR==2{print $2}&#39;</span><span class="k">)</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="nv">MEM_PERCENT</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;scale=2; (</span><span class="nv">$SENTINEL_RSS</span><span class="s2">/1024)/</span><span class="nv">$TOTAL_MEM</span><span class="s2">*100&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Memory Percentage: </span><span class="si">${</span><span class="nv">MEM_PERCENT</span><span class="si">}</span><span class="s2">%&quot;</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="c1"># Alert if memory usage is high</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="k">if</span><span class="w"> </span><span class="o">((</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SENTINEL_MB</span><span class="s2"> &gt; 400&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l<span class="k">)</span><span class="w"> </span><span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⚠️  HIGH MEMORY ALERT: </span><span class="si">${</span><span class="nv">SENTINEL_MB</span><span class="si">}</span><span class="s2"> MB&quot;</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="k">fi</span>
+</code></pre></div>
+<hr />
+<h2 id="disk-io-monitoring">💿 Disk I/O Monitoring</h2>
+<pre class="mermaid"><code>flowchart LR
+    subgraph "Disk I/O Monitoring Strategy"
+        subgraph "Read Operations"
+            LOG_READ["Log File Reading&lt;br/&gt;/var/log/sentinelone/"]
+            CONFIG_READ["Configuration&lt;br/&gt;/opt/sentinelone/"]
+            SCAN_READ["File Scanning&lt;br/&gt;User Files"]
+        end
+
+        subgraph "Write Operations"
+            LOG_WRITE["Event Logging&lt;br/&gt;Activity Logs"]
+            QUARANTINE["Quarantine Files&lt;br/&gt;Isolated Threats"]
+            CACHE_WRITE["Cache Updates&lt;br/&gt;Temporary Data"]
+        end
+
+        subgraph "Monitoring Tools"
+            IOSTAT["iostat -x 1&lt;br/&gt;Real-time I/O"]
+            IOTOP["iotop -a&lt;br/&gt;Process I/O"]
+            LSOF["lsof | grep sentinel&lt;br/&gt;Open Files"]
+        end
+
+        LOG_READ --&gt; IOSTAT
+        SCAN_READ --&gt; IOTOP
+        LOG_WRITE --&gt; LSOF
+    end
+
+    style LOG_READ fill:#e8f5e8
+    style LOG_WRITE fill:#fff3e0
+    style IOSTAT fill:#e3f2fd</code></pre>
+<p><strong>Disk I/O Monitoring Commands:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Monitor disk I/O by SentinelOne</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>iotop<span class="w"> </span>-a<span class="w"> </span>-o<span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/,$//&#39;</span><span class="k">)</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Check open files by SentinelOne</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>lsof<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;SentinelOne open files count: </span><span class="k">$(</span>lsof<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1"># Monitor specific directories</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="s2">&quot;du -sh /var/log/sentinelone /opt/sentinelone&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="network-traffic-monitoring">🌐 Network Traffic Monitoring</h2>
+<pre class="mermaid"><code>flowchart TB
+    subgraph "Network Traffic Analysis"
+        subgraph "Outbound Traffic"
+            TELEMETRY["Telemetry Data&lt;br/&gt;Performance Metrics"]
+            THREATS["Threat Intelligence&lt;br/&gt;IOCs/Signatures"]
+            LOGS["Log Forwarding&lt;br/&gt;SIEM Integration"]
+        end
+
+        subgraph "Inbound Traffic"
+            POLICIES["Policy Updates&lt;br/&gt;Configuration"]
+            SIGNATURES["Signature Updates&lt;br/&gt;Threat Definitions"]
+            COMMANDS["Remote Commands&lt;br/&gt;Management"]
+        end
+
+        subgraph "Monitoring Methods"
+            NETSTAT_CMD["netstat -tupln&lt;br/&gt;Active Connections"]
+            SS_CMD["ss -tuln&lt;br/&gt;Socket Statistics"]
+            TCPDUMP["tcpdump -i any&lt;br/&gt;Packet Capture"]
+        end
+
+        TELEMETRY --&gt; NETSTAT_CMD
+        POLICIES --&gt; SS_CMD
+        THREATS --&gt; TCPDUMP
+    end
+
+    style TELEMETRY fill:#e3f2fd
+    style POLICIES fill:#f3e5f5
+    style NETSTAT_CMD fill:#e8f5e8</code></pre>
+<p><strong>Network Monitoring Script:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SENTINELONE NETWORK MONITORING ===&quot;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># Check SentinelOne network connections</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== Active Network Connections ===&quot;</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>ss<span class="w"> </span>-tuln<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;:(443|80|8080|8443)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="c1"># Monitor bandwidth usage</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== Network Interface Statistics ===&quot;</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>cat<span class="w"> </span>/proc/net/dev<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;eth0|ens|enp&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-5
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c1"># SentinelOne specific connections</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== SentinelOne Network Activity ===&quot;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>netstat<span class="w"> </span>-tupln<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c1"># Check connectivity to SentinelOne cloud</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== Connectivity Test ===&quot;</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">3</span><span class="w"> </span>api.sentinelone.net<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Cloud connectivity OK&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Cloud connectivity FAILED&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="performance-baselines-thresholds">📈 Performance Baselines &amp; Thresholds</h2>
+<table class="metrics-table">
+<thead>
+<tr>
+<th>Resource</th>
+<th>Normal Range</th>
+<th>Warning Threshold</th>
+<th>Critical Threshold</th>
+<th>Action Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU Usage</td>
+<td>2-5%</td>
+<td>> 10%</td>
+<td>> 20%</td>
+<td><span class="status-warning">⚠️ Investigate</span></td>
+</tr>
+<tr>
+<td>Memory (RSS)</td>
+<td>150-250MB</td>
+<td>> 400MB</td>
+<td>> 600MB</td>
+<td><span class="status-error">❌ Restart Agent</span></td>
+</tr>
+<tr>
+<td>Disk I/O</td>
+<td>< 5MB/s</td>
+<td>> 15MB/s</td>
+<td>> 30MB/s</td>
+<td><span class="status-warning">⚠️ Check Scanning</span></td>
+</tr>
+<tr>
+<td>Network</td>
+<td>< 100KB/s</td>
+<td>> 1MB/s</td>
+<td>> 5MB/s</td>
+<td><span class="status-success">✅ Normal Upload</span></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+<h2 id="related-testing-validation">🔗 Related Testing &amp; Validation</h2>
+<div class="admonition info">
+<p class="admonition-title">Performance Testing References</p>
+<ul>
+<li><strong><a href="../../testing/kategori-e-performance/">Kategori E - Performance Impact Testing</a></strong>: Komprehensif performance testing procedures</li>
+<li><strong><a href="../../testing/linux/linux-overview/#linux-performance-monitoring">Linux Performance Testing</a></strong>: Linux-specific resource monitoring</li>
+<li><strong><a href="../../testing/windows/windows-overview/">Windows Performance Testing</a></strong>: Windows resource monitoring procedures</li>
+<li><strong><a href="../../testing/cross-platform/cross-platform-testing/">Cross-Platform Performance</a></strong>: Unified performance testing across platforms</li>
+</ul>
+</div>
+<hr />
+<h2 id="quick-performance-check-script">⚡ Quick Performance Check Script</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🔍 SentinelOne Quick Performance Check&quot;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;===========================================&quot;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># Function to check if value exceeds threshold</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>check_threshold<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">value</span><span class="o">=</span><span class="nv">$1</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">threshold</span><span class="o">=</span><span class="nv">$2</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">metric</span><span class="o">=</span><span class="nv">$3</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">((</span><span class="w"> </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$value</span><span class="s2"> &gt; </span><span class="nv">$threshold</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="w"> </span>-l<span class="k">)</span><span class="w"> </span><span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ </span><span class="nv">$metric</span><span class="s2">: </span><span class="si">${</span><span class="nv">value</span><span class="si">}</span><span class="s2"> (&gt; </span><span class="si">${</span><span class="nv">threshold</span><span class="si">}</span><span class="s2">)&quot;</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ </span><span class="nv">$metric</span><span class="s2">: </span><span class="si">${</span><span class="nv">value</span><span class="si">}</span><span class="s2"> (OK)&quot;</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="o">}</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="c1"># Check CPU</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="nv">CPU_USAGE</span><span class="o">=</span><span class="k">$(</span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{sum+=$3} END {print sum+0}&#39;</span><span class="k">)</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>check_threshold<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$CPU_USAGE</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;10&quot;</span><span class="w"> </span><span class="s2">&quot;CPU Usage (%)&quot;</span>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a><span class="c1"># Check Memory</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a><span class="nv">MEM_MB</span><span class="o">=</span><span class="k">$(</span>ps<span class="w"> </span>-o<span class="w"> </span>rss<span class="w"> </span>--no-headers<span class="w"> </span>--pid<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>sentinelone<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="k">)</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{sum+=$1} END {print sum/1024}&#39;</span><span class="k">)</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>check_threshold<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$MEM_MB</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;400&quot;</span><span class="w"> </span><span class="s2">&quot;Memory Usage (MB)&quot;</span>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a><span class="c1"># Check Connectivity</span>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span>-W<span class="w"> </span><span class="m">3</span><span class="w"> </span>api.sentinelone.net<span class="w"> </span><span class="p">&amp;</span>&gt;/dev/null
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-eq<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Network Connectivity: OK&quot;</span>
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a><span class="k">else</span>
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Network Connectivity: FAILED&quot;</span>
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a><span class="k">fi</span>
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;===========================================&quot;</span>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📊 Run complete performance tests: [Performance Testing Guide](../testing/kategori-e-performance.md)&quot;</span>
+</code></pre></div>
+<h2 id="performance-monitoring-checklist">📋 Performance Monitoring Checklist</h2>
+<div class="demo-checklist">
+<h4>Daily Performance Monitoring</h4>
+<ul>
+<li>[ ] Check CPU usage < 5% average</li>
+<li>[ ] Verify memory usage < 300MB</li>
+<li>[ ] Monitor disk I/O < 10MB/s</li>
+<li>[ ] Confirm network connectivity</li>
+<li>[ ] Review console alerts</li>
+<li>[ ] Validate agent responsiveness</li>
+</ul>
+</div>
+
+<div class="demo-checklist">
+<h4>Weekly Performance Review</h4>
+<ul>
+<li>[ ] Analyze performance trends</li>
+<li>[ ] Review baseline metrics</li>
+<li>[ ] Update alert thresholds if needed</li>
+<li>[ ] Document performance anomalies</li>
+<li>[ ] Plan optimization if required</li>
+</ul>
+</div>
+
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1106,7 +2438,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1144,11 +2476,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1199,6 +2526,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>

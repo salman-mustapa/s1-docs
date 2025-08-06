@@ -18,6 +18,8 @@
         <link rel="prev" href="../threat-hunting/">
       
       
+        <link rel="next" href="../../testing/testing-overview/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
@@ -50,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -76,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#strategi-deteksi-dan-respons-offline-di-sentinelone" class="md-skip">
+        <a href="#strategi-deteksi-dan-respons-offline-sentinelone" class="md-skip">
           Lewati ke isi
         </a>
       
@@ -225,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -341,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -392,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -403,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -951,20 +1071,419 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#langkah-persiapan" class="md-nav__link">
+  <a href="#arsitektur-offline-detection-response" class="md-nav__link">
     <span class="md-ellipsis">
-      Langkah Persiapan
+      📡 Arsitektur Offline Detection &amp; Response
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-tips" class="md-nav__link">
+  <a href="#konfigurasi-offline-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick Tips
+      🔧 Konfigurasi Offline Mode
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔧 Konfigurasi Offline Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-console-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Console Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Console Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-policy-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Policy Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-agent-level-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Agent-Level Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Agent-Level Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sentinelctl-offline-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      sentinelctl Offline Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offline-policy-cache-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Policy Cache Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offline-threat-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Offline Threat Detection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Offline Threat Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-detection-capabilities-in-offline-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Detection Capabilities in Offline Mode
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Detection Capabilities in Offline Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detection-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detection Matrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-offline-detection-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Offline Detection Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Offline Detection Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-a-malware-detection-while-offline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario A: Malware Detection While Offline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-b-behavioral-threat-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario B: Behavioral Threat Detection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-response-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Automated Response Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Automated Response Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-offline-response-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Offline Response Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-response-action-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Response Action Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Response Action Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-response-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Response Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-response-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 Manual Response Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 Manual Response Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-offline-incident-response-playbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Offline Incident Response Playbook
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Offline Incident Response Playbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-detection-and-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Detection and Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-containment-and-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Containment and Mitigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-evidence-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Evidence Collection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-emergency-response-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Emergency Response Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Emergency Response Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-isolation-critical-situations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Isolation (Critical Situations)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-recovery-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Recovery Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recovery-and-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Recovery and Synchronization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Recovery and Synchronization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-network-recovery-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Network Recovery Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-automatic-synchronization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Automatic Synchronization Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offline-operations-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Offline Operations Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Offline Operations Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-offline-status-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Offline Status Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-offline-performance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Offline Performance Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-preparedness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Preparedness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detection-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detection Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Procedures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -980,6 +1499,554 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1011,20 +2078,419 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#langkah-persiapan" class="md-nav__link">
+  <a href="#arsitektur-offline-detection-response" class="md-nav__link">
     <span class="md-ellipsis">
-      Langkah Persiapan
+      📡 Arsitektur Offline Detection &amp; Response
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-tips" class="md-nav__link">
+  <a href="#konfigurasi-offline-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick Tips
+      🔧 Konfigurasi Offline Mode
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔧 Konfigurasi Offline Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-console-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Console Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Console Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-policy-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Policy Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-agent-level-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Agent-Level Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Agent-Level Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sentinelctl-offline-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      sentinelctl Offline Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offline-policy-cache-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Policy Cache Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offline-threat-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Offline Threat Detection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Offline Threat Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-detection-capabilities-in-offline-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Detection Capabilities in Offline Mode
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Detection Capabilities in Offline Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detection-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detection Matrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-offline-detection-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Offline Detection Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Offline Detection Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-a-malware-detection-while-offline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario A: Malware Detection While Offline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-b-behavioral-threat-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario B: Behavioral Threat Detection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automated-response-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚡ Automated Response Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚡ Automated Response Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-offline-response-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Offline Response Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-response-action-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Response Action Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Response Action Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-response-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automated Response Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-response-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 Manual Response Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 Manual Response Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-offline-incident-response-playbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Offline Incident Response Playbook
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 Offline Incident Response Playbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-detection-and-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Detection and Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-containment-and-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Containment and Mitigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-evidence-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Evidence Collection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-emergency-response-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Emergency Response Procedures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 Emergency Response Procedures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-isolation-critical-situations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Isolation (Critical Situations)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-recovery-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Recovery Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recovery-and-synchronization" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Recovery and Synchronization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 Recovery and Synchronization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-network-recovery-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Network Recovery Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-automatic-synchronization-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Automatic Synchronization Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offline-operations-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Offline Operations Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Offline Operations Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-offline-status-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Offline Status Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-offline-performance-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Offline Performance Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#offline-preparedness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offline Preparedness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detection-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detection Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Procedures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-and-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing and Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1047,40 +2513,811 @@
   
 
 
-<h1 id="strategi-deteksi-dan-respons-offline-di-sentinelone">Strategi Deteksi dan Respons Offline di SentinelOne</h1>
-<p>Petunjuk bagaimana menghadapi situasi deteksi ancaman ketika sistem dalam mode offline atau terputus jaringan.</p>
-<h2 id="langkah-persiapan">Langkah Persiapan</h2>
-<ol>
-<li><strong>Konfigurasi Mode Offline</strong></li>
-<li>"<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.28 3 1 4.27l1.47 1.47c-.43.26-.86.55-1.27.86L3 9c.53-.4 1.08-.75 1.66-1.07l2.23 2.23c-.74.34-1.45.75-2.09 1.24l1.8 2.4c.78-.58 1.66-1.03 2.6-1.33L11.75 15c-1.25.07-2.41.5-3.35 1.2L12 21l2.46-3.27L17.74 21 19 19.72M12 3c-2.15 0-4.2.38-6.1 1.07l2.39 2.4C9.5 6.16 10.72 6 12 6c3.38 0 6.5 1.11 9 3l1.8-2.4C19.79 4.34 16.06 3 12 3m0 6c-.38 0-.75 0-1.12.05l3.19 3.2c1.22.28 2.36.82 3.33 1.55l1.8-2.4C17.2 9.89 14.7 9 12 9"/></svg></span>" Pergi ke <strong>Settings</strong> &gt; <strong>Offline Mode</strong></li>
-<li>
-<p>Aktifkan deteksi ancaman pada mode offline.</p>
-</li>
-<li>
-<p><strong>Atur Respons Manual</strong></p>
-</li>
-<li>
-<p>Identifikasi dan struktur jalur respons manual ketika terputus dari management console.</p>
-</li>
-<li>
-<p><strong>Uji Coba Periodik</strong></p>
-</li>
-<li>Lakukan simulasi offline untuk menguji efektivitas langkah-langkah deteksi dan respons.</li>
-</ol>
-<h2 id="quick-tips">Quick Tips</h2>
+<h1 id="strategi-deteksi-dan-respons-offline-sentinelone">Strategi Deteksi dan Respons Offline SentinelOne</h1>
+<p>Panduan komprehensif untuk menghadapi situasi deteksi ancaman dan incident response ketika sistem dalam mode offline atau terputus dari management console.</p>
+<hr />
+<h2 id="arsitektur-offline-detection-response">📡 Arsitektur Offline Detection &amp; Response</h2>
+<pre class="mermaid"><code>flowchart TB
+    subgraph "Normal Operations"
+        AGENT_ONLINE["SentinelOne Agent&lt;br/&gt;Online Mode"]
+        CONSOLE["Management Console&lt;br/&gt;Centralized Control"]
+        CLOUD_INTEL["Cloud Intelligence&lt;br/&gt;Real-time Updates"]
+    end
+
+    subgraph "Offline Mode Transition"
+        DISCONNECT["Network Disconnection&lt;br/&gt;Triggers Offline Mode"]
+        CACHE_POLICY["Cached Policies&lt;br/&gt;Local Enforcement"]
+        LOCAL_BUFFER["Local Event Buffer&lt;br/&gt;Store for Later Sync"]
+    end
+
+    subgraph "Offline Detection Engine"
+        LOCAL_SIGNATURES["Local Signatures&lt;br/&gt;Static Detection"]
+        BEHAVIORAL["Behavioral Analysis&lt;br/&gt;ML Models"]
+        HEURISTICS["Heuristic Engine&lt;br/&gt;Pattern Recognition"]
+        QUARANTINE["Local Quarantine&lt;br/&gt;Threat Isolation"]
+    end
+
+    subgraph "Offline Response Actions"
+        AUTO_REMEDIATE["Automated Remediation&lt;br/&gt;Policy-Based"]
+        LOCAL_ISOLATE["Network Isolation&lt;br/&gt;Endpoint Level"]
+        ROLLBACK["File System Rollback&lt;br/&gt;Threat Mitigation"]
+        LOG_COLLECTION["Forensic Logging&lt;br/&gt;Evidence Preservation"]
+    end
+
+    subgraph "Recovery Operations"
+        RECONNECT["Network Recovery&lt;br/&gt;Automatic Detection"]
+        SYNC["Data Synchronization&lt;br/&gt;Event Upload"]
+        POLICY_UPDATE["Policy Refresh&lt;br/&gt;Latest Rules"]
+        REPORT["Incident Reporting&lt;br/&gt;Offline Activity Summary"]
+    end
+
+    AGENT_ONLINE --&gt; CONSOLE
+    CONSOLE --&gt; CLOUD_INTEL
+
+    AGENT_ONLINE --&gt;|"Connection Lost"| DISCONNECT
+    DISCONNECT --&gt; CACHE_POLICY
+    DISCONNECT --&gt; LOCAL_BUFFER
+
+    CACHE_POLICY --&gt; LOCAL_SIGNATURES
+    CACHE_POLICY --&gt; BEHAVIORAL
+    CACHE_POLICY --&gt; HEURISTICS
+
+    LOCAL_SIGNATURES --&gt; QUARANTINE
+    BEHAVIORAL --&gt; AUTO_REMEDIATE
+    HEURISTICS --&gt; LOCAL_ISOLATE
+
+    AUTO_REMEDIATE --&gt; ROLLBACK
+    LOCAL_ISOLATE --&gt; LOG_COLLECTION
+
+    QUARANTINE --&gt; RECONNECT
+    LOG_COLLECTION --&gt; SYNC
+    SYNC --&gt; POLICY_UPDATE
+    POLICY_UPDATE --&gt; REPORT
+
+    style DISCONNECT fill:#ffebee
+    style CACHE_POLICY fill:#e8f5e8
+    style QUARANTINE fill:#fff3e0
+    style RECONNECT fill:#e3f2fd</code></pre>
+<hr />
+<h2 id="konfigurasi-offline-mode">🔧 Konfigurasi Offline Mode</h2>
+<h3 id="11-console-configuration">1.1 Console Configuration</h3>
+<h4 id="offline-policy-setup">Offline Policy Setup</h4>
+<pre class="mermaid"><code>flowchart LR
+    CONSOLE["Management Console"] --&gt; POLICY["Create Offline Policy"]
+    POLICY --&gt; DETECTION["Configure Detection&lt;br/&gt;Sensitivity Levels"]
+    DETECTION --&gt; RESPONSE["Define Response&lt;br/&gt;Actions"]
+    RESPONSE --&gt; CACHING["Enable Policy&lt;br/&gt;Caching"]
+    CACHING --&gt; DEPLOY["Deploy to&lt;br/&gt;Agent Groups"]
+
+    style CONSOLE fill:#e3f2fd
+    style DETECTION fill:#e8f5e8
+    style RESPONSE fill:#fff3e0
+    style DEPLOY fill:#fce4ec</code></pre>
+<h4 id="step-by-step-configuration">Step-by-Step Configuration</h4>
+<p><strong>Step 1: Enable Offline Detection</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Console Navigation:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>1. Navigate to Policies &gt; [Your Policy Name]
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>2. Go to Detection tab
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>3. Enable &quot;Offline Detection Mode&quot;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>4. Set detection sensitivity: Conservative / Balanced / Aggressive
+</code></pre></div></p>
+<p><strong>Step 2: Configure Offline Response</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;offline_policy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;detection&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;autonomous&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="nt">&quot;sensitivity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;balanced&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nt">&quot;cache_duration&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7d&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">&quot;signature_updates&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;daily&quot;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nt">&quot;response&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">      </span><span class="nt">&quot;automatic_quarantine&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="nt">&quot;network_isolation&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">      </span><span class="nt">&quot;file_rollback&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">      </span><span class="nt">&quot;collect_forensics&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="nt">&quot;buffering&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="nt">&quot;max_events&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="nt">&quot;max_storage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;500MB&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="nt">&quot;retention_period&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;30d&quot;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="p">}</span>
+</code></pre></div></p>
+<h3 id="12-agent-level-configuration">1.2 Agent-Level Configuration</h3>
+<h4 id="sentinelctl-offline-configuration">sentinelctl Offline Configuration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Enable offline detection mode</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span><span class="nb">enable</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--detection-mode<span class="w"> </span><span class="s2">&quot;autonomous&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--cache-policies<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--buffer-events
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Configure offline behavior</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>configure<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span>--max-buffer-size<span class="w"> </span><span class="s2">&quot;500MB&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--max-offline-days<span class="w"> </span><span class="s2">&quot;30&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--auto-quarantine<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span>--collect-forensics
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="c1"># Set offline response actions</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>response<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span>--quarantine-threats<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span>--rollback-changes<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">  </span>--preserve-evidence<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span>--local-logging
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="c1"># View offline configuration</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>status
+</code></pre></div>
+<h4 id="offline-policy-cache-management">Offline Policy Cache Management</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Force policy cache update (while online)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>cache<span class="w"> </span>update-policies
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># View cached policies</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>cache<span class="w"> </span>list-policies
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Check cache expiration</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>cache<span class="w"> </span>check-expiry
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Manually refresh signatures cache</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>cache<span class="w"> </span>update-signatures
+</code></pre></div>
+<hr />
+<h2 id="offline-threat-detection">🚨 Offline Threat Detection</h2>
+<h3 id="21-detection-capabilities-in-offline-mode">2.1 Detection Capabilities in Offline Mode</h3>
+<h4 id="detection-matrix">Detection Matrix</h4>
+<pre class="mermaid"><code>graph TB
+    subgraph "Offline Detection Capabilities"
+        STATIC["Static Analysis&lt;br/&gt;✅ Signature-based&lt;br/&gt;✅ Hash matching&lt;br/&gt;✅ File reputation"]
+
+        BEHAVIORAL["Behavioral Analysis&lt;br/&gt;✅ Process behavior&lt;br/&gt;✅ System calls&lt;br/&gt;⚠️ Limited ML models"]
+
+        HEURISTIC["Heuristic Detection&lt;br/&gt;✅ Pattern matching&lt;br/&gt;✅ Anomaly detection&lt;br/&gt;✅ Rule-based logic"]
+
+        NETWORK["Network Monitoring&lt;br/&gt;⚠️ Local traffic only&lt;br/&gt;❌ Cloud reputation&lt;br/&gt;✅ Cached IOCs"]
+    end
+
+    subgraph "Detection Limitations"
+        CLOUD_INTEL["❌ Real-time Threat Intel"]
+        REPUTATION["❌ Live File Reputation"]
+        GLOBAL_CONTEXT["❌ Global Attack Context"]
+        CLOUD_ML["❌ Cloud ML Models"]
+    end
+
+    STATIC -.-&gt;|"Limited by"| CLOUD_INTEL
+    BEHAVIORAL -.-&gt;|"Limited by"| CLOUD_ML
+    HEURISTIC -.-&gt;|"Limited by"| REPUTATION
+    NETWORK -.-&gt;|"Limited by"| GLOBAL_CONTEXT
+
+    style STATIC fill:#e8f5e8
+    style BEHAVIORAL fill:#fff3e0
+    style CLOUD_INTEL fill:#ffebee</code></pre>
+<h3 id="22-offline-detection-scenarios">2.2 Offline Detection Scenarios</h3>
+<h4 id="scenario-a-malware-detection-while-offline">Scenario A: Malware Detection While Offline</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># Simulate offline malware detection</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== Offline Malware Detection Scenario ===&quot;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Step 1: Verify agent is in offline mode</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Checking agent offline status:&quot;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>status<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>offline
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1"># Step 2: Create EICAR test file (safe malware sample)</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Creating EICAR test file:&quot;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/eicar_offline.txt
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c1"># Step 3: Monitor detection</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Monitoring for offline detection:&quot;</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">10</span><span class="w"> </span>--follow<span class="w"> </span><span class="p">&amp;</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="nv">LOG_PID</span><span class="o">=</span><span class="nv">$!</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>sleep<span class="w"> </span><span class="m">10</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="nb">kill</span><span class="w"> </span><span class="nv">$LOG_PID</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c1"># Step 4: Check quarantine status</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Checking quarantine:&quot;</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>quarantine<span class="w"> </span>list
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="c1"># Step 5: Review offline events</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Offline events buffer:&quot;</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>events<span class="w"> </span>--count
+</code></pre></div>
+<h4 id="scenario-b-behavioral-threat-detection">Scenario B: Behavioral Threat Detection</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c"># PowerShell script for Windows offline behavioral testing</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">Write-Host</span> <span class="s2">&quot;=== Offline Behavioral Detection Test ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c"># Step 1: Verify offline mode</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nv">$status</span> <span class="p">=</span> <span class="p">&amp;</span> <span class="s2">&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot;</span> <span class="n">status</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Agent Status: $status&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c"># Step 2: Simulate suspicious behavior</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Simulating suspicious process behavior...&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c"># Create suspicious process chain</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nv">$proc1</span> <span class="p">=</span> <span class="nb">Start-Process</span> <span class="n">cmd</span><span class="p">.</span><span class="n">exe</span> <span class="n">-ArgumentList</span> <span class="s2">&quot;/c timeout 30&quot;</span> <span class="n">-PassThru</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="nv">$proc2</span> <span class="p">=</span> <span class="nb">Start-Process</span> <span class="n">powershell</span><span class="p">.</span><span class="n">exe</span> <span class="n">-ArgumentList</span> <span class="s2">&quot;-Command Start-Sleep 30&quot;</span> <span class="n">-PassThru</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c"># Step 3: Monitor behavioral detection</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="nb">Start-Sleep</span> <span class="n">5</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="p">&amp;</span> <span class="s2">&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot;</span> <span class="n">logs</span> <span class="p">-</span><span class="n">-tail</span> <span class="n">5</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="c"># Step 4: Cleanup</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="nv">$proc1</span> <span class="p">|</span> <span class="nb">Stop-Process</span> <span class="n">-Force</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="nv">$proc2</span> <span class="p">|</span> <span class="nb">Stop-Process</span> <span class="n">-Force</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Behavioral test completed&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+</code></pre></div>
+<hr />
+<h2 id="automated-response-actions">⚡ Automated Response Actions</h2>
+<h3 id="31-offline-response-workflow">3.1 Offline Response Workflow</h3>
+<pre class="mermaid"><code>flowchart TD
+    THREAT["Threat Detected&lt;br/&gt;Offline Mode"] --&gt; ASSESS["Risk Assessment&lt;br/&gt;Local Analysis"]
+
+    ASSESS --&gt; HIGH{"High Risk&lt;br/&gt;Threat?"}
+    HIGH --&gt;|"Yes"| QUARANTINE["Immediate Quarantine&lt;br/&gt;Isolate Threat"]
+    HIGH --&gt;|"No"| MEDIUM{"Medium Risk&lt;br/&gt;Threat?"}
+
+    QUARANTINE --&gt; ROLLBACK["File Rollback&lt;br/&gt;Restore Clean State"]
+    ROLLBACK --&gt; ISOLATE["Network Isolation&lt;br/&gt;Prevent Spread"]
+    ISOLATE --&gt; FORENSICS["Collect Forensics&lt;br/&gt;Evidence Preservation"]
+
+    MEDIUM --&gt;|"Yes"| MONITOR["Enhanced Monitoring&lt;br/&gt;Behavioral Analysis"]
+    MEDIUM --&gt;|"No"| LOG["Log Event&lt;br/&gt;Record Activity"]
+
+    MONITOR --&gt; ESCALATE{"Escalation&lt;br/&gt;Needed?"}
+    ESCALATE --&gt;|"Yes"| QUARANTINE
+    ESCALATE --&gt;|"No"| LOG
+
+    FORENSICS --&gt; BUFFER["Event Buffering&lt;br/&gt;Store for Sync"]
+    LOG --&gt; BUFFER
+
+    BUFFER --&gt; WAIT["Wait for&lt;br/&gt;Connectivity"]
+    WAIT --&gt; SYNC["Sync to Console&lt;br/&gt;Report Incidents"]
+
+    style THREAT fill:#ffebee
+    style QUARANTINE fill:#e8f5e8
+    style ISOLATE fill:#fff3e0
+    style SYNC fill:#e3f2fd</code></pre>
+<h3 id="32-response-action-configuration">3.2 Response Action Configuration</h3>
+<h4 id="automated-response-rules">Automated Response Rules</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># offline-response-rules.yaml</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">response_rules</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">critical_threats</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">threat_types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;malware&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;ransomware&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="nt">actions</span><span class="p">:</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;quarantine_immediately&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;rollback_file_changes&quot;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;collect_forensics&quot;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;log_incident&quot;</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="nt">suspicious_behavior</span><span class="p">:</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">threat_types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;behavioral&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;anomalous&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">      </span><span class="nt">actions</span><span class="p">:</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;enhance_monitoring&quot;</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;collect_process_tree&quot;</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;log_detailed_activity&quot;</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">  </span><span class="nt">policy_violations</span><span class="p">:</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">threat_types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;policy_breach&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;unauthorized_access&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">      </span><span class="nt">actions</span><span class="p">:</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;block_action&quot;</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;log_violation&quot;</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;alert_local_admin&quot;</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">  </span><span class="nt">network_threats</span><span class="p">:</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">threat_types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;c2_communication&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;data_exfiltration&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">      </span><span class="nt">actions</span><span class="p">:</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;block_network_connection&quot;</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;quarantine_process&quot;</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;collect_network_forensics&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Apply offline response rules</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>response-rules<span class="w"> </span>apply<span class="w"> </span>--config<span class="w"> </span>offline-response-rules.yaml
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Test response actions</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>test-response<span class="w"> </span>--threat-type<span class="w"> </span>malware
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># View response history</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>response-history<span class="w"> </span>--last<span class="w"> </span>24h
+</code></pre></div>
+<hr />
+<h2 id="manual-response-procedures">📱 Manual Response Procedures</h2>
+<h3 id="41-offline-incident-response-playbook">4.1 Offline Incident Response Playbook</h3>
+<h4 id="phase-1-detection-and-assessment">Phase 1: Detection and Assessment</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># Offline Incident Response - Phase 1: Detection</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== Phase 1: Offline Threat Detection ===&quot;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># Step 1: Check for active threats</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Checking for active threats:&quot;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>list<span class="w"> </span>--status<span class="w"> </span>active
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># Step 2: Review recent detections</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Recent detections (last 1 hour):&quot;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>list<span class="w"> </span>--since<span class="w"> </span>1h
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c1"># Step 3: Analyze threat severity</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Threat severity breakdown:&quot;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>stats<span class="w"> </span>--group-by<span class="w"> </span>severity
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="c1"># Step 4: Check quarantine status</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Current quarantine status:&quot;</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>quarantine<span class="w"> </span>list<span class="w"> </span>--status<span class="w"> </span>active
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="c1"># Step 5: System health check</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;System health status:&quot;</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>health<span class="w"> </span>check<span class="w"> </span>--offline-mode
+</code></pre></div>
+<h4 id="phase-2-containment-and-mitigation">Phase 2: Containment and Mitigation</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Offline Incident Response - Phase 2: Containment</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== Phase 2: Offline Threat Containment ===&quot;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># Function to contain threats</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>contain_threat<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">threat_id</span><span class="o">=</span><span class="nv">$1</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Containing threat: </span><span class="nv">$threat_id</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">    </span><span class="c1"># Quarantine the threat</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>quarantine<span class="w"> </span>--id<span class="w"> </span><span class="nv">$threat_id</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="c1"># Rollback file changes if needed</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>rollback<span class="w"> </span>--id<span class="w"> </span><span class="nv">$threat_id</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">    </span><span class="c1"># Collect forensic data</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>forensics<span class="w"> </span>collect<span class="w"> </span>--threat-id<span class="w"> </span><span class="nv">$threat_id</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Threat </span><span class="nv">$threat_id</span><span class="s2"> contained successfully&quot;</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="o">}</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="c1"># Get active threats</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="nv">active_threats</span><span class="o">=</span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>list<span class="w"> </span>--status<span class="w"> </span>active<span class="w"> </span>--format<span class="w"> </span>json<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s1">&#39;.[].id&#39;</span><span class="k">)</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="c1"># Contain each active threat</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="k">for</span><span class="w"> </span>threat_id<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$active_threats</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">    </span>contain_threat<span class="w"> </span><span class="nv">$threat_id</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="k">done</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;All active threats contained&quot;</span>
+</code></pre></div>
+<h4 id="phase-3-evidence-collection">Phase 3: Evidence Collection</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># Offline Incident Response - Phase 3: Evidence Collection</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== Phase 3: Evidence Collection ===&quot;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># Create forensics package</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nv">FORENSICS_DIR</span><span class="o">=</span><span class="s2">&quot;/tmp/offline_forensics_</span><span class="k">$(</span>date<span class="w"> </span>+%Y%m%d_%H%M%S<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Collecting evidence in: </span><span class="nv">$FORENSICS_DIR</span><span class="s2">&quot;</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="c1"># Collect system state</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>system<span class="w"> </span>snapshot<span class="w"> </span>--output<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>/system_snapshot.json
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="c1"># Collect threat artifacts</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--format<span class="w"> </span>json<span class="w"> </span>--output<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>/threats.json
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="c1"># Collect quarantine information</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>quarantine<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--output<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>/quarantine.json
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="c1"># Collect agent logs</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>logs<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--output<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>/agent_logs.zip
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a><span class="c1"># Collect process tree</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>processes<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--output<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>/process_tree.json
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a><span class="c1"># Create evidence package</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>tar<span class="w"> </span>-czf<span class="w"> </span><span class="nv">$FORENSICS_DIR</span>.tar.gz<span class="w"> </span>-C<span class="w"> </span>/tmp<span class="w"> </span><span class="k">$(</span>basename<span class="w"> </span><span class="nv">$FORENSICS_DIR</span><span class="k">)</span>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Evidence package created: </span><span class="nv">$FORENSICS_DIR</span><span class="s2">.tar.gz&quot;</span>
+</code></pre></div>
+<h3 id="42-emergency-response-procedures">4.2 Emergency Response Procedures</h3>
+<h4 id="network-isolation-critical-situations">Network Isolation (Critical Situations)</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># Emergency Network Isolation Script</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== EMERGENCY: Network Isolation Procedure ===&quot;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># WARNING: This will disconnect the system from network</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Are you sure you want to isolate this system? (yes/no): &quot;</span><span class="w"> </span>confirm
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$confirm</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;yes&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Initiating network isolation...&quot;</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="c1"># Method 1: Using SentinelOne (if available)</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>network<span class="w"> </span>isolate<span class="w"> </span>--reason<span class="w"> </span><span class="s2">&quot;Emergency containment&quot;</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="c1"># Method 2: System-level isolation (backup)</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Using system-level network isolation&quot;</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">        </span><span class="c1"># Disable network interfaces (Linux)</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span>interface<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>ip<span class="w"> </span>link<span class="w"> </span>show<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;^[0-9]+:&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d:<span class="w"> </span>-f2<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>lo<span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">            </span>sudo<span class="w"> </span>ip<span class="w"> </span>link<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="nv">$interface</span><span class="w"> </span>down
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">            </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Disabled interface: </span><span class="nv">$interface</span><span class="s2">&quot;</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">        </span><span class="k">done</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">        </span><span class="c1"># Block all traffic (iptables)</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="w">        </span>sudo<span class="w"> </span>iptables<span class="w"> </span>-P<span class="w"> </span>INPUT<span class="w"> </span>DROP
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="w">        </span>sudo<span class="w"> </span>iptables<span class="w"> </span>-P<span class="w"> </span>OUTPUT<span class="w"> </span>DROP
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a><span class="w">        </span>sudo<span class="w"> </span>iptables<span class="w"> </span>-P<span class="w"> </span>FORWARD<span class="w"> </span>DROP
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a>
+<a id="__codelineno-11-30" name="__codelineno-11-30" href="#__codelineno-11-30"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Network isolation completed using system controls&quot;</span>
+<a id="__codelineno-11-31" name="__codelineno-11-31" href="#__codelineno-11-31"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-11-32" name="__codelineno-11-32" href="#__codelineno-11-32"></a>
+<a id="__codelineno-11-33" name="__codelineno-11-33" href="#__codelineno-11-33"></a><span class="w">    </span><span class="c1"># Log the isolation</span>
+<a id="__codelineno-11-34" name="__codelineno-11-34" href="#__codelineno-11-34"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>date<span class="k">)</span><span class="s2">: Emergency network isolation activated&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/var/log/sentinelone_isolation.log
+<a id="__codelineno-11-35" name="__codelineno-11-35" href="#__codelineno-11-35"></a>
+<a id="__codelineno-11-36" name="__codelineno-11-36" href="#__codelineno-11-36"></a><span class="k">else</span>
+<a id="__codelineno-11-37" name="__codelineno-11-37" href="#__codelineno-11-37"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Network isolation cancelled&quot;</span>
+<a id="__codelineno-11-38" name="__codelineno-11-38" href="#__codelineno-11-38"></a><span class="k">fi</span>
+</code></pre></div>
+<h4 id="system-recovery-procedure">System Recovery Procedure</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c"># Windows Emergency Recovery Script</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">Write-Host</span> <span class="s2">&quot;=== Emergency System Recovery ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Red</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c"># Step 1: Stop suspicious processes</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Stopping suspicious processes...&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="nv">$suspiciousProcesses</span> <span class="p">=</span> <span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="nv">$_</span><span class="p">.</span><span class="n">ProcessName</span> <span class="o">-match</span> <span class="s2">&quot;(temp|malware|suspicious)&quot;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="p">}</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="k">foreach</span> <span class="p">(</span><span class="nv">$proc</span> <span class="k">in</span> <span class="nv">$suspiciousProcesses</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    <span class="k">try</span> <span class="p">{</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>        <span class="nb">Stop-Process</span> <span class="n">-Id</span> <span class="nv">$proc</span><span class="p">.</span><span class="n">Id</span> <span class="n">-Force</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;Stopped process: </span><span class="p">$(</span><span class="nv">$proc</span><span class="p">.</span><span class="n">ProcessName</span><span class="p">)</span><span class="s2">&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>    <span class="p">}</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>    <span class="k">catch</span> <span class="p">{</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;Failed to stop process: </span><span class="p">$(</span><span class="nv">$proc</span><span class="p">.</span><span class="n">ProcessName</span><span class="p">)</span><span class="s2">&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Red</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>    <span class="p">}</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="p">}</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="c"># Step 2: Check and restore system files</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Running system file check...&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="nb">Start-Process</span> <span class="n">sfc</span> <span class="n">-ArgumentList</span> <span class="s2">&quot;/scannow&quot;</span> <span class="n">-Wait</span> <span class="n">-NoNewWindow</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="c"># Step 3: Create system restore point</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Creating system restore point...&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="nb">Checkpoint-Computer</span> <span class="n">-Description</span> <span class="s2">&quot;SentinelOne Emergency Recovery&quot;</span> <span class="n">-RestorePointType</span> <span class="s2">&quot;MODIFY_SETTINGS&quot;</span>
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a>
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="c"># Step 4: Collect recovery information</span>
+<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="nv">$recoveryInfo</span> <span class="p">=</span> <span class="p">@{</span>
+<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a>    <span class="s1">&#39;timestamp&#39;</span> <span class="p">=</span> <span class="nb">Get-Date</span>
+<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a>    <span class="s1">&#39;processes_stopped&#39;</span> <span class="p">=</span> <span class="nv">$suspiciousProcesses</span><span class="p">.</span><span class="n">Count</span>
+<a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a>    <span class="s1">&#39;system_status&#39;</span> <span class="p">=</span> <span class="s1">&#39;recovering&#39;</span>
+<a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a>    <span class="s1">&#39;next_steps&#39;</span> <span class="p">=</span> <span class="s1">&#39;Wait for network recovery and sync with console&#39;</span>
+<a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="p">}</span>
+<a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a>
+<a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="nv">$recoveryInfo</span> <span class="p">|</span> <span class="nb">ConvertTo-Json</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="s2">&quot;C:\temp\recovery_info.json&quot;</span>
+<a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a>
+<a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Emergency recovery procedures completed&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+<a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="nb">Write-Host</span> <span class="s2">&quot;Recovery information saved to C:\temp\recovery_info.json&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Cyan</span>
+</code></pre></div>
+<hr />
+<h2 id="recovery-and-synchronization">🔄 Recovery and Synchronization</h2>
+<h3 id="51-network-recovery-detection">5.1 Network Recovery Detection</h3>
+<pre class="mermaid"><code>sequenceDiagram
+    participant AGENT as SentinelOne Agent
+    participant NETWORK as Network Stack
+    participant CONSOLE as Management Console
+    participant SYNC as Sync Service
+
+    loop Network Monitoring
+        AGENT-&gt;&gt;NETWORK: Health Check Ping
+        alt Network Available
+            NETWORK--&gt;&gt;AGENT: Success Response
+            AGENT-&gt;&gt;CONSOLE: Attempt Connection
+            CONSOLE--&gt;&gt;AGENT: Authentication Success
+            AGENT-&gt;&gt;SYNC: Initiate Data Sync
+
+            Note over SYNC: Sync offline events,&lt;br/&gt;threat data, forensics
+
+            SYNC-&gt;&gt;CONSOLE: Upload Buffered Events
+            CONSOLE--&gt;&gt;SYNC: ACK Events Received
+
+            SYNC-&gt;&gt;CONSOLE: Upload Threat Data
+            CONSOLE--&gt;&gt;SYNC: Process Threats
+
+            AGENT-&gt;&gt;CONSOLE: Request Policy Updates
+            CONSOLE--&gt;&gt;AGENT: Send Latest Policies
+
+            AGENT-&gt;&gt;AGENT: Exit Offline Mode
+        else Network Unavailable
+            NETWORK--&gt;&gt;AGENT: Timeout/Failure
+            AGENT-&gt;&gt;AGENT: Continue Offline Mode
+        end
+    end</code></pre>
+<h3 id="52-automatic-synchronization-process">5.2 Automatic Synchronization Process</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1"># Automated Recovery and Sync Script</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SentinelOne Offline Recovery ===&quot;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1"># Function to test connectivity</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>test_connectivity<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Testing network connectivity...&quot;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="c1"># Test console connectivity</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>network<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--timeout<span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Console connectivity restored&quot;</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Console still unreachable&quot;</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="o">}</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="c1"># Function to sync offline data</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>sync_offline_data<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Starting offline data synchronization...&quot;</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="w">    </span><span class="c1"># Upload buffered events</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Uploading buffered events...&quot;</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>sync-events
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="w">    </span><span class="c1"># Upload threat data</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Uploading threat detections...&quot;</span>
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>sync-threats
+<a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a>
+<a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a><span class="w">    </span><span class="c1"># Upload forensic data</span>
+<a id="__codelineno-13-33" name="__codelineno-13-33" href="#__codelineno-13-33"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Uploading forensic evidence...&quot;</span>
+<a id="__codelineno-13-34" name="__codelineno-13-34" href="#__codelineno-13-34"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>sync-forensics
+<a id="__codelineno-13-35" name="__codelineno-13-35" href="#__codelineno-13-35"></a>
+<a id="__codelineno-13-36" name="__codelineno-13-36" href="#__codelineno-13-36"></a><span class="w">    </span><span class="c1"># Refresh policies</span>
+<a id="__codelineno-13-37" name="__codelineno-13-37" href="#__codelineno-13-37"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Updating policies from console...&quot;</span>
+<a id="__codelineno-13-38" name="__codelineno-13-38" href="#__codelineno-13-38"></a><span class="w">    </span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>policy<span class="w"> </span>refresh
+<a id="__codelineno-13-39" name="__codelineno-13-39" href="#__codelineno-13-39"></a>
+<a id="__codelineno-13-40" name="__codelineno-13-40" href="#__codelineno-13-40"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Offline data sync completed&quot;</span>
+<a id="__codelineno-13-41" name="__codelineno-13-41" href="#__codelineno-13-41"></a><span class="o">}</span>
+<a id="__codelineno-13-42" name="__codelineno-13-42" href="#__codelineno-13-42"></a>
+<a id="__codelineno-13-43" name="__codelineno-13-43" href="#__codelineno-13-43"></a><span class="c1"># Function to validate recovery</span>
+<a id="__codelineno-13-44" name="__codelineno-13-44" href="#__codelineno-13-44"></a>validate_recovery<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-13-45" name="__codelineno-13-45" href="#__codelineno-13-45"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Validating recovery status...&quot;</span>
+<a id="__codelineno-13-46" name="__codelineno-13-46" href="#__codelineno-13-46"></a>
+<a id="__codelineno-13-47" name="__codelineno-13-47" href="#__codelineno-13-47"></a><span class="w">    </span><span class="c1"># Check agent status</span>
+<a id="__codelineno-13-48" name="__codelineno-13-48" href="#__codelineno-13-48"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">status</span><span class="o">=</span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>status<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;mode&quot;</span><span class="k">)</span>
+<a id="__codelineno-13-49" name="__codelineno-13-49" href="#__codelineno-13-49"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Agent mode: </span><span class="nv">$status</span><span class="s2">&quot;</span>
+<a id="__codelineno-13-50" name="__codelineno-13-50" href="#__codelineno-13-50"></a>
+<a id="__codelineno-13-51" name="__codelineno-13-51" href="#__codelineno-13-51"></a><span class="w">    </span><span class="c1"># Check threat sync status</span>
+<a id="__codelineno-13-52" name="__codelineno-13-52" href="#__codelineno-13-52"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">pending</span><span class="o">=</span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>pending-events<span class="k">)</span>
+<a id="__codelineno-13-53" name="__codelineno-13-53" href="#__codelineno-13-53"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Pending events: </span><span class="nv">$pending</span><span class="s2">&quot;</span>
+<a id="__codelineno-13-54" name="__codelineno-13-54" href="#__codelineno-13-54"></a>
+<a id="__codelineno-13-55" name="__codelineno-13-55" href="#__codelineno-13-55"></a><span class="w">    </span><span class="c1"># Check policy freshness</span>
+<a id="__codelineno-13-56" name="__codelineno-13-56" href="#__codelineno-13-56"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">policy_age</span><span class="o">=</span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>policy<span class="w"> </span>age<span class="k">)</span>
+<a id="__codelineno-13-57" name="__codelineno-13-57" href="#__codelineno-13-57"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Policy age: </span><span class="nv">$policy_age</span><span class="s2">&quot;</span>
+<a id="__codelineno-13-58" name="__codelineno-13-58" href="#__codelineno-13-58"></a>
+<a id="__codelineno-13-59" name="__codelineno-13-59" href="#__codelineno-13-59"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$status</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span>*<span class="s2">&quot;online&quot;</span>*<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$pending</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-13-60" name="__codelineno-13-60" href="#__codelineno-13-60"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Recovery successful&quot;</span>
+<a id="__codelineno-13-61" name="__codelineno-13-61" href="#__codelineno-13-61"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-13-62" name="__codelineno-13-62" href="#__codelineno-13-62"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-13-63" name="__codelineno-13-63" href="#__codelineno-13-63"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⚠️ Recovery incomplete&quot;</span>
+<a id="__codelineno-13-64" name="__codelineno-13-64" href="#__codelineno-13-64"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-13-65" name="__codelineno-13-65" href="#__codelineno-13-65"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-13-66" name="__codelineno-13-66" href="#__codelineno-13-66"></a><span class="o">}</span>
+<a id="__codelineno-13-67" name="__codelineno-13-67" href="#__codelineno-13-67"></a>
+<a id="__codelineno-13-68" name="__codelineno-13-68" href="#__codelineno-13-68"></a><span class="c1"># Main recovery loop</span>
+<a id="__codelineno-13-69" name="__codelineno-13-69" href="#__codelineno-13-69"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-13-70" name="__codelineno-13-70" href="#__codelineno-13-70"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span>test_connectivity<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-13-71" name="__codelineno-13-71" href="#__codelineno-13-71"></a><span class="w">        </span>sync_offline_data
+<a id="__codelineno-13-72" name="__codelineno-13-72" href="#__codelineno-13-72"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span>validate_recovery<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-13-73" name="__codelineno-13-73" href="#__codelineno-13-73"></a><span class="w">            </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🎉 Full recovery completed successfully&quot;</span>
+<a id="__codelineno-13-74" name="__codelineno-13-74" href="#__codelineno-13-74"></a><span class="w">            </span><span class="k">break</span>
+<a id="__codelineno-13-75" name="__codelineno-13-75" href="#__codelineno-13-75"></a><span class="w">        </span><span class="k">else</span>
+<a id="__codelineno-13-76" name="__codelineno-13-76" href="#__codelineno-13-76"></a><span class="w">            </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⚠️ Recovery issues detected, retrying...&quot;</span>
+<a id="__codelineno-13-77" name="__codelineno-13-77" href="#__codelineno-13-77"></a><span class="w">            </span>sleep<span class="w"> </span><span class="m">30</span>
+<a id="__codelineno-13-78" name="__codelineno-13-78" href="#__codelineno-13-78"></a><span class="w">        </span><span class="k">fi</span>
+<a id="__codelineno-13-79" name="__codelineno-13-79" href="#__codelineno-13-79"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-13-80" name="__codelineno-13-80" href="#__codelineno-13-80"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⏳ Waiting for connectivity... (checking again in 60 seconds)&quot;</span>
+<a id="__codelineno-13-81" name="__codelineno-13-81" href="#__codelineno-13-81"></a><span class="w">        </span>sleep<span class="w"> </span><span class="m">60</span>
+<a id="__codelineno-13-82" name="__codelineno-13-82" href="#__codelineno-13-82"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-13-83" name="__codelineno-13-83" href="#__codelineno-13-83"></a><span class="k">done</span>
+</code></pre></div>
+<hr />
+<h2 id="offline-operations-monitoring">📊 Offline Operations Monitoring</h2>
+<h3 id="61-offline-status-dashboard">6.1 Offline Status Dashboard</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="c1"># Offline Operations Status Script</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SentinelOne Offline Operations Dashboard ===&quot;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Generated: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;================================================&quot;</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="c1"># Agent Status</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🤖 AGENT STATUS:&quot;</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>status<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;(Status|Mode|Version|Last Connection)&quot;</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="nb">echo</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1"># Threat Summary</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🚨 THREAT SUMMARY:&quot;</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Active Threats: </span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threats<span class="w"> </span>count<span class="w"> </span>--status<span class="w"> </span>active<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Quarantined: </span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>quarantine<span class="w"> </span>count<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Total Offline Detections: </span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>events<span class="w"> </span>count<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="nb">echo</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="c1"># Buffer Status</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;💾 BUFFER STATUS:&quot;</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>buffer-status
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="nb">echo</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="c1"># System Health</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;💚 SYSTEM HEALTH:&quot;</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>health<span class="w"> </span>check<span class="w"> </span>--offline-mode<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;(CPU|Memory|Disk|Status)&quot;</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="nb">echo</span>
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a>
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="c1"># Recent Activity</span>
+<a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📋 RECENT ACTIVITY (Last 4 hours):&quot;</span>
+<a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>logs<span class="w"> </span>--since<span class="w"> </span>4h<span class="w"> </span>--level<span class="w"> </span>warn,error<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10
+<a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a><span class="nb">echo</span>
+<a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a>
+<a id="__codelineno-14-35" name="__codelineno-14-35" href="#__codelineno-14-35"></a><span class="c1"># Pending Sync</span>
+<a id="__codelineno-14-36" name="__codelineno-14-36" href="#__codelineno-14-36"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⏳ PENDING SYNCHRONIZATION:&quot;</span>
+<a id="__codelineno-14-37" name="__codelineno-14-37" href="#__codelineno-14-37"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Events: </span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>pending-events<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-38" name="__codelineno-14-38" href="#__codelineno-14-38"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Threats: </span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>pending-threats<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-39" name="__codelineno-14-39" href="#__codelineno-14-39"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Forensics: </span><span class="k">$(</span>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>offline<span class="w"> </span>pending-forensics<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-14-40" name="__codelineno-14-40" href="#__codelineno-14-40"></a><span class="nb">echo</span>
+<a id="__codelineno-14-41" name="__codelineno-14-41" href="#__codelineno-14-41"></a>
+<a id="__codelineno-14-42" name="__codelineno-14-42" href="#__codelineno-14-42"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;================================================&quot;</span>
+<a id="__codelineno-14-43" name="__codelineno-14-43" href="#__codelineno-14-43"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Next update: </span><span class="k">$(</span>date<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;+5 minutes&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h3 id="62-offline-performance-metrics">6.2 Offline Performance Metrics</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="ch">#!/usr/bin/env python3</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="sd">SentinelOne Offline Performance Monitor</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">OfflineMonitor</span><span class="p">:</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">collect_metrics</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Collect offline performance metrics&quot;&quot;&quot;</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>        <span class="c1"># Detection metrics</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>        <span class="n">detection_stats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_detection_stats</span><span class="p">()</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>        <span class="c1"># Performance metrics</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>        <span class="n">performance_stats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_performance_stats</span><span class="p">()</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>        <span class="c1"># Buffer metrics</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>        <span class="n">buffer_stats</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_buffer_stats</span><span class="p">()</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>            <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>            <span class="s1">&#39;detection&#39;</span><span class="p">:</span> <span class="n">detection_stats</span><span class="p">,</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>            <span class="s1">&#39;performance&#39;</span><span class="p">:</span> <span class="n">performance_stats</span><span class="p">,</span>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>            <span class="s1">&#39;buffer&#39;</span><span class="p">:</span> <span class="n">buffer_stats</span>
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>        <span class="p">}</span>
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span>
+<a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>
+<a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_detection_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-15-37" name="__codelineno-15-37" href="#__codelineno-15-37"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get offline detection statistics&quot;&quot;&quot;</span>
+<a id="__codelineno-15-38" name="__codelineno-15-38" href="#__codelineno-15-38"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-15-39" name="__codelineno-15-39" href="#__codelineno-15-39"></a>            <span class="c1"># Run sentinelctl to get detection stats</span>
+<a id="__codelineno-15-40" name="__codelineno-15-40" href="#__codelineno-15-40"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<a id="__codelineno-15-41" name="__codelineno-15-41" href="#__codelineno-15-41"></a>                <span class="p">[</span><span class="s1">&#39;sudo&#39;</span><span class="p">,</span> <span class="s1">&#39;sentinelctl&#39;</span><span class="p">,</span> <span class="s1">&#39;offline&#39;</span><span class="p">,</span> <span class="s1">&#39;stats&#39;</span><span class="p">,</span> <span class="s1">&#39;--json&#39;</span><span class="p">],</span>
+<a id="__codelineno-15-42" name="__codelineno-15-42" href="#__codelineno-15-42"></a>                <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span>
+<a id="__codelineno-15-43" name="__codelineno-15-43" href="#__codelineno-15-43"></a>            <span class="p">)</span>
+<a id="__codelineno-15-44" name="__codelineno-15-44" href="#__codelineno-15-44"></a>
+<a id="__codelineno-15-45" name="__codelineno-15-45" href="#__codelineno-15-45"></a>            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-15-46" name="__codelineno-15-46" href="#__codelineno-15-46"></a>                <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+<a id="__codelineno-15-47" name="__codelineno-15-47" href="#__codelineno-15-47"></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-15-48" name="__codelineno-15-48" href="#__codelineno-15-48"></a>                <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="p">}</span>
+<a id="__codelineno-15-49" name="__codelineno-15-49" href="#__codelineno-15-49"></a>
+<a id="__codelineno-15-50" name="__codelineno-15-50" href="#__codelineno-15-50"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-15-51" name="__codelineno-15-51" href="#__codelineno-15-51"></a>            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+<a id="__codelineno-15-52" name="__codelineno-15-52" href="#__codelineno-15-52"></a>
+<a id="__codelineno-15-53" name="__codelineno-15-53" href="#__codelineno-15-53"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_performance_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-15-54" name="__codelineno-15-54" href="#__codelineno-15-54"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get offline performance impact&quot;&quot;&quot;</span>
+<a id="__codelineno-15-55" name="__codelineno-15-55" href="#__codelineno-15-55"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-15-56" name="__codelineno-15-56" href="#__codelineno-15-56"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<a id="__codelineno-15-57" name="__codelineno-15-57" href="#__codelineno-15-57"></a>                <span class="p">[</span><span class="s1">&#39;sudo&#39;</span><span class="p">,</span> <span class="s1">&#39;sentinelctl&#39;</span><span class="p">,</span> <span class="s1">&#39;performance&#39;</span><span class="p">,</span> <span class="s1">&#39;offline&#39;</span><span class="p">,</span> <span class="s1">&#39;--json&#39;</span><span class="p">],</span>
+<a id="__codelineno-15-58" name="__codelineno-15-58" href="#__codelineno-15-58"></a>                <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span>
+<a id="__codelineno-15-59" name="__codelineno-15-59" href="#__codelineno-15-59"></a>            <span class="p">)</span>
+<a id="__codelineno-15-60" name="__codelineno-15-60" href="#__codelineno-15-60"></a>
+<a id="__codelineno-15-61" name="__codelineno-15-61" href="#__codelineno-15-61"></a>            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-15-62" name="__codelineno-15-62" href="#__codelineno-15-62"></a>                <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+<a id="__codelineno-15-63" name="__codelineno-15-63" href="#__codelineno-15-63"></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-15-64" name="__codelineno-15-64" href="#__codelineno-15-64"></a>                <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="p">}</span>
+<a id="__codelineno-15-65" name="__codelineno-15-65" href="#__codelineno-15-65"></a>
+<a id="__codelineno-15-66" name="__codelineno-15-66" href="#__codelineno-15-66"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-15-67" name="__codelineno-15-67" href="#__codelineno-15-67"></a>            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+<a id="__codelineno-15-68" name="__codelineno-15-68" href="#__codelineno-15-68"></a>
+<a id="__codelineno-15-69" name="__codelineno-15-69" href="#__codelineno-15-69"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_buffer_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-15-70" name="__codelineno-15-70" href="#__codelineno-15-70"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get event buffer statistics&quot;&quot;&quot;</span>
+<a id="__codelineno-15-71" name="__codelineno-15-71" href="#__codelineno-15-71"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-15-72" name="__codelineno-15-72" href="#__codelineno-15-72"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<a id="__codelineno-15-73" name="__codelineno-15-73" href="#__codelineno-15-73"></a>                <span class="p">[</span><span class="s1">&#39;sudo&#39;</span><span class="p">,</span> <span class="s1">&#39;sentinelctl&#39;</span><span class="p">,</span> <span class="s1">&#39;offline&#39;</span><span class="p">,</span> <span class="s1">&#39;buffer-info&#39;</span><span class="p">,</span> <span class="s1">&#39;--json&#39;</span><span class="p">],</span>
+<a id="__codelineno-15-74" name="__codelineno-15-74" href="#__codelineno-15-74"></a>                <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span>
+<a id="__codelineno-15-75" name="__codelineno-15-75" href="#__codelineno-15-75"></a>            <span class="p">)</span>
+<a id="__codelineno-15-76" name="__codelineno-15-76" href="#__codelineno-15-76"></a>
+<a id="__codelineno-15-77" name="__codelineno-15-77" href="#__codelineno-15-77"></a>            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-15-78" name="__codelineno-15-78" href="#__codelineno-15-78"></a>                <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+<a id="__codelineno-15-79" name="__codelineno-15-79" href="#__codelineno-15-79"></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-15-80" name="__codelineno-15-80" href="#__codelineno-15-80"></a>                <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="p">}</span>
+<a id="__codelineno-15-81" name="__codelineno-15-81" href="#__codelineno-15-81"></a>
+<a id="__codelineno-15-82" name="__codelineno-15-82" href="#__codelineno-15-82"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-15-83" name="__codelineno-15-83" href="#__codelineno-15-83"></a>            <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+<a id="__codelineno-15-84" name="__codelineno-15-84" href="#__codelineno-15-84"></a>
+<a id="__codelineno-15-85" name="__codelineno-15-85" href="#__codelineno-15-85"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">generate_report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-15-86" name="__codelineno-15-86" href="#__codelineno-15-86"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Generate offline operations report&quot;&quot;&quot;</span>
+<a id="__codelineno-15-87" name="__codelineno-15-87" href="#__codelineno-15-87"></a>        <span class="n">metrics</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">collect_metrics</span><span class="p">()</span>
+<a id="__codelineno-15-88" name="__codelineno-15-88" href="#__codelineno-15-88"></a>
+<a id="__codelineno-15-89" name="__codelineno-15-89" href="#__codelineno-15-89"></a>        <span class="n">report</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-15-90" name="__codelineno-15-90" href="#__codelineno-15-90"></a><span class="s2">=== SentinelOne Offline Operations Report ===</span>
+<a id="__codelineno-15-91" name="__codelineno-15-91" href="#__codelineno-15-91"></a><span class="s2">Generated: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="si">}</span>
+<a id="__codelineno-15-92" name="__codelineno-15-92" href="#__codelineno-15-92"></a>
+<a id="__codelineno-15-93" name="__codelineno-15-93" href="#__codelineno-15-93"></a><span class="s2">📊 Detection Performance:</span>
+<a id="__codelineno-15-94" name="__codelineno-15-94" href="#__codelineno-15-94"></a><span class="s2">- Threats Detected: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;detection&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;total_threats&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span>
+<a id="__codelineno-15-95" name="__codelineno-15-95" href="#__codelineno-15-95"></a><span class="s2">- Response Time: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;detection&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;avg_response_time&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">s</span>
+<a id="__codelineno-15-96" name="__codelineno-15-96" href="#__codelineno-15-96"></a><span class="s2">- Success Rate: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;detection&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;success_rate&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">%</span>
+<a id="__codelineno-15-97" name="__codelineno-15-97" href="#__codelineno-15-97"></a>
+<a id="__codelineno-15-98" name="__codelineno-15-98" href="#__codelineno-15-98"></a><span class="s2">💻 System Performance:</span>
+<a id="__codelineno-15-99" name="__codelineno-15-99" href="#__codelineno-15-99"></a><span class="s2">- CPU Usage: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;performance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cpu_usage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">%</span>
+<a id="__codelineno-15-100" name="__codelineno-15-100" href="#__codelineno-15-100"></a><span class="s2">- Memory Usage: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;performance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;memory_usage&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">MB</span>
+<a id="__codelineno-15-101" name="__codelineno-15-101" href="#__codelineno-15-101"></a><span class="s2">- Disk I/O: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;performance&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;disk_io&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">MB/s</span>
+<a id="__codelineno-15-102" name="__codelineno-15-102" href="#__codelineno-15-102"></a>
+<a id="__codelineno-15-103" name="__codelineno-15-103" href="#__codelineno-15-103"></a><span class="s2">💾 Buffer Status:</span>
+<a id="__codelineno-15-104" name="__codelineno-15-104" href="#__codelineno-15-104"></a><span class="s2">- Events Buffered: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;buffer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;event_count&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span>
+<a id="__codelineno-15-105" name="__codelineno-15-105" href="#__codelineno-15-105"></a><span class="s2">- Buffer Size: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;buffer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;size_mb&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">MB</span>
+<a id="__codelineno-15-106" name="__codelineno-15-106" href="#__codelineno-15-106"></a><span class="s2">- Buffer Utilization: </span><span class="si">{</span><span class="n">metrics</span><span class="p">[</span><span class="s1">&#39;buffer&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;utilization&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;N/A&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">%</span>
+<a id="__codelineno-15-107" name="__codelineno-15-107" href="#__codelineno-15-107"></a>
+<a id="__codelineno-15-108" name="__codelineno-15-108" href="#__codelineno-15-108"></a><span class="s2">================================================</span>
+<a id="__codelineno-15-109" name="__codelineno-15-109" href="#__codelineno-15-109"></a><span class="s2">        &quot;&quot;&quot;</span>
+<a id="__codelineno-15-110" name="__codelineno-15-110" href="#__codelineno-15-110"></a>
+<a id="__codelineno-15-111" name="__codelineno-15-111" href="#__codelineno-15-111"></a>        <span class="k">return</span> <span class="n">report</span>
+<a id="__codelineno-15-112" name="__codelineno-15-112" href="#__codelineno-15-112"></a>
+<a id="__codelineno-15-113" name="__codelineno-15-113" href="#__codelineno-15-113"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-15-114" name="__codelineno-15-114" href="#__codelineno-15-114"></a>    <span class="n">monitor</span> <span class="o">=</span> <span class="n">OfflineMonitor</span><span class="p">()</span>
+<a id="__codelineno-15-115" name="__codelineno-15-115" href="#__codelineno-15-115"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">monitor</span><span class="o">.</span><span class="n">generate_report</span><span class="p">())</span>
+</code></pre></div>
+<hr />
+<h2 id="validation-checklist">✅ Validation Checklist</h2>
+<h3 id="offline-preparedness">Offline Preparedness</h3>
 <ul>
-<li><strong>Dokumentasi</strong></li>
-<li>
-<p>"<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"/></svg></span>" Simpan panduan dan checklist offline untuk referensi tim.</p>
-</li>
-<li>
-<p><strong>Respons Cepat</strong></p>
-</li>
-<li>Miliki jalur komunikasi alternatif untuk kordinasi saat offline.</li>
+<li>[ ] <strong>Offline Mode Enabled</strong>: Agent configured for offline operation</li>
+<li>[ ] <strong>Policies Cached</strong>: Latest policies stored locally</li>
+<li>[ ] <strong>Signatures Updated</strong>: Recent signature databases cached</li>
+<li>[ ] <strong>Response Rules</strong>: Automated response actions configured</li>
+<li>[ ] <strong>Buffer Configuration</strong>: Adequate storage for offline events</li>
+</ul>
+<h3 id="detection-capabilities">Detection Capabilities</h3>
+<ul>
+<li>[ ] <strong>Static Detection</strong>: Signature-based detection functional</li>
+<li>[ ] <strong>Behavioral Analysis</strong>: Behavioral engine operational offline</li>
+<li>[ ] <strong>Heuristic Detection</strong>: Pattern recognition working</li>
+<li>[ ] <strong>Quarantine Function</strong>: Threat isolation capabilities active</li>
+<li>[ ] <strong>Rollback Ability</strong>: File system rollback functional</li>
+</ul>
+<h3 id="response-procedures">Response Procedures</h3>
+<ul>
+<li>[ ] <strong>Manual Playbooks</strong>: Offline incident response documented</li>
+<li>[ ] <strong>Emergency Procedures</strong>: Critical response actions defined</li>
+<li>[ ] <strong>Evidence Collection</strong>: Forensics collection procedures ready</li>
+<li>[ ] <strong>Communication Plans</strong>: Alternative communication channels established</li>
+<li>[ ] <strong>Recovery Procedures</strong>: Network recovery and sync processes tested</li>
+</ul>
+<h3 id="testing-and-validation">Testing and Validation</h3>
+<ul>
+<li>[ ] <strong>Offline Testing</strong>: Regular offline scenarios tested</li>
+<li>[ ] <strong>Recovery Testing</strong>: Network recovery procedures validated</li>
+<li>[ ] <strong>Sync Validation</strong>: Data synchronization accuracy verified</li>
+<li>[ ] <strong>Performance Impact</strong>: Offline mode performance acceptable</li>
+<li>[ ] <strong>Documentation</strong>: All procedures documented and accessible</li>
 </ul>
 <hr />
-<p><em>Hubungi tim keamanan jika memerlukan dukungan lebih lanjut.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<p><em>Untuk bantuan lebih lanjut dengan offline detection dan response, hubungi Security Team atau rujuk ke SentinelOne Offline Operations Guide.</em></p>
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1101,7 +3338,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1139,11 +3376,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1194,6 +3426,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>

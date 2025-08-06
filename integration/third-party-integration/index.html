@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -227,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -405,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -809,29 +927,389 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#langkah-integrasi" class="md-nav__link">
+  <a href="#arsitektur-integrasi-enterprise" class="md-nav__link">
     <span class="md-ellipsis">
-      Langkah Integrasi
+      🔗 Arsitektur Integrasi Enterprise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Arsitektur Integrasi Enterprise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview-integrasi-utama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview Integrasi Utama
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#contoh-integrasi-umum" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#alur-data-dan-integrasi-detail" class="md-nav__link">
     <span class="md-ellipsis">
-      Contoh Integrasi Umum
+      Alur Data dan Integrasi Detail
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#tips" class="md-nav__link">
+  <a href="#siem-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips
+      🎛️ SIEM Integration
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🎛️ SIEM Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-splunk-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Splunk Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Splunk Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-ibm-qradar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 IBM QRadar Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 IBM QRadar Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qradar-dsm-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      QRadar DSM Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-azure-sentinel-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Azure Sentinel Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Azure Sentinel Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-connector-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Connector Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 SOAR Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 SOAR Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-splunk-phantom-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Splunk Phantom Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Splunk Phantom Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phantom-app-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phantom App Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phantom-playbook-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phantom Playbook Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-cortex-xsoar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Cortex XSOAR Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Cortex XSOAR Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xsoar-playbook-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      XSOAR Playbook YAML
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#itsm-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 ITSM Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 ITSM Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-servicenow-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 ServiceNow Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 ServiceNow Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servicenow-flow-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      ServiceNow Flow Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicenow-integration-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      ServiceNow Integration Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-intelligence-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Threat Intelligence Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔒 Threat Intelligence Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-misp-integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 MISP Integration Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-misp-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 MISP Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 Communication Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 Communication Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-slack-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Slack Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Slack Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slack-bot-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slack Bot Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-integration-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ API Integration Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ API Integration Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-sentinelone-api-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 SentinelOne API Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-api-integration-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 API Integration Template
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Integration Testing &amp; Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Integration Testing &amp; Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -995,6 +1473,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1022,29 +2048,389 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#langkah-integrasi" class="md-nav__link">
+  <a href="#arsitektur-integrasi-enterprise" class="md-nav__link">
     <span class="md-ellipsis">
-      Langkah Integrasi
+      🔗 Arsitektur Integrasi Enterprise
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 Arsitektur Integrasi Enterprise">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview-integrasi-utama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview Integrasi Utama
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#contoh-integrasi-umum" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#alur-data-dan-integrasi-detail" class="md-nav__link">
     <span class="md-ellipsis">
-      Contoh Integrasi Umum
+      Alur Data dan Integrasi Detail
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#tips" class="md-nav__link">
+  <a href="#siem-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips
+      🎛️ SIEM Integration
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🎛️ SIEM Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-splunk-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Splunk Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 Splunk Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-ibm-qradar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 IBM QRadar Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 IBM QRadar Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qradar-dsm-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      QRadar DSM Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-azure-sentinel-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Azure Sentinel Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Azure Sentinel Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-connector-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Connector Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤖 SOAR Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 SOAR Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-splunk-phantom-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Splunk Phantom Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 Splunk Phantom Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phantom-app-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phantom App Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phantom-playbook-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phantom Playbook Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-cortex-xsoar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Cortex XSOAR Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 Cortex XSOAR Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xsoar-playbook-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      XSOAR Playbook YAML
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#itsm-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 ITSM Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 ITSM Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-servicenow-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 ServiceNow Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 ServiceNow Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servicenow-flow-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      ServiceNow Flow Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servicenow-integration-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      ServiceNow Integration Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-intelligence-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Threat Intelligence Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔒 Threat Intelligence Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-misp-integration-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 MISP Integration Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-misp-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 MISP Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      📱 Communication Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📱 Communication Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-slack-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Slack Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Slack Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slack-bot-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slack Bot Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-integration-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ API Integration Framework
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ API Integration Framework">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-sentinelone-api-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 SentinelOne API Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-api-integration-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 API Integration Template
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Integration Testing &amp; Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Integration Testing &amp; Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1068,41 +2454,650 @@
 
 
 <h1 id="integrasi-sentinelone-dengan-sistem-pihak-ketiga">Integrasi SentinelOne dengan Sistem Pihak Ketiga</h1>
-<p>Panduan ini mencakup cara mengintegrasikan SentinelOne EDR dengan sistem keamanan dan monitoring lainnya.</p>
-<h2 id="langkah-integrasi">Langkah Integrasi</h2>
-<ol>
-<li><strong>API Configuration</strong></li>
-<li>
-<p>"<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.59 13.41c.41.39.41 1.03 0 1.42-.39.39-1.03.39-1.42 0a5.003 5.003 0 0 1 0-7.07l3.54-3.54a5.003 5.003 0 0 1 7.07 0 5.003 5.003 0 0 1 0 7.07l-1.49 1.49c.01-.82-.12-1.64-.4-2.42l.47-.48a2.98 2.98 0 0 0 0-4.24 2.98 2.98 0 0 0-4.24 0l-3.53 3.53a2.98 2.98 0 0 0 0 4.24m2.82-4.24c.39-.39 1.03-.39 1.42 0a5.003 5.003 0 0 1 0 7.07l-3.54 3.54a5.003 5.003 0 0 1-7.07 0 5.003 5.003 0 0 1 0-7.07l1.49-1.49c-.01.82.12 1.64.4 2.43l-.47.47a2.98 2.98 0 0 0 0 4.24 2.98 2.98 0 0 0 4.24 0l3.53-3.53a2.98 2.98 0 0 0 0-4.24.973.973 0 0 1 0-1.42"/></svg></span>" Gunakan API keys dari console untuk mengatur integrasi.</p>
-</li>
-<li>
-<p><strong>Pilih Integrasi yang Tersedia</strong></p>
-</li>
-<li>
-<p>Buka <strong>Settings</strong> &gt; <strong>Integrations</strong> dan pilih dari daftar yang tersedia.</p>
-</li>
-<li>
-<p><strong>Test Integrasi</strong></p>
-</li>
-<li>Uji koneksi dan pastikan data dikirim/diterima dengan benar.</li>
-<li><strong>Catatan Gambar/Video Here</strong><ul>
-<li>Ilustrasikan cara setup API integration</li>
-</ul>
-</li>
-</ol>
-<h2 id="contoh-integrasi-umum">Contoh Integrasi Umum</h2>
+<p>Panduan komprehensif untuk mengintegrasikan SentinelOne EDR dengan berbagai sistem keamanan, monitoring, dan operasional enterprise.</p>
+<hr />
+<h2 id="arsitektur-integrasi-enterprise">🔗 Arsitektur Integrasi Enterprise</h2>
+<h3 id="overview-integrasi-utama">Overview Integrasi Utama</h3>
+<div class="architecture-large">
+
+<pre class="mermaid"><code>flowchart TD
+    S1["🛡️ SentinelOne&lt;br/&gt;Management Console"]
+
+    S1 --&gt; SIEM["📊 SIEM Integration"]
+    S1 --&gt; SOAR["🤖 SOAR Integration"]
+    S1 --&gt; ITSM["🎫 ITSM Integration"]
+    S1 --&gt; THREAT["🎯 Threat Intelligence"]
+    S1 --&gt; COMM["💬 Communication"]
+
+    SIEM --&gt; SIEM_TOOLS["Splunk | QRadar&lt;br/&gt;Azure Sentinel | Elastic"]
+    SOAR --&gt; SOAR_TOOLS["Phantom | XSOAR&lt;br/&gt;Swimlane | Demisto"]
+    ITSM --&gt; ITSM_TOOLS["ServiceNow | JIRA&lt;br/&gt;BMC Remedy"]
+    THREAT --&gt; THREAT_TOOLS["MISP | ThreatConnect&lt;br/&gt;AlienVault OTX"]
+    COMM --&gt; COMM_TOOLS["Slack | Teams&lt;br/&gt;Email | Webhooks"]
+
+    style S1 fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style SIEM fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    style SOAR fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style ITSM fill:#fce4ec,stroke:#e91e63,stroke-width:2px
+    style THREAT fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+    style COMM fill:#e0f2f1,stroke:#00796b,stroke-width:2px</code></pre>
+
+</div>
+
+<h3 id="alur-data-dan-integrasi-detail">Alur Data dan Integrasi Detail</h3>
+<pre class="mermaid"><code>flowchart LR
+    subgraph "🏢 SentinelOne Core"
+        CONSOLE["Management&lt;br/&gt;Console"]
+        API["REST API&lt;br/&gt;GraphQL"]
+        AGENTS["EDR Agents&lt;br/&gt;Endpoints"]
+    end
+
+    subgraph "📊 SIEM Systems"
+        SPLUNK["Splunk&lt;br/&gt;Enterprise"]
+        QRADAR["IBM&lt;br/&gt;QRadar"]
+        SENTINEL["Azure&lt;br/&gt;Sentinel"]
+    end
+
+    subgraph "🤖 SOAR Platforms"
+        PHANTOM["Splunk&lt;br/&gt;Phantom"]
+        XSOAR["Cortex&lt;br/&gt;XSOAR"]
+    end
+
+    subgraph "🎫 ITSM Tools"
+        SNOW["ServiceNow"]
+        JIRA["JIRA"]
+    end
+
+    AGENTS --&gt; CONSOLE
+    CONSOLE --&gt; API
+
+    API --&gt;|"Events &amp; Alerts&lt;br/&gt;Real-time"| SPLUNK
+    API --&gt;|"Security Events&lt;br/&gt;JSON/CEF"| QRADAR
+    API --&gt;|"Log Forwarding&lt;br/&gt;Webhook"| SENTINEL
+
+    API --&gt;|"Incident Trigger&lt;br/&gt;Playbook"| PHANTOM
+    API --&gt;|"Automation&lt;br/&gt;Response"| XSOAR
+
+    API --&gt;|"Ticket Creation&lt;br/&gt;REST API"| SNOW
+    API --&gt;|"Issue Tracking&lt;br/&gt;Webhook"| JIRA
+
+    style CONSOLE fill:#e3f2fd
+    style API fill:#f3e5f5
+    style AGENTS fill:#e8f5e8</code></pre>
+<hr />
+<h2 id="siem-integration">🎛️ SIEM Integration</h2>
+<h3 id="11-splunk-integration">1.1 Splunk Integration</h3>
+<h4 id="architecture-overview">Architecture Overview</h4>
+<pre class="mermaid"><code>sequenceDiagram
+    participant S1 as SentinelOne Console
+    participant API as SentinelOne API
+    participant HEC as Splunk HEC
+    participant SPLUNK as Splunk Enterprise
+    participant ANALYST as SOC Analyst
+
+    S1-&gt;&gt;API: Generate Events &amp; Alerts
+    API-&gt;&gt;HEC: Forward Events (JSON)
+    HEC-&gt;&gt;SPLUNK: Index Security Events
+    SPLUNK-&gt;&gt;SPLUNK: Create Dashboards &amp; Searches
+    ANALYST-&gt;&gt;SPLUNK: Monitor &amp; Investigate
+    SPLUNK-&gt;&gt;API: Query Additional Data
+    API-&gt;&gt;ANALYST: Enriched Context</code></pre>
+<h4 id="configuration-steps">Configuration Steps</h4>
+<p><strong>Step 1: Setup Splunk HTTP Event Collector</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Splunk Configuration</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># Enable HEC in Splunk</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>splunk<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>http-event-collector<span class="w"> </span>-auth<span class="w"> </span>admin:password
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Create HEC token</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>splunk<span class="w"> </span>http-event-collector<span class="w"> </span>create<span class="w"> </span>sentinelone-token<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span>-uri<span class="w"> </span>https://splunk.company.com:8089<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span>-auth<span class="w"> </span>admin:password<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span>-index<span class="w"> </span>sentinelone<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span>-sourcetype<span class="w"> </span>sentinelone:alert
+</code></pre></div></p>
+<p><strong>Step 2: Configure SentinelOne Integration</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Via sentinelctl</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>splunk<span class="w"> </span>configure<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--hec-url<span class="w"> </span><span class="s2">&quot;https://splunk.company.com:8088/services/collector&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--hec-token<span class="w"> </span><span class="s2">&quot;your-hec-token&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--index<span class="w"> </span><span class="s2">&quot;sentinelone&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>--source<span class="w"> </span><span class="s2">&quot;sentinelone_edr&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>--sourcetype<span class="w"> </span><span class="s2">&quot;sentinelone:threat&quot;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Test the integration</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>splunk<span class="w"> </span><span class="nb">test</span>
+</code></pre></div></p>
+<p><strong>Step 3: Splunk App Configuration</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># Create Splunk searches for SentinelOne data
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>index=sentinelone sourcetype=sentinelone:threat
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>| eval threat_name=json_extract(rawdata, &quot;threatInfo.threatName&quot;)
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>| eval endpoint_name=json_extract(rawdata, &quot;agentRealtimeInfo.agentComputerName&quot;)
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>| eval severity=json_extract(rawdata, &quot;ruleInfo.severity&quot;)
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>| stats count by threat_name, endpoint_name, severity
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>| sort -count
+</code></pre></div></p>
+<h3 id="12-ibm-qradar-integration">1.2 IBM QRadar Integration</h3>
+<h4 id="qradar-dsm-configuration">QRadar DSM Configuration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">&lt;!-- QRadar Device Support Module for SentinelOne --&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">&lt;device-extension</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;event_parsing/device_extension&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&lt;pattern</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;SentinelOnePattern&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="cp">&lt;![CDATA[SentinelOne\s+(\S+)\s+(.*)]]&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">&lt;/pattern&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">&lt;event-match</span><span class="w"> </span><span class="na">pattern-id=</span><span class="s">&quot;SentinelOnePattern&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">&lt;event</span><span class="w"> </span><span class="na">category-id=</span><span class="s">&quot;6003&quot;</span><span class="w"> </span><span class="na">severity=</span><span class="s">&quot;5&quot;</span><span class="nt">&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="nt">&lt;property-matches&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="nt">&lt;property-match</span><span class="w"> </span><span class="na">property=</span><span class="s">&quot;DeviceType&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;SentinelOne EDR&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="nt">&lt;property-match</span><span class="w"> </span><span class="na">property=</span><span class="s">&quot;ThreatName&quot;</span><span class="w"> </span><span class="na">capture-group=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="nt">&lt;property-match</span><span class="w"> </span><span class="na">property=</span><span class="s">&quot;Message&quot;</span><span class="w"> </span><span class="na">capture-group=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="nt">&lt;/property-matches&gt;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">&lt;/event&gt;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="nt">&lt;/event-match&gt;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nt">&lt;/device-extension&gt;</span>
+</code></pre></div>
+<h3 id="13-azure-sentinel-integration">1.3 Azure Sentinel Integration</h3>
+<h4 id="data-connector-configuration">Data Connector Configuration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;kind&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SentinelOneDataConnector&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&quot;connectorUiConfig&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SentinelOne EDR&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">      </span><span class="nt">&quot;publisher&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SentinelOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">      </span><span class="nt">&quot;descriptionMarkdown&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Connect SentinelOne EDR to Azure Sentinel&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="nt">&quot;graphQueries&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">          </span><span class="nt">&quot;metricName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Total events received&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">          </span><span class="nt">&quot;legend&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SentinelOne Events&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">          </span><span class="nt">&quot;baseQuery&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SentinelOne_CL | summarize Events = count() by bin(TimeGenerated, 1h)&quot;</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="soar-integration">🤖 SOAR Integration</h2>
+<h3 id="21-splunk-phantom-integration">2.1 Splunk Phantom Integration</h3>
+<h4 id="phantom-app-architecture">Phantom App Architecture</h4>
+<pre class="mermaid"><code>flowchart LR
+    subgraph "Phantom Playbook"
+        TRIGGER["SentinelOne Alert&lt;br/&gt;Webhook Trigger"]
+        ENRICH["Threat Enrichment&lt;br/&gt;Get IOCs"]
+        DECIDE["Decision Node&lt;br/&gt;Risk Assessment"]
+        ISOLATE["Isolate Endpoint&lt;br/&gt;SentinelOne Action"]
+        TICKET["Create Ticket&lt;br/&gt;ServiceNow"]
+        NOTIFY["Notify Team&lt;br/&gt;Slack/Email"]
+    end
+
+    TRIGGER --&gt; ENRICH
+    ENRICH --&gt; DECIDE
+    DECIDE --&gt;|"High Risk"| ISOLATE
+    DECIDE --&gt;|"Medium Risk"| TICKET
+    ISOLATE --&gt; TICKET
+    TICKET --&gt; NOTIFY
+
+    style TRIGGER fill:#e3f2fd
+    style DECIDE fill:#fff3e0
+    style ISOLATE fill:#ffebee</code></pre>
+<h4 id="phantom-playbook-example">Phantom Playbook Example</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Phantom Playbook for SentinelOne Alert Response</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">on_start</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">summary</span><span class="p">):</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">phantom</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Starting SentinelOne Alert Response Playbook&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="c1"># Get alert details from SentinelOne</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">get_threat_details</span><span class="p">(</span><span class="n">container</span><span class="o">=</span><span class="n">container</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_threat_details</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">success</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">container</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">results</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">handle</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="c1"># Query SentinelOne API for threat details</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="n">parameters</span> <span class="o">=</span> <span class="p">[{</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="s1">&#39;threat_id&#39;</span><span class="p">:</span> <span class="n">container</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;threatInfo&#39;</span><span class="p">][</span><span class="s1">&#39;threatId&#39;</span><span class="p">]</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>    <span class="p">}]</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="n">phantom</span><span class="o">.</span><span class="n">act</span><span class="p">(</span><span class="s1">&#39;get threat&#39;</span><span class="p">,</span> <span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> 
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>                <span class="n">app</span><span class="o">=</span><span class="s1">&#39;sentinelone&#39;</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">enrich_with_threat_intel</span><span class="p">)</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">def</span><span class="w"> </span><span class="nf">enrich_with_threat_intel</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">success</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">container</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">results</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">handle</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    <span class="c1"># Enrich with external threat intelligence</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    <span class="k">if</span> <span class="n">success</span><span class="p">:</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>        <span class="n">threat_data</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>        <span class="c1"># Continue with enrichment logic...</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>        <span class="n">decide_response_action</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">)</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="k">def</span><span class="w"> </span><span class="nf">decide_response_action</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">):</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>    <span class="n">risk_score</span> <span class="o">=</span> <span class="n">calculate_risk_score</span><span class="p">(</span><span class="n">threat_data</span><span class="p">)</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>    <span class="k">if</span> <span class="n">risk_score</span> <span class="o">&gt;=</span> <span class="mi">8</span><span class="p">:</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>        <span class="n">isolate_endpoint</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">)</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>    <span class="k">elif</span> <span class="n">risk_score</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>        <span class="n">create_incident_ticket</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">)</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>        <span class="n">log_for_monitoring</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="22-cortex-xsoar-integration">2.2 Cortex XSOAR Integration</h3>
+<h4 id="xsoar-playbook-yaml">XSOAR Playbook YAML</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SentinelOne-Threat-Response</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-1</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SentinelOne Threat Response</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Automated response to SentinelOne threats</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nt">tasks</span><span class="p">:</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="s">&quot;0&quot;</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0&quot;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">start</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">task</span><span class="p">:</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">eb9c3dd0-7e51-4b8e-8a2f-6c1234567890</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-1</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="nt">nexttasks</span><span class="p">:</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">      </span><span class="s">&#39;#none#&#39;</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">  </span><span class="s">&quot;1&quot;</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1&quot;</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">regular</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">    </span><span class="nt">task</span><span class="p">:</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ab1c3dd0-7e51-4b8e-8a2f-6c1234567890</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-1</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Get Threat Details</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">      </span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SentinelOne|||sentinelone-get-threat</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">    </span><span class="nt">nexttasks</span><span class="p">:</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">      </span><span class="s">&#39;#none#&#39;</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;2&quot;</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">  </span><span class="s">&quot;2&quot;</span><span class="p p-Indicator">:</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2&quot;</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">condition</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="w">    </span><span class="nt">task</span><span class="p">:</span>
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="w">      </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cd2c3dd0-7e51-4b8e-8a2f-6c1234567890</span>
+<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a><span class="w">      </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-1</span>
+<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Risk Assessment</span>
+<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a><span class="w">    </span><span class="nt">conditions</span><span class="p">:</span>
+<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">High Risk</span>
+<a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a><span class="w">      </span><span class="nt">condition</span><span class="p">:</span>
+<a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">left</span><span class="p">:</span>
+<a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span>
+<a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a><span class="w">              </span><span class="nt">simple</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${SentinelOne.Threat.RiskScore}</span>
+<a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a><span class="w">          </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">greaterThanOrEqual</span>
+<a id="__codelineno-6-41" name="__codelineno-6-41" href="#__codelineno-6-41"></a><span class="w">          </span><span class="nt">right</span><span class="p">:</span>
+<a id="__codelineno-6-42" name="__codelineno-6-42" href="#__codelineno-6-42"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;8&quot;</span>
+<a id="__codelineno-6-43" name="__codelineno-6-43" href="#__codelineno-6-43"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Medium Risk</span>
+<a id="__codelineno-6-44" name="__codelineno-6-44" href="#__codelineno-6-44"></a><span class="w">      </span><span class="nt">condition</span><span class="p">:</span>
+<a id="__codelineno-6-45" name="__codelineno-6-45" href="#__codelineno-6-45"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">left</span><span class="p">:</span>
+<a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span>
+<a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a><span class="w">              </span><span class="nt">simple</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${SentinelOne.Threat.RiskScore}</span>
+<a id="__codelineno-6-48" name="__codelineno-6-48" href="#__codelineno-6-48"></a><span class="w">          </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">greaterThanOrEqual</span>
+<a id="__codelineno-6-49" name="__codelineno-6-49" href="#__codelineno-6-49"></a><span class="w">          </span><span class="nt">right</span><span class="p">:</span>
+<a id="__codelineno-6-50" name="__codelineno-6-50" href="#__codelineno-6-50"></a><span class="w">            </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;5&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="itsm-integration">📋 ITSM Integration</h2>
+<h3 id="31-servicenow-integration">3.1 ServiceNow Integration</h3>
+<h4 id="servicenow-flow-design">ServiceNow Flow Design</h4>
+<pre class="mermaid"><code>flowchart TD
+    S1_ALERT["SentinelOne Alert"] --&gt; WEBHOOK["ServiceNow Webhook"]
+    WEBHOOK --&gt; PARSE["Parse JSON Payload"]
+    PARSE --&gt; CLASSIFY["Auto-Classify Incident"]
+    CLASSIFY --&gt; CREATE["Create Incident Record"]
+    CREATE --&gt; ENRICH["Enrich with CMDB Data"]
+    ENRICH --&gt; ASSIGN["Auto-Assign to Queue"]
+    ASSIGN --&gt; NOTIFY["Notify Assigned Team"]
+
+    NOTIFY --&gt; INVESTIGATE["Analyst Investigation"]
+    INVESTIGATE --&gt; UPDATE_S1["Update SentinelOne"]
+    UPDATE_S1 --&gt; RESOLVE["Resolve Incident"]
+
+    style S1_ALERT fill:#e3f2fd
+    style CREATE fill:#e8f5e8
+    style INVESTIGATE fill:#fff3e0</code></pre>
+<h4 id="servicenow-integration-script">ServiceNow Integration Script</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">// ServiceNow Business Rule for SentinelOne Integration</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="nx">executeRule</span><span class="p">(</span><span class="nx">current</span><span class="p">,</span><span class="w"> </span><span class="nx">previous</span><span class="w"> </span><span class="cm">/*null when async*/</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="c1">// Parse SentinelOne webhook data</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">payload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">u_webhook_payload</span><span class="p">);</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="c1">// Create incident from SentinelOne alert</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">incident</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">GlideRecord</span><span class="p">(</span><span class="s1">&#39;incident&#39;</span><span class="p">);</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="c1">// Map SentinelOne fields to ServiceNow</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">short_description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;SentinelOne Alert: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">threatName</span><span class="p">;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">buildDescription</span><span class="p">(</span><span class="nx">payload</span><span class="p">);</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">urgency</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">mapSeverityToUrgency</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">ruleInfo</span><span class="p">.</span><span class="nx">severity</span><span class="p">);</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">category</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Security&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">subcategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Endpoint Security&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">u_source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;SentinelOne&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">u_threat_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">threatId</span><span class="p">;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">u_endpoint_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">agentRealtimeInfo</span><span class="p">.</span><span class="nx">agentComputerName</span><span class="p">;</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">    </span><span class="c1">// Auto-assign based on threat type</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">assignment_group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getAssignmentGroup</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">threatName</span><span class="p">);</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">    </span><span class="nx">incident</span><span class="p">.</span><span class="nx">insert</span><span class="p">();</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">    </span><span class="c1">// Send notification to SentinelOne</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="w">    </span><span class="nx">updateSentinelOneTicket</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">threatId</span><span class="p">,</span><span class="w"> </span><span class="nx">incident</span><span class="p">.</span><span class="nx">number</span><span class="p">);</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="p">})(</span><span class="nx">current</span><span class="p">,</span><span class="w"> </span><span class="nx">previous</span><span class="p">);</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="kd">function</span><span class="w"> </span><span class="nx">buildDescription</span><span class="p">(</span><span class="nx">payload</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">desc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Threat Details:\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="w">    </span><span class="nx">desc</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;Threat Name: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">threatName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">    </span><span class="nx">desc</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;File Path: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">filePath</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">    </span><span class="nx">desc</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;Endpoint: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">agentRealtimeInfo</span><span class="p">.</span><span class="nx">agentComputerName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">    </span><span class="nx">desc</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;User: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">agentRealtimeInfo</span><span class="p">.</span><span class="nx">loggedInUsers</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">    </span><span class="nx">desc</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;Detection Time: &#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">payload</span><span class="p">.</span><span class="nx">threatInfo</span><span class="p">.</span><span class="nx">createdAt</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="p">;</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">desc</span><span class="p">;</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="threat-intelligence-integration">🔒 Threat Intelligence Integration</h2>
+<h3 id="41-misp-integration-architecture">4.1 MISP Integration Architecture</h3>
+<pre class="mermaid"><code>flowchart TB
+    subgraph "Threat Intelligence Flow"
+        MISP_DB["MISP Database&lt;br/&gt;Threat Intelligence"]
+        MISP_API["MISP API&lt;br/&gt;IOC Distribution"]
+
+        S1_INTEL["SentinelOne&lt;br/&gt;Threat Intel Module"]
+        S1_ENGINE["Detection Engine&lt;br/&gt;IOC Matching"]
+
+        FEEDS["External Feeds&lt;br/&gt;Commercial/Open Source"]
+        ANALYST["Threat Analyst&lt;br/&gt;Manual Input"]
+    end
+
+    subgraph "Detection &amp; Response"
+        ENDPOINTS["Protected Endpoints"]
+        ALERTS["Threat Alerts"]
+        HUNTING["Threat Hunting"]
+    end
+
+    FEEDS --&gt; MISP_DB
+    ANALYST --&gt; MISP_DB
+
+    MISP_DB --&gt; MISP_API
+    MISP_API --&gt;|"IOC Pull"| S1_INTEL
+    S1_INTEL --&gt; S1_ENGINE
+
+    S1_ENGINE --&gt; ENDPOINTS
+    ENDPOINTS --&gt; ALERTS
+    ALERTS --&gt;|"New IOCs"| S1_INTEL
+    S1_INTEL --&gt;|"IOC Push"| MISP_API
+
+    S1_ENGINE --&gt; HUNTING
+
+    style MISP_DB fill:#e3f2fd
+    style S1_ENGINE fill:#e8f5e8
+    style ALERTS fill:#fff3e0</code></pre>
+<h3 id="42-misp-configuration">4.2 MISP Configuration</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Configure MISP integration in SentinelOne</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threat-intel<span class="w"> </span>misp<span class="w"> </span>configure<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>--url<span class="w"> </span><span class="s2">&quot;https://misp.company.com&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--auth-key<span class="w"> </span><span class="s2">&quot;your-misp-auth-key&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--pull-interval<span class="w"> </span><span class="s2">&quot;1h&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>--push-detections<span class="w"> </span><span class="nb">true</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>--threat-level<span class="w"> </span><span class="s2">&quot;2&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>--tags<span class="w"> </span><span class="s2">&quot;sentinelone,edr,automated&quot;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># Test MISP connection</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threat-intel<span class="w"> </span>misp<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1"># Manual IOC pull</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threat-intel<span class="w"> </span>misp<span class="w"> </span>pull<span class="w"> </span>--last-days<span class="w"> </span><span class="m">7</span>
+</code></pre></div>
+<hr />
+<h2 id="communication-integration">📱 Communication Integration</h2>
+<h3 id="51-slack-integration">5.1 Slack Integration</h3>
+<h4 id="slack-bot-configuration">Slack Bot Configuration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># SentinelOne Slack Bot Integration</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">slack_sdk</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">slack_sdk</span><span class="w"> </span><span class="kn">import</span> <span class="n">WebClient</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">slack_sdk.errors</span><span class="w"> </span><span class="kn">import</span> <span class="n">SlackApiError</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">SentinelOneSlackBot</span><span class="p">:</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">):</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">WebClient</span><span class="p">(</span><span class="n">token</span><span class="o">=</span><span class="n">token</span><span class="p">)</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">send_threat_alert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">):</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>        <span class="n">blocks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_threat_blocks</span><span class="p">(</span><span class="n">threat_data</span><span class="p">)</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">chat_postMessage</span><span class="p">(</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>                <span class="n">channel</span><span class="o">=</span><span class="s1">&#39;#security-alerts&#39;</span><span class="p">,</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>                <span class="n">blocks</span><span class="o">=</span><span class="n">blocks</span><span class="p">,</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>                <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;SentinelOne Alert: </span><span class="si">{</span><span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;threatName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>            <span class="p">)</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>        <span class="k">except</span> <span class="n">SlackApiError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error sending message: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">build_threat_blocks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">threat_data</span><span class="p">):</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>        <span class="k">return</span> <span class="p">[</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>            <span class="p">{</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;header&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>                <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>                    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;plain_text&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>                    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;🚨 SentinelOne Threat Alert&quot;</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>                <span class="p">}</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>            <span class="p">},</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>            <span class="p">{</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;section&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>                <span class="s2">&quot;fields&quot;</span><span class="p">:</span> <span class="p">[</span>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>                    <span class="p">{</span>
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;mrkdwn&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;*Threat:* </span><span class="si">{</span><span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;threatName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a>                    <span class="p">},</span>
+<a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>                    <span class="p">{</span>
+<a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a>                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;mrkdwn&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;*Endpoint:* </span><span class="si">{</span><span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;endpointName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a>                    <span class="p">},</span>
+<a id="__codelineno-9-42" name="__codelineno-9-42" href="#__codelineno-9-42"></a>                    <span class="p">{</span>
+<a id="__codelineno-9-43" name="__codelineno-9-43" href="#__codelineno-9-43"></a>                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;mrkdwn&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-44" name="__codelineno-9-44" href="#__codelineno-9-44"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;*Severity:* </span><span class="si">{</span><span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;severity&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-45" name="__codelineno-9-45" href="#__codelineno-9-45"></a>                    <span class="p">},</span>
+<a id="__codelineno-9-46" name="__codelineno-9-46" href="#__codelineno-9-46"></a>                    <span class="p">{</span>
+<a id="__codelineno-9-47" name="__codelineno-9-47" href="#__codelineno-9-47"></a>                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;mrkdwn&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-48" name="__codelineno-9-48" href="#__codelineno-9-48"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;*Status:* </span><span class="si">{</span><span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-49" name="__codelineno-9-49" href="#__codelineno-9-49"></a>                    <span class="p">}</span>
+<a id="__codelineno-9-50" name="__codelineno-9-50" href="#__codelineno-9-50"></a>                <span class="p">]</span>
+<a id="__codelineno-9-51" name="__codelineno-9-51" href="#__codelineno-9-51"></a>            <span class="p">},</span>
+<a id="__codelineno-9-52" name="__codelineno-9-52" href="#__codelineno-9-52"></a>            <span class="p">{</span>
+<a id="__codelineno-9-53" name="__codelineno-9-53" href="#__codelineno-9-53"></a>                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;actions&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-54" name="__codelineno-9-54" href="#__codelineno-9-54"></a>                <span class="s2">&quot;elements&quot;</span><span class="p">:</span> <span class="p">[</span>
+<a id="__codelineno-9-55" name="__codelineno-9-55" href="#__codelineno-9-55"></a>                    <span class="p">{</span>
+<a id="__codelineno-9-56" name="__codelineno-9-56" href="#__codelineno-9-56"></a>                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;button&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-57" name="__codelineno-9-57" href="#__codelineno-9-57"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-9-58" name="__codelineno-9-58" href="#__codelineno-9-58"></a>                            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;plain_text&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-59" name="__codelineno-9-59" href="#__codelineno-9-59"></a>                            <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;View in Console&quot;</span>
+<a id="__codelineno-9-60" name="__codelineno-9-60" href="#__codelineno-9-60"></a>                        <span class="p">},</span>
+<a id="__codelineno-9-61" name="__codelineno-9-61" href="#__codelineno-9-61"></a>                        <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;consoleUrl&#39;</span><span class="p">]</span>
+<a id="__codelineno-9-62" name="__codelineno-9-62" href="#__codelineno-9-62"></a>                    <span class="p">},</span>
+<a id="__codelineno-9-63" name="__codelineno-9-63" href="#__codelineno-9-63"></a>                    <span class="p">{</span>
+<a id="__codelineno-9-64" name="__codelineno-9-64" href="#__codelineno-9-64"></a>                        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;button&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-65" name="__codelineno-9-65" href="#__codelineno-9-65"></a>                        <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-9-66" name="__codelineno-9-66" href="#__codelineno-9-66"></a>                            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;plain_text&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-67" name="__codelineno-9-67" href="#__codelineno-9-67"></a>                            <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Isolate Endpoint&quot;</span>
+<a id="__codelineno-9-68" name="__codelineno-9-68" href="#__codelineno-9-68"></a>                        <span class="p">},</span>
+<a id="__codelineno-9-69" name="__codelineno-9-69" href="#__codelineno-9-69"></a>                        <span class="s2">&quot;action_id&quot;</span><span class="p">:</span> <span class="s2">&quot;isolate_endpoint&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-70" name="__codelineno-9-70" href="#__codelineno-9-70"></a>                        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">threat_data</span><span class="p">[</span><span class="s1">&#39;threatId&#39;</span><span class="p">]</span>
+<a id="__codelineno-9-71" name="__codelineno-9-71" href="#__codelineno-9-71"></a>                    <span class="p">}</span>
+<a id="__codelineno-9-72" name="__codelineno-9-72" href="#__codelineno-9-72"></a>                <span class="p">]</span>
+<a id="__codelineno-9-73" name="__codelineno-9-73" href="#__codelineno-9-73"></a>            <span class="p">}</span>
+<a id="__codelineno-9-74" name="__codelineno-9-74" href="#__codelineno-9-74"></a>        <span class="p">]</span>
+</code></pre></div>
+<hr />
+<h2 id="api-integration-framework">⚙️ API Integration Framework</h2>
+<h3 id="61-sentinelone-api-overview">6.1 SentinelOne API Overview</h3>
+<pre class="mermaid"><code>flowchart LR
+    subgraph "API Authentication"
+        API_TOKEN["API Token&lt;br/&gt;Bearer Authentication"]
+        RATE_LIMIT["Rate Limiting&lt;br/&gt;100 req/min"]
+    end
+
+    subgraph "API Endpoints"
+        THREATS["Threats API&lt;br/&gt;/threats"]
+        AGENTS["Agents API&lt;br/&gt;/agents"]
+        ACTIVITIES["Activities API&lt;br/&gt;/activities"]
+        POLICIES["Policies API&lt;br/&gt;/policies"]
+        USERS["Users API&lt;br/&gt;/users"]
+    end
+
+    subgraph "Data Formats"
+        JSON_REQ["JSON Request&lt;br/&gt;Content-Type: application/json"]
+        JSON_RESP["JSON Response&lt;br/&gt;Structured Data"]
+        WEBHOOK["Webhook&lt;br/&gt;Real-time Events"]
+    end
+
+    API_TOKEN --&gt; THREATS
+    API_TOKEN --&gt; AGENTS
+    API_TOKEN --&gt; ACTIVITIES
+    API_TOKEN --&gt; POLICIES
+    API_TOKEN --&gt; USERS
+
+    THREATS --&gt; JSON_RESP
+    AGENTS --&gt; JSON_RESP
+    ACTIVITIES --&gt; JSON_RESP
+
+    JSON_REQ --&gt; THREATS
+    WEBHOOK --&gt; JSON_RESP
+
+    RATE_LIMIT -.-&gt; API_TOKEN
+
+    style API_TOKEN fill:#e3f2fd
+    style JSON_RESP fill:#e8f5e8
+    style WEBHOOK fill:#fff3e0</code></pre>
+<h3 id="62-api-integration-template">6.2 API Integration Template</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="ch">#!/usr/bin/env python3</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="sd">SentinelOne API Integration Template</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="sd">Author: Security Team</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="sd">Version: 1.0</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="k">class</span><span class="w"> </span><span class="nc">SentinelOneAPI</span><span class="p">:</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">console_url</span><span class="p">,</span> <span class="n">api_token</span><span class="p">):</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">console_url</span> <span class="o">=</span> <span class="n">console_url</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">api_token</span> <span class="o">=</span> <span class="n">api_token</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>            <span class="s1">&#39;Authorization&#39;</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;ApiToken </span><span class="si">{</span><span class="n">api_token</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>            <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>        <span class="p">})</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>        <span class="c1"># Setup logging</span>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>        <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">get_threats</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">created_after</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Get threats from SentinelOne&quot;&quot;&quot;</span>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">console_url</span><span class="si">}</span><span class="s2">/web/api/v2.1/threats&quot;</span>
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;limit&#39;</span><span class="p">:</span> <span class="n">limit</span><span class="p">}</span>
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a>        <span class="k">if</span> <span class="n">created_after</span><span class="p">:</span>
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>            <span class="n">params</span><span class="p">[</span><span class="s1">&#39;createdAt__gte&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">created_after</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a>            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a>            <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a>        <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error fetching threats: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a>            <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-10-42" name="__codelineno-10-42" href="#__codelineno-10-42"></a>
+<a id="__codelineno-10-43" name="__codelineno-10-43" href="#__codelineno-10-43"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">isolate_endpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">agent_id</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">&quot;Security incident&quot;</span><span class="p">):</span>
+<a id="__codelineno-10-44" name="__codelineno-10-44" href="#__codelineno-10-44"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Isolate an endpoint&quot;&quot;&quot;</span>
+<a id="__codelineno-10-45" name="__codelineno-10-45" href="#__codelineno-10-45"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">console_url</span><span class="si">}</span><span class="s2">/web/api/v2.1/agents/actions/disconnect&quot;</span>
+<a id="__codelineno-10-46" name="__codelineno-10-46" href="#__codelineno-10-46"></a>        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-10-47" name="__codelineno-10-47" href="#__codelineno-10-47"></a>            <span class="s1">&#39;filter&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;ids&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">agent_id</span><span class="p">]},</span>
+<a id="__codelineno-10-48" name="__codelineno-10-48" href="#__codelineno-10-48"></a>            <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;reason&#39;</span><span class="p">:</span> <span class="n">reason</span><span class="p">}</span>
+<a id="__codelineno-10-49" name="__codelineno-10-49" href="#__codelineno-10-49"></a>        <span class="p">}</span>
+<a id="__codelineno-10-50" name="__codelineno-10-50" href="#__codelineno-10-50"></a>
+<a id="__codelineno-10-51" name="__codelineno-10-51" href="#__codelineno-10-51"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-10-52" name="__codelineno-10-52" href="#__codelineno-10-52"></a>            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-10-53" name="__codelineno-10-53" href="#__codelineno-10-53"></a>            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<a id="__codelineno-10-54" name="__codelineno-10-54" href="#__codelineno-10-54"></a>            <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-10-55" name="__codelineno-10-55" href="#__codelineno-10-55"></a>        <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-10-56" name="__codelineno-10-56" href="#__codelineno-10-56"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error isolating endpoint: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-57" name="__codelineno-10-57" href="#__codelineno-10-57"></a>            <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-10-58" name="__codelineno-10-58" href="#__codelineno-10-58"></a>
+<a id="__codelineno-10-59" name="__codelineno-10-59" href="#__codelineno-10-59"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">create_webhook</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">webhook_url</span><span class="p">,</span> <span class="n">events</span><span class="p">):</span>
+<a id="__codelineno-10-60" name="__codelineno-10-60" href="#__codelineno-10-60"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;Create webhook for real-time events&quot;&quot;&quot;</span>
+<a id="__codelineno-10-61" name="__codelineno-10-61" href="#__codelineno-10-61"></a>        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">console_url</span><span class="si">}</span><span class="s2">/web/api/v2.1/settings/webhooks&quot;</span>
+<a id="__codelineno-10-62" name="__codelineno-10-62" href="#__codelineno-10-62"></a>        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-10-63" name="__codelineno-10-63" href="#__codelineno-10-63"></a>            <span class="s1">&#39;url&#39;</span><span class="p">:</span> <span class="n">webhook_url</span><span class="p">,</span>
+<a id="__codelineno-10-64" name="__codelineno-10-64" href="#__codelineno-10-64"></a>            <span class="s1">&#39;events&#39;</span><span class="p">:</span> <span class="n">events</span><span class="p">,</span>
+<a id="__codelineno-10-65" name="__codelineno-10-65" href="#__codelineno-10-65"></a>            <span class="s1">&#39;active&#39;</span><span class="p">:</span> <span class="kc">True</span>
+<a id="__codelineno-10-66" name="__codelineno-10-66" href="#__codelineno-10-66"></a>        <span class="p">}</span>
+<a id="__codelineno-10-67" name="__codelineno-10-67" href="#__codelineno-10-67"></a>
+<a id="__codelineno-10-68" name="__codelineno-10-68" href="#__codelineno-10-68"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-10-69" name="__codelineno-10-69" href="#__codelineno-10-69"></a>            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+<a id="__codelineno-10-70" name="__codelineno-10-70" href="#__codelineno-10-70"></a>            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<a id="__codelineno-10-71" name="__codelineno-10-71" href="#__codelineno-10-71"></a>            <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-10-72" name="__codelineno-10-72" href="#__codelineno-10-72"></a>        <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-10-73" name="__codelineno-10-73" href="#__codelineno-10-73"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error creating webhook: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-74" name="__codelineno-10-74" href="#__codelineno-10-74"></a>            <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-10-75" name="__codelineno-10-75" href="#__codelineno-10-75"></a>
+<a id="__codelineno-10-76" name="__codelineno-10-76" href="#__codelineno-10-76"></a><span class="c1"># Usage Example</span>
+<a id="__codelineno-10-77" name="__codelineno-10-77" href="#__codelineno-10-77"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-10-78" name="__codelineno-10-78" href="#__codelineno-10-78"></a>    <span class="c1"># Initialize API client</span>
+<a id="__codelineno-10-79" name="__codelineno-10-79" href="#__codelineno-10-79"></a>    <span class="n">s1_api</span> <span class="o">=</span> <span class="n">SentinelOneAPI</span><span class="p">(</span>
+<a id="__codelineno-10-80" name="__codelineno-10-80" href="#__codelineno-10-80"></a>        <span class="n">console_url</span><span class="o">=</span><span class="s2">&quot;https://your-tenant.sentinelone.net&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-81" name="__codelineno-10-81" href="#__codelineno-10-81"></a>        <span class="n">api_token</span><span class="o">=</span><span class="s2">&quot;your-api-token&quot;</span>
+<a id="__codelineno-10-82" name="__codelineno-10-82" href="#__codelineno-10-82"></a>    <span class="p">)</span>
+<a id="__codelineno-10-83" name="__codelineno-10-83" href="#__codelineno-10-83"></a>
+<a id="__codelineno-10-84" name="__codelineno-10-84" href="#__codelineno-10-84"></a>    <span class="c1"># Get recent threats</span>
+<a id="__codelineno-10-85" name="__codelineno-10-85" href="#__codelineno-10-85"></a>    <span class="n">yesterday</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-10-86" name="__codelineno-10-86" href="#__codelineno-10-86"></a>    <span class="n">threats</span> <span class="o">=</span> <span class="n">s1_api</span><span class="o">.</span><span class="n">get_threats</span><span class="p">(</span><span class="n">created_after</span><span class="o">=</span><span class="n">yesterday</span><span class="p">)</span>
+<a id="__codelineno-10-87" name="__codelineno-10-87" href="#__codelineno-10-87"></a>
+<a id="__codelineno-10-88" name="__codelineno-10-88" href="#__codelineno-10-88"></a>    <span class="k">if</span> <span class="n">threats</span><span class="p">:</span>
+<a id="__codelineno-10-89" name="__codelineno-10-89" href="#__codelineno-10-89"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="n">threats</span><span class="p">[</span><span class="s1">&#39;pagination&#39;</span><span class="p">][</span><span class="s1">&#39;totalItems&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> threats&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-90" name="__codelineno-10-90" href="#__codelineno-10-90"></a>        <span class="k">for</span> <span class="n">threat</span> <span class="ow">in</span> <span class="n">threats</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]:</span>
+<a id="__codelineno-10-91" name="__codelineno-10-91" href="#__codelineno-10-91"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Threat: </span><span class="si">{</span><span class="n">threat</span><span class="p">[</span><span class="s1">&#39;threatInfo&#39;</span><span class="p">][</span><span class="s1">&#39;threatName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-92" name="__codelineno-10-92" href="#__codelineno-10-92"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Endpoint: </span><span class="si">{</span><span class="n">threat</span><span class="p">[</span><span class="s1">&#39;agentRealtimeInfo&#39;</span><span class="p">][</span><span class="s1">&#39;agentComputerName&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="integration-testing-validation">🔧 Integration Testing &amp; Validation</h2>
+<h3 id="testing-framework">Testing Framework</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># Integration Testing Script</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SentinelOne Integration Testing Framework ===&quot;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># Test SIEM Integration</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Testing SIEM Integration...&quot;</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>splunk<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>qradar<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="c1"># Test SOAR Integration</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Testing SOAR Integration...&quot;</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>phantom<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>xsoar<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="c1"># Test ITSM Integration</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Testing ITSM Integration...&quot;</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>servicenow<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>jira<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="c1"># Test Communication Integration</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Testing Communication Integration...&quot;</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>slack<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>teams<span class="w"> </span><span class="nb">test</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ All integration tests completed&quot;</span>
+</code></pre></div>
+<h3 id="validation-checklist">Validation Checklist</h3>
 <ul>
-<li><strong>SIEM Tools</strong> (Splunk, IBM QRadar)</li>
-<li><strong>Ticketing System</strong> (ServiceNow, JIRA)</li>
-</ul>
-<h2 id="tips">Tips</h2>
-<ul>
-<li><strong>Document Settings</strong></li>
-<li>Selalu dokumentasikan setting integrasi; ini membantu saat troubleshooting.</li>
+<li>[ ] <strong>SIEM Integration</strong>: Events flowing to SIEM platforms</li>
+<li>[ ] <strong>SOAR Integration</strong>: Automated playbooks triggered</li>
+<li>[ ] <strong>ITSM Integration</strong>: Tickets created automatically</li>
+<li>[ ] <strong>Threat Intel</strong>: IOCs synchronized bidirectionally</li>
+<li>[ ] <strong>Communication</strong>: Notifications sent to teams</li>
+<li>[ ] <strong>API Integration</strong>: Custom integrations functional</li>
+<li>[ ] <strong>Webhook Integration</strong>: Real-time events received</li>
+<li>[ ] <strong>Performance</strong>: Integration latency acceptable</li>
 </ul>
 <hr />
-<p><em>Pastikan untuk mengikuti semua protokol keamanan standar saat melakukan integrasi.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<p><em>Untuk bantuan lebih lanjut dengan integrasi, hubungi Security Team atau rujuk ke SentinelOne API Documentation.</em></p>
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1123,7 +3118,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1161,11 +3156,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1216,6 +3206,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>

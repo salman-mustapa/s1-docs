@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://salman-mustapa.github.io/s1-docs/installation/edr-install/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../commands/sentinelctl-reference/">
       
       
         <link rel="next" href="../edr-exclusion/">
@@ -51,6 +51,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -227,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -405,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -557,13 +675,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#langkah-implementasi" class="md-nav__link">
+  <a href="#persiapan-instalasi" class="md-nav__link">
     <span class="md-ellipsis">
-      Langkah Implementasi
+      Persiapan Instalasi
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Langkah Implementasi">
+    <nav class="md-nav" aria-label="Persiapan Instalasi">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -584,45 +702,126 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3-instalasi-agen" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalasi-berdasarkan-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Instalasi Agen
+      Instalasi Berdasarkan Platform
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Instalasi Agen">
+    <nav class="md-nav" aria-label="Instalasi Berdasarkan Platform">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
+  <a href="#metode-1-command-line-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Windows
+      Metode 1: Command Line Installation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+  <a href="#metode-2-gui-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux
+      Metode 2: GUI Installation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
+  <a href="#metode-3-powershell-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      macOS
+      Metode 3: PowerShell Installation
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#verifikasi-instalasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Instalasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-rpm-based-systems-centosrhelfedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: RPM-based Systems (CentOS/RHEL/Fedora)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-deb-based-systems-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: DEB-based Systems (Ubuntu/Debian)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-generic-installation-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Generic Installation Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifikasi-instalasi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Instalasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-command-line-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: Command Line Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-gui-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: GUI Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-automated-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Automated Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifikasi-instalasi_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Instalasi
+    </span>
+  </a>
   
 </li>
         
@@ -646,6 +845,138 @@
       Troubleshooting Umum
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uninstall-sentinelone-edr-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uninstall SentinelOne EDR Agent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Uninstall SentinelOne EDR Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-command-line-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: Command Line Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-msi-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: MSI Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-programs-and-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Programs and Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-4-powershell-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 4: PowerShell Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-sentinelctl-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: SentinelCtl Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-package-manager-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: Package Manager Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-force-removal-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Force Removal Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-sentinelctl-uninstall_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: SentinelCtl Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-manual-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: Manual Removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-uninstall-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Uninstall Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifikasi-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decommissioning-agent-from-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decommissioning Agent from Console
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1121,6 +1452,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1190,13 +2069,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#langkah-implementasi" class="md-nav__link">
+  <a href="#persiapan-instalasi" class="md-nav__link">
     <span class="md-ellipsis">
-      Langkah Implementasi
+      Persiapan Instalasi
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Langkah Implementasi">
+    <nav class="md-nav" aria-label="Persiapan Instalasi">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1217,45 +2096,126 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#3-instalasi-agen" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalasi-berdasarkan-platform" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Instalasi Agen
+      Instalasi Berdasarkan Platform
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. Instalasi Agen">
+    <nav class="md-nav" aria-label="Instalasi Berdasarkan Platform">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
+  <a href="#metode-1-command-line-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Windows
+      Metode 1: Command Line Installation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linux" class="md-nav__link">
+  <a href="#metode-2-gui-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      Linux
+      Metode 2: GUI Installation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
+  <a href="#metode-3-powershell-installation" class="md-nav__link">
     <span class="md-ellipsis">
-      macOS
+      Metode 3: PowerShell Installation
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
+          <li class="md-nav__item">
+  <a href="#verifikasi-instalasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Instalasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-rpm-based-systems-centosrhelfedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: RPM-based Systems (CentOS/RHEL/Fedora)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-deb-based-systems-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: DEB-based Systems (Ubuntu/Debian)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-generic-installation-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Generic Installation Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifikasi-instalasi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Instalasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-command-line-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: Command Line Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-gui-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: GUI Installation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-automated-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Automated Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifikasi-instalasi_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Instalasi
+    </span>
+  </a>
   
 </li>
         
@@ -1279,6 +2239,138 @@
       Troubleshooting Umum
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uninstall-sentinelone-edr-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uninstall SentinelOne EDR Agent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Uninstall SentinelOne EDR Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-command-line-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: Command Line Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-msi-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: MSI Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-programs-and-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Programs and Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-4-powershell-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 4: PowerShell Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-sentinelctl-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: SentinelCtl Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-package-manager-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: Package Manager Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-force-removal-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Force Removal Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-1-sentinelctl-uninstall_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 1: SentinelCtl Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-2-manual-removal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 2: Manual Removal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-3-uninstall-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metode 3: Uninstall Script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verifikasi-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifikasi Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-uninstall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting Uninstall
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decommissioning-agent-from-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decommissioning Agent from Console
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1338,7 +2430,7 @@
 </div>
 <div class="tabbed-block">
 <ul>
-<li>Ubuntu 18.04+, CentOS 7+, RHEL 7+</li>
+<li>Ubuntu 18.04+, CentOS 7+, RHEL 7+, SLES 12+</li>
 <li>RAM minimum 1GB, recommended 2GB+</li>
 <li>Disk space minimum 1GB</li>
 <li>Root privileges</li>
@@ -1360,7 +2452,7 @@
 <li>DNS resolution untuk domain SentinelOne</li>
 <li>Firewall configuration untuk komunikasi agent</li>
 </ul>
-<h2 id="langkah-implementasi">Langkah Implementasi</h2>
+<h2 id="persiapan-instalasi">Persiapan Instalasi</h2>
 <h3 id="1-unduh-paket-instalasi">1. Unduh Paket Instalasi</h3>
 <ul>
 <li>Masuk ke SentinelOne Management Console</li>
@@ -1371,64 +2463,177 @@
 <h3 id="2-persiapkan-installation-token">2. Persiapkan Installation Token</h3>
 <ul>
 <li>Salin Site Token dari Console</li>
-<li>Ini digunakan untuk menghubungkan agent</li>
-<li>Simpan token dengan aman</li>
+<li>Ini digunakan untuk menghubungkan agent ke management console</li>
+<li>Simpan token dengan aman untuk proses instalasi</li>
 </ul>
-<h3 id="3-instalasi-agen">3. Instalasi Agen</h3>
-<h4 id="windows">Windows</h4>
-<ul>
-<li>
-<p><strong>Command Line:</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>msiexec /i SentinelInstaller_windows_64bit.msi /quiet SITE_TOKEN=your_site_token_here
+<h2 id="instalasi-berdasarkan-platform">Instalasi Berdasarkan Platform</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Windows</label><label for="__tabbed_2_2">Linux</label><label for="__tabbed_2_3">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h3 id="metode-1-command-line-installation">Metode 1: Command Line Installation</h3>
+<p><strong>Instalasi Silent dengan MSI:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>msiexec /i SentinelInstaller_windows_64bit.msi /quiet SITE_TOKEN=your_site_token_here
 </code></pre></div></p>
-</li>
-<li>
-<p><strong>GUI:</strong></p>
-</li>
-<li>Jalankan file installer</li>
-<li>Ikuti wizard</li>
-<li>Masukkan Site Token jika diminta</li>
-</ul>
-<h4 id="linux">Linux</h4>
-<ul>
-<li>
-<p><strong>RPM (CentOS/RHEL):</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>SentinelAgent_linux.rpm
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>SITE_TOKEN
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+<p><strong>Instalasi dengan Parameter Tambahan:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>msiexec /i SentinelInstaller_windows_64bit.msi /quiet SITE_TOKEN=your_site_token_here REBOOT=ReallySuppress
 </code></pre></div></p>
-</li>
-<li>
-<p><strong>DEB (Ubuntu/Debian):</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>SentinelAgent_linux.deb
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>SITE_TOKEN
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+<h3 id="metode-2-gui-installation">Metode 2: GUI Installation</h3>
+<ol>
+<li>Jalankan file installer <code>SentinelInstaller_windows_64bit.msi</code></li>
+<li>Ikuti wizard instalasi</li>
+<li>Masukkan Site Token ketika diminta</li>
+<li>Tunggu hingga instalasi selesai</li>
+<li>Restart sistem jika diperlukan</li>
+</ol>
+<h3 id="metode-3-powershell-installation">Metode 3: PowerShell Installation</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Download installer</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$installer</span> <span class="p">=</span> <span class="s2">&quot;SentinelInstaller_windows_64bit.msi&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nv">$token</span> <span class="p">=</span> <span class="s2">&quot;your_site_token_here&quot;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c"># Install silently</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">Start-Process</span> <span class="n">msiexec</span><span class="p">.</span><span class="n">exe</span> <span class="n">-ArgumentList</span> <span class="s2">&quot;/i $installer /quiet SITE_TOKEN=$token&quot;</span> <span class="n">-Wait</span>
+</code></pre></div>
+<h3 id="verifikasi-instalasi">Verifikasi Instalasi</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot; status
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<h3 id="metode-1-rpm-based-systems-centosrhelfedora">Metode 1: RPM-based Systems (CentOS/RHEL/Fedora)</h3>
+<p><strong>Instalasi langsung:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Install package</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span>SentinelAgent_linux.rpm
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Set site token</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>YOUR_SITE_TOKEN
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Start agent</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
 </code></pre></div></p>
-</li>
-</ul>
-<h4 id="macos">macOS</h4>
-<ul>
-<li><strong>Command Line:</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>installer<span class="w"> </span>-pkg<span class="w"> </span>SentinelAgent_macos.pkg<span class="w"> </span>-target<span class="w"> </span>/
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>SITE_TOKEN
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+<p><strong>Instalasi dengan yum/dnf:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Install using yum</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>yum<span class="w"> </span>localinstall<span class="w"> </span>SentinelAgent_linux.rpm
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Or using dnf (newer systems)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>SentinelAgent_linux.rpm
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># Configure and start</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>YOUR_SITE_TOKEN
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+</code></pre></div></p>
+<h3 id="metode-2-deb-based-systems-ubuntudebian">Metode 2: DEB-based Systems (Ubuntu/Debian)</h3>
+<p><strong>Instalasi langsung:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Install package</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>SentinelAgent_linux.deb
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Fix dependencies if needed</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-f
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># Set site token</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>YOUR_SITE_TOKEN
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># Start agent</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+</code></pre></div></p>
+<p><strong>Instalasi dengan apt:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Install using apt</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>./SentinelAgent_linux.deb
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Configure and start</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>YOUR_SITE_TOKEN
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+</code></pre></div></p>
+<h3 id="metode-3-generic-installation-script">Metode 3: Generic Installation Script</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># SentinelOne Installation Script</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nv">SITE_TOKEN</span><span class="o">=</span><span class="s2">&quot;YOUR_SITE_TOKEN&quot;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nv">INSTALLER_PATH</span><span class="o">=</span><span class="s2">&quot;/path/to/SentinelAgent_linux.rpm&quot;</span><span class="w">  </span><span class="c1"># or .deb</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># Detect package manager</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">if</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>rpm<span class="w"> </span> 3e<span class="w"> </span>/dev/null<span class="w"> </span><span class="m">2</span> 3e<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span>sudo<span class="w"> </span>rpm<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$INSTALLER_PATH</span><span class="s2">&quot;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">elif</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>dpkg<span class="w"> </span> 3e<span class="w"> </span>/dev/null<span class="w"> </span><span class="m">2</span> 3e<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$INSTALLER_PATH</span><span class="s2">&quot;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-f<span class="w">  </span><span class="c1"># Fix dependencies</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="k">fi</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="c1"># Configure agent</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SITE_TOKEN</span><span class="s2">&quot;</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="c1"># Verify installation</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status
+</code></pre></div>
+<h3 id="verifikasi-instalasi_1">Verifikasi Instalasi</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>sentinelone
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<h3 id="metode-1-command-line-installation_1">Metode 1: Command Line Installation</h3>
+<p><strong>Instalasi dengan installer command:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Install package</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>installer<span class="w"> </span>-pkg<span class="w"> </span>SentinelAgent_macos.pkg<span class="w"> </span>-target<span class="w"> </span>/
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Set site token</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>YOUR_SITE_TOKEN
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># Start agent</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+</code></pre></div></p>
+<h3 id="metode-2-gui-installation_1">Metode 2: GUI Installation</h3>
+<ol>
+<li>Double-click file <code>SentinelAgent_macos.pkg</code></li>
+<li>Ikuti wizard instalasi macOS</li>
+<li>Masukkan password administrator ketika diminta</li>
+<li>Buka Terminal setelah instalasi</li>
+<li>Set site token:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span>YOUR_SITE_TOKEN
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
 </code></pre></div></li>
-</ul>
+</ol>
+<h3 id="metode-3-automated-script">Metode 3: Automated Script</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c1"># SentinelOne macOS Installation Script</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nv">SITE_TOKEN</span><span class="o">=</span><span class="s2">&quot;YOUR_SITE_TOKEN&quot;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nv">PKG_PATH</span><span class="o">=</span><span class="s2">&quot;/path/to/SentinelAgent_macos.pkg&quot;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># Install package</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>sudo<span class="w"> </span>installer<span class="w"> </span>-pkg<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$PKG_PATH</span><span class="s2">&quot;</span><span class="w"> </span>-target<span class="w"> </span>/
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1"># Wait for installation to complete</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>sleep<span class="w"> </span><span class="m">10</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="c1"># Configure agent</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>management<span class="w"> </span>token<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SITE_TOKEN</span><span class="s2">&quot;</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>control<span class="w"> </span>start
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="c1"># Verify installation</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>status
+</code></pre></div>
+<h3 id="verifikasi-instalasi_2">Verifikasi Instalasi</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>status
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>launchctl<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone
+</code></pre></div>
+</div>
+</div>
+</div>
 <h3 id="4-verifikasi-instalasi">4. Verifikasi Instalasi</h3>
 <ul>
 <li>
 <p><strong>Windows:</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot; status
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot; status
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>Linux:</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>macOS:</strong>
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>status
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>status
 </code></pre></div></p>
 </li>
 <li>
@@ -1464,6 +2669,243 @@
 <li><strong>Penyebab:</strong> Pemindaian real-time</li>
 <li><strong>Solusi:</strong> Atur exclusion untuk aplikasi kritis</li>
 </ul>
+<h2 id="uninstall-sentinelone-edr-agent">Uninstall SentinelOne EDR Agent</h2>
+<div class="admonition warning">
+<p class="admonition-title">Penting</p>
+<p>Proses uninstall akan menghapus semua proteksi pada endpoint. Pastikan Anda memiliki alternatif keamanan sebelum melakukan uninstall.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Windows</label><label for="__tabbed_3_2">Linux</label><label for="__tabbed_3_3">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h3 id="metode-1-command-line-uninstall">Metode 1: Command Line Uninstall</h3>
+<p><strong>Menggunakan SentinelCtl:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot; uninstall
+</code></pre></div></p>
+<p><strong>Uninstall dengan passphrase (jika ada):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot; uninstall --passphrase &quot;your_passphrase&quot;
+</code></pre></div></p>
+<h3 id="metode-2-msi-uninstall">Metode 2: MSI Uninstall</h3>
+<p><strong>Find product code and uninstall:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a># Find SentinelOne product code
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>wmic product where &quot;name like &#39;%SentinelOne%&#39;&quot; get identifyingnumber,name
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a># Uninstall using product code
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>msiexec /x {PRODUCT-CODE} /quiet
+</code></pre></div></p>
+<h3 id="metode-3-programs-and-features">Metode 3: Programs and Features</h3>
+<ol>
+<li>Buka <strong>Control Panel</strong>  3e <strong>Programs and Features</strong></li>
+<li>Cari "SentinelOne" dalam daftar</li>
+<li>Klik <strong>Uninstall</strong></li>
+<li>Ikuti wizard uninstall</li>
+</ol>
+<h3 id="metode-4-powershell-uninstall">Metode 4: PowerShell Uninstall</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c"># Get SentinelOne installation</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nv">$sentinelone</span> <span class="p">=</span> <span class="nb">Get-WmiObject</span> <span class="n">-Class</span> <span class="n">Win32_Product</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-like</span> <span class="s2">&quot;*SentinelOne*&quot;</span><span class="p">}</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c"># Uninstall</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$sentinelone</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="nv">$sentinelone</span><span class="p">.</span><span class="n">Uninstall</span><span class="p">()</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;SentinelOne uninstalled successfully&quot;</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="p">}</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<h3 id="metode-1-sentinelctl-uninstall">Metode 1: SentinelCtl Uninstall</h3>
+<p><strong>Standard uninstall:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>uninstall
+</code></pre></div></p>
+<p><strong>Uninstall dengan passphrase:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>uninstall<span class="w"> </span>--passphrase<span class="w"> </span><span class="s2">&quot;your_passphrase&quot;</span>
+</code></pre></div></p>
+<h3 id="metode-2-package-manager-uninstall">Metode 2: Package Manager Uninstall</h3>
+<p><strong>RPM-based systems:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Find package name</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>rpm<span class="w"> </span>-qa<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># Remove package</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>sudo<span class="w"> </span>rpm<span class="w"> </span>-e<span class="w"> </span>SentinelAgent
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="c1"># Or using yum/dnf</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>sudo<span class="w"> </span>yum<span class="w"> </span>remove<span class="w"> </span>SentinelAgent
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>remove<span class="w"> </span>SentinelAgent
+</code></pre></div></p>
+<p><strong>DEB-based systems:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># Find package name</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>dpkg<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># Remove package</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>sudo<span class="w"> </span>dpkg<span class="w"> </span>-r<span class="w"> </span>sentinelagent
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="c1"># Or using apt</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>sentinelagent
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>sudo<span class="w"> </span>apt<span class="w"> </span>purge<span class="w"> </span>sentinelagent<span class="w">  </span><span class="c1"># Remove config files too</span>
+</code></pre></div></p>
+<h3 id="metode-3-force-removal-script">Metode 3: Force Removal Script</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="c1"># Force removal of SentinelOne (use with caution)</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Stopping SentinelOne services...&quot;</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>sentinelone
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>sentinelone
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Removing SentinelOne files...&quot;</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/opt/sentinelone/
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/etc/sentinelone/
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>/etc/systemd/system/sentinelone.service
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Cleaning up systemd...&quot;</span>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;SentinelOne force removal completed&quot;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<h3 id="metode-1-sentinelctl-uninstall_1">Metode 1: SentinelCtl Uninstall</h3>
+<p><strong>Standard uninstall:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>uninstall
+</code></pre></div></p>
+<p><strong>Uninstall dengan passphrase:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>uninstall<span class="w"> </span>--passphrase<span class="w"> </span><span class="s2">&quot;your_passphrase&quot;</span>
+</code></pre></div></p>
+<h3 id="metode-2-manual-removal">Metode 2: Manual Removal</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># Stop SentinelOne service</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>sudo<span class="w"> </span>launchctl<span class="w"> </span>unload<span class="w"> </span>/Library/LaunchDaemons/com.sentinelone.*
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># Remove SentinelOne files</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/Library/Sentinelone/
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>/Library/LaunchDaemons/com.sentinelone.*
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/Library/Application<span class="se">\ </span>Support/SentinelOne/
+</code></pre></div>
+<h3 id="metode-3-uninstall-script">Metode 3: Uninstall Script</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="c1"># SentinelOne macOS Uninstall Script</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Uninstalling SentinelOne from macOS...&quot;</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="c1"># Try sentinelctl first</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;/Library/Sentinelone/sentinel/bin/sentinelctl&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Using sentinelctl for removal...&quot;</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">    </span>sudo<span class="w"> </span>/Library/Sentinelone/sentinel/bin/sentinelctl<span class="w"> </span>uninstall
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="k">else</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Manual removal...&quot;</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a><span class="w">    </span>sudo<span class="w"> </span>launchctl<span class="w"> </span>unload<span class="w"> </span>/Library/LaunchDaemons/com.sentinelone.*<span class="w"> </span><span class="m">2</span> 3e/dev/null
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a><span class="w">    </span>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/Library/Sentinelone/
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a><span class="w">    </span>sudo<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span>/Library/LaunchDaemons/com.sentinelone.*
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a><span class="w">    </span>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/Library/Application<span class="se">\ </span>Support/SentinelOne/
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a><span class="k">fi</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;SentinelOne uninstall completed&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="verifikasi-uninstall">Verifikasi Uninstall</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Windows</label><label for="__tabbed_4_2">Linux</label><label for="__tabbed_4_3">macOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a># Check if services are removed
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>sc query SentinelAgent
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>sc query SentinelHelperService
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a># Check if files are removed
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>dir &quot;C:\Program Files\SentinelOne&quot;
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># Check if package is removed</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>rpm<span class="w"> </span>-qa<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>dpkg<span class="w"> </span>-l<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="c1"># Check if services are stopped</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>sentinelone
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="c1"># Check if files are removed</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>ls<span class="w"> </span>-la<span class="w"> </span>/opt/sentinelone/
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1"># Check if services are removed</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>sudo<span class="w"> </span>launchctl<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="c1"># Check if files are removed</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>ls<span class="w"> </span>-la<span class="w"> </span>/Library/Sentinelone/
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="troubleshooting-uninstall">Troubleshooting Uninstall</h3>
+<div class="admonition tip">
+<p class="admonition-title">Common Issues</p>
+<ul>
+<li><strong>Password/Passphrase Required</strong>: Hubungi administrator untuk mendapatkan passphrase uninstall</li>
+<li><strong>Service Won't Stop</strong>: Force stop service sebelum uninstall</li>
+<li><strong>Files Still Present</strong>: Manual removal mungkin diperlukan</li>
+<li><strong>Permission Denied</strong>: Pastikan running sebagai admin/root</li>
+<li><strong>Connection Lost During Uninstall</strong>: Lihat bagian <a href="#decommissioning-agent-from-console">Decommissioning</a> di bawah</li>
+</ul>
+</div>
+<h3 id="decommissioning-agent-from-console">Decommissioning Agent from Console</h3>
+<div class="admonition warning">
+<p class="admonition-title">Uninstall dengan Gangguan Koneksi</p>
+<p>Ketika terjadi gangguan koneksi internet saat proses uninstall, agent mungkin sudah terhapus dari endpoint tetapi masih tercatat <strong>online</strong> atau <strong>offline</strong> di Management Console. Dalam situasi ini, endpoint perlu di-<strong>decommission</strong> manual dari console.</p>
+</div>
+<p><strong>Skenario yang Memerlukan Decommissioning:</strong></p>
+<ul>
+<li><strong>Uninstall saat koneksi internet terputus</strong></li>
+<li><strong>Agent tidak merespon command dari console</strong></li>
+<li><strong>Endpoint sudah tidak ada tapi masih muncul di console</strong></li>
+<li><strong>Status endpoint menunjukkan "offline" padahal sudah di-uninstall</strong></li>
+</ul>
+<p><strong>Langkah-langkah Decommissioning:</strong></p>
+<ol>
+<li>
+<p><strong>Login ke Management Console</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>URL: https://your-tenant.sentinelone.net
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>Navigate: Sentinels → [Select Endpoint]
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Locate the Affected Endpoint</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>Filter by: Endpoint name, IP address, atau status
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>Status: Biasanya menampilkan &quot;Offline&quot; atau &quot;Disconnected&quot;
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Decommission Process</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>Right-click endpoint → Actions → Decommission
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>Atau: Select endpoint → Actions menu → Decommission
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>Confirm: Centang &quot;I understand this action cannot be undone&quot;
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>Click: &quot;Decommission&quot;
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Verification</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>Check: Endpoint hilang dari Sentinels list
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>Status: Tidak muncul lagi di console
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>License: License slot tersedia untuk endpoint baru
+</code></pre></div></p>
+</li>
+</ol>
+<p><strong>Alternative via API (Advanced):</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="c1"># Decommission via SentinelOne API</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://your-tenant.sentinelone.net/web/api/v2.1/agents/actions/decommission&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: ApiToken your-api-token&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a><span class="s1">    &quot;filter&quot;: {</span>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="s1">      &quot;ids&quot;: [&quot;agent-id-here&quot;]</span>
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="s1">    },</span>
+<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="s1">    &quot;data&quot;: {}</span>
+<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a><span class="s1">  }&#39;</span>
+</code></pre></div>
+<p><strong>Kapan Melakukan Decommissioning:</strong></p>
+<ul>
+<li>✅ <strong>After Physical Uninstall</strong>: Setelah memastikan agent benar-benar terhapus dari endpoint</li>
+<li>✅ <strong>Endpoint Disposal</strong>: Ketika endpoint/server sudah tidak digunakan lagi</li>
+<li>✅ <strong>Migration</strong>: Sebelum install ulang atau migrasi ke tenant lain</li>
+<li>❌ <strong>Active Endpoint</strong>: Jangan decommission endpoint yang masih aktif dan terkoneksi</li>
+</ul>
 <h2 id="praktik-terbaik">Praktik Terbaik</h2>
 <ul>
 <li><strong>Instalasi Massal</strong>: Gunakan alat seperti SCCM atau Ansible</li>
@@ -1471,10 +2913,12 @@
 <li><strong>Dokumentasi</strong>: Catat semua endpoint yang diinstal</li>
 <li><strong>Pemantauan</strong>: Awasi resource setelah instalasi</li>
 <li><strong>Exclusion</strong>: Siapkan exclusion list sebelum instalasi</li>
+<li><strong>Backup Configuration</strong>: Simpan konfigurasi sebelum uninstall</li>
+<li><strong>Alternative Security</strong>: Pastikan ada proteksi alternatif sebelum uninstall</li>
 </ul>
 <hr />
 <p><em>Gunakan panduan ini untuk memastikan setiap langkah diimplementasikan dengan benar.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 <h2 id="post-installation-configuration">Post-Installation Configuration</h2>
 <p>Setelah instalasi berhasil, lakukan konfigurasi berikut:</p>
 <ol>
@@ -1504,7 +2948,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1542,11 +2986,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1597,6 +3036,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>

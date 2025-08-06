@@ -1,0 +1,306 @@
+/* Custom CSS untuk SentinelOne Documentation */
+
+/* Mermaid Diagram Styling */
+.mermaid {
+    text-align: center;
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-width: 100%;
+    min-height: 400px;
+    overflow: visible;
+}
+
+/* Large Integration Diagrams - Make them bigger and more readable */
+.mermaid svg {
+    width: 100% !important;
+    height: auto !important;
+    min-width: 800px;
+    min-height: 600px;
+}
+
+/* Flowchart specific styling for better readability */
+.mermaid .flowchart-label {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon {
+    stroke-width: 2px !important;
+}
+
+/* Make node text larger and more readable */
+.mermaid .nodeLabel {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.4 !important;
+}
+
+/* Edge labels styling */
+.mermaid .edgeLabel {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+}
+
+/* Architecture diagram container with scroll for very large diagrams */
+.architecture-large {
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 20px;
+    margin: 20px 0;
+    background: #fafbfc;
+    border: 2px solid #e1e4e8;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.architecture-large .mermaid {
+    min-width: 1200px;
+    min-height: 800px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+}
+
+[data-md-color-scheme="slate"] .architecture-large {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .mermaid svg {
+        min-width: 600px;
+        min-height: 400px;
+    }
+    
+    .architecture-large .mermaid {
+        min-width: 800px;
+        min-height: 600px;
+    }
+    
+    .mermaid .nodeLabel {
+        font-size: 11px !important;
+    }
+    
+    .mermaid .edgeLabel {
+        font-size: 10px !important;
+    }
+}
+
+/* Dark mode styling for Mermaid */
+[data-md-color-scheme="slate"] .mermaid {
+    background: #1e1e1e;
+    border-color: #333;
+    color: #fff;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 15px 0;
+}
+
+/* Image captions */
+.image-caption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+[data-md-color-scheme="slate"] .image-caption {
+    color: #ccc;
+}
+
+/* Architecture diagrams container */
+.architecture-diagram {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+}
+
+[data-md-color-scheme="slate"] .architecture-diagram {
+    background: #2d2d2d;
+    border-color: #444;
+}
+
+/* Flowchart container */
+.flowchart-container {
+    overflow-x: auto;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+/* Testing scenario boxes */
+.testing-scenario {
+    border-left: 4px solid #2196f3;
+    padding: 15px;
+    margin: 15px 0;
+    background: #f3f8ff;
+    border-radius: 0 8px 8px 0;
+}
+
+[data-md-color-scheme="slate"] .testing-scenario {
+    background: #1a2332;
+    border-left-color: #64b5f6;
+}
+
+/* Success/Warning/Error indicators */
+.status-indicator {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.status-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.status-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+[data-md-color-scheme="slate"] .status-success {
+    background: #0f2419;
+    color: #4caf50;
+    border-color: #2d5a3d;
+}
+
+[data-md-color-scheme="slate"] .status-warning {
+    background: #2d2410;
+    color: #ff9800;
+    border-color: #4d3d0a;
+}
+
+[data-md-color-scheme="slate"] .status-error {
+    background: #2d1014;
+    color: #f44336;
+    border-color: #4d1a1e;
+}
+
+/* Demo checklist styling */
+.demo-checklist {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+[data-md-color-scheme="slate"] .demo-checklist {
+    background: #2d2d2d;
+    border-color: #444;
+}
+
+.demo-checklist ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.demo-checklist li {
+    margin: 8px 0;
+}
+
+/* Metrics table styling */
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+}
+
+.metrics-table th,
+.metrics-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.metrics-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+[data-md-color-scheme="slate"] .metrics-table th {
+    background: #3d3d3d;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+[data-md-color-scheme="slate"] .metrics-table td {
+    border-color: #555;
+}
+
+/* Code block enhancements */
+.highlight pre {
+    border-left: 4px solid #2196f3;
+}
+
+/* Platform badges */
+.platform-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.platform-badge.windows {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.platform-badge.linux {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+[data-md-color-scheme="slate"] .platform-badge {
+    background: #1e3a8a;
+    color: #93c5fd;
+}
+
+[data-md-color-scheme="slate"] .platform-badge.windows {
+    background: #1b4332;
+    color: #4ade80;
+}
+
+[data-md-color-scheme="slate"] .platform-badge.linux {
+    background: #451a03;
+    color: #fb923c;
+}

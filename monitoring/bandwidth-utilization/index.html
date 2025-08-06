@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monitoring-utilisasi-bandwidth-oleh-sentinelone-edr" class="md-skip">
+        <a href="#bandwidth-utilization-monitoring" class="md-skip">
           Lewati ke isi
         </a>
       
@@ -227,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -405,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -659,18 +777,192 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cara-monitor" class="md-nav__link">
+  <a href="#konsep-bandwidth-monitoring-sentinelone" class="md-nav__link">
     <span class="md-ellipsis">
-      Cara Monitor
+      🌐 Konsep Bandwidth Monitoring SentinelOne
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tips-optimasi" class="md-nav__link">
+  <a href="#traffic-categories-bandwidth-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips Optimasi
+      📊 Traffic Categories &amp; Bandwidth Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#console-based-bandwidth-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Console-Based Bandwidth Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Console-Based Bandwidth Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#management-console-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Management Console Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-based-network-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Endpoint-Based Network Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Endpoint-Based Network Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-network-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Command Line Network Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-monitoring-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Network Monitoring Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-optimization-throttling" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Bandwidth Optimization &amp; Throttling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Bandwidth Optimization &amp; Throttling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimization-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Optimization Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-bandwidth-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Console Bandwidth Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-usage-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Bandwidth Usage Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Bandwidth Usage Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typical-daily-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕐 Typical Daily Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bandwidth-monitoring-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Bandwidth Monitoring Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Bandwidth Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Bandwidth Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Common Issues &amp; Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bandwidth-troubleshooting-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Bandwidth Troubleshooting Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-testing-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Related Testing &amp; Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-monitoring-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Bandwidth Monitoring Checklist
     </span>
   </a>
   
@@ -986,6 +1278,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1013,18 +1853,192 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cara-monitor" class="md-nav__link">
+  <a href="#konsep-bandwidth-monitoring-sentinelone" class="md-nav__link">
     <span class="md-ellipsis">
-      Cara Monitor
+      🌐 Konsep Bandwidth Monitoring SentinelOne
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tips-optimasi" class="md-nav__link">
+  <a href="#traffic-categories-bandwidth-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips Optimasi
+      📊 Traffic Categories &amp; Bandwidth Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#console-based-bandwidth-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Console-Based Bandwidth Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Console-Based Bandwidth Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#management-console-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Management Console Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint-based-network-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Endpoint-Based Network Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Endpoint-Based Network Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-network-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Command Line Network Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-monitoring-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Network Monitoring Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-optimization-throttling" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Bandwidth Optimization &amp; Throttling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Bandwidth Optimization &amp; Throttling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optimization-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Optimization Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-bandwidth-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Console Bandwidth Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-usage-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Bandwidth Usage Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Bandwidth Usage Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typical-daily-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕐 Typical Daily Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bandwidth-monitoring-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Bandwidth Monitoring Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Bandwidth Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Bandwidth Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Common Issues &amp; Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bandwidth-troubleshooting-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Bandwidth Troubleshooting Script
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-testing-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔗 Related Testing &amp; Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bandwidth-monitoring-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Bandwidth Monitoring Checklist
     </span>
   </a>
   
@@ -1049,39 +2063,591 @@
   
 
 
-<h1 id="monitoring-utilisasi-bandwidth-oleh-sentinelone-edr">Monitoring Utilisasi Bandwidth oleh SentinelOne EDR</h1>
-<p>Panduan untuk membantu Anda menganalisis penggunaan bandwidth oleh agen SentinelOne dan bagaimana mengoptimasinya.</p>
-<h2 id="cara-monitor">Cara Monitor</h2>
-<ol>
-<li><strong>Navigasi ke Bandwidth Monitoring</strong></li>
-<li>
-<p>Masuk ke dashboard, pergi ke <strong>Bandwidth Monitoring</strong>.</p>
-</li>
-<li>
-<p><strong>Atur Throttling</strong></p>
-</li>
-<li>
-<p>Batasi penggunaan bandwidth bila perlu dengan pengaturan throttling.</p>
-</li>
-<li>
-<p><strong>Analyze Data Kisaran Waktu</strong></p>
-</li>
-<li>"<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg></span>" Analisis data penggunaan pada jam-jam sibuk.</li>
-</ol>
-<h2 id="tips-optimasi">Tips Optimasi</h2>
-<ul>
-<li><strong>Atur Batasan</strong></li>
-<li>
-<p>Pastikan adanya batasan untuk upload/download yang tinggi.</p>
-</li>
-<li>
-<p><strong>Reroute Traffic</strong></p>
-</li>
-<li>Jika memungkinkan, reroute traffic tertentu untuk mengurangi beban.</li>
-</ul>
+<h1 id="bandwidth-utilization-monitoring">Bandwidth Utilization Monitoring</h1>
+<h2 id="konsep-bandwidth-monitoring-sentinelone">🌐 Konsep Bandwidth Monitoring SentinelOne</h2>
+<p>Bandwidth monitoring SentinelOne EDR melibatkan <strong>pemahaman pola traffic</strong> antara endpoint dan SentinelOne cloud untuk optimasi jaringan dan mencegah bottleneck.</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph "Endpoint"
+        AGENT["SentinelOne Agent"]
+    end
+
+    subgraph "Data Flow"
+        OUTBOUND["Outbound Traffic&lt;br/&gt;- Telemetry&lt;br/&gt;- Security Events&lt;br/&gt;- Activity Logs"]
+        INBOUND["Inbound Traffic&lt;br/&gt;- Policy Updates&lt;br/&gt;- Signatures&lt;br/&gt;- Commands"]
+    end
+
+    subgraph "Cloud"
+        CONSOLE["Management Console"]
+    end
+
+    AGENT --&gt; OUTBOUND
+    INBOUND --&gt; AGENT
+    OUTBOUND --&gt; CONSOLE
+    CONSOLE --&gt; INBOUND
+
+    style AGENT fill:#e3f2fd
+    style CONSOLE fill:#f3e5f5
+    style OUTBOUND fill:#fff3e0
+    style INBOUND fill:#e8f5e8</code></pre>
+<h2 id="traffic-categories-bandwidth-usage">📊 Traffic Categories &amp; Bandwidth Usage</h2>
+<div class="testing-scenario">
+<h4>🚀 Normal Bandwidth Usage</h4>
+<p><strong>Heartbeat:</strong> 1-5 KB/min (keep-alive)</p>
+<p><strong>Telemetry:</strong> 10-50 KB/min (performance metrics)</p>
+<p><strong>Policy Updates:</strong> 100-500 KB/hour (configuration)</p>
+<p><strong>Signature Updates:</strong> 1-10 MB/day (threat intelligence)</p>
+<p><strong>Event Upload:</strong> Variable (depends on activity)</p>
+</div>
+
 <hr />
-<p><em>Untuk informasi lebih lanjut, hubungi admin jaringan.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<h2 id="console-based-bandwidth-monitoring">📈 Console-Based Bandwidth Monitoring</h2>
+<h3 id="management-console-workflow">🎯 Management Console Workflow</h3>
+<pre class="mermaid"><code>flowchart LR
+    A[Access Console] --&gt; B[Network Analytics]
+    B --&gt; C[Select Time Range]
+    C --&gt; D[Traffic Analysis]
+    D --&gt; E[Configure Limits]
+
+    style A fill:#e3f2fd
+    style E fill:#fff3e0</code></pre>
+<p><strong>Console Monitoring Steps:</strong></p>
+<ol>
+<li>
+<p><strong>Dashboard Access</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Console → Network → Bandwidth Monitoring
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>View: Real-time usage graphs
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Filter: By site, endpoint group, or individual agent
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Traffic Analysis</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Time Range: Last 24 hours / 7 days / 30 days
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Metrics: Upload/Download volumes
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Peak Times: Identify high-usage periods
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Bandwidth Optimization</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Settings → Network → Bandwidth Control
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Upload Limit: Set max KB/s per endpoint
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Schedule: Configure off-hours for updates
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h2 id="endpoint-based-network-monitoring">🔧 Endpoint-Based Network Monitoring</h2>
+<h3 id="command-line-network-analysis">💻 Command Line Network Analysis</h3>
+<pre class="mermaid"><code>flowchart TD
+    subgraph "Endpoint Network Monitoring Tools"
+        subgraph "Connection Monitoring (Linux/macOS)"
+            NETSTAT["netstat -tupln&lt;br/&gt;Active Connections"]
+            SS["ss -tuln&lt;br/&gt;Socket Statistics"]
+            LSOF["lsof -i&lt;br/&gt;Network Files"]
+        end
+
+        subgraph "Connection Monitoring (Windows)"
+            WIN_NETSTAT["netstat -an&lt;br/&gt;Active Connections"]
+            WIN_NETSH["netsh interface show&lt;br/&gt;Interface Stats"]
+            WIN_PS["Get-NetTCPConnection&lt;br/&gt;PowerShell Network"]
+        end
+
+        subgraph "Traffic Analysis"
+            IFTOP["iftop (Linux)&lt;br/&gt;Real-time Traffic"]
+            NLOAD["nload (Linux)&lt;br/&gt;Bandwidth Usage"]
+            WIN_PERFMON["Performance Monitor&lt;br/&gt;Windows Counters"]
+        end
+
+        subgraph "SentinelOne Specific"
+            S1_CONN["SentinelOne Connections&lt;br/&gt;Active Sessions"]
+            S1_TRAFFIC["Traffic Volume&lt;br/&gt;Data Transfer"]
+            S1_ENDPOINTS["API Endpoints&lt;br/&gt;Cloud Destinations"]
+        end
+
+        NETSTAT --&gt; S1_CONN
+        WIN_NETSTAT --&gt; S1_CONN
+        IFTOP --&gt; S1_TRAFFIC
+        WIN_PERFMON --&gt; S1_TRAFFIC
+        SS --&gt; S1_ENDPOINTS
+        WIN_PS --&gt; S1_ENDPOINTS
+    end
+
+    style NETSTAT fill:#e3f2fd
+    style WIN_NETSTAT fill:#f3e5f5
+    style IFTOP fill:#e8f5e8
+    style WIN_PERFMON fill:#fff3e0
+    style S1_CONN fill:#e8f5e8</code></pre>
+<h3 id="network-monitoring-script">📊 Network Monitoring Script</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux/macOS Script</label><label for="__tabbed_1_2">Windows PowerShell Script</label><label for="__tabbed_1_3">Cross-Platform Detection Script</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SENTINELONE BANDWIDTH MONITORING (Linux/macOS) ===&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Function to convert bytes to human readable format</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>bytes_to_human<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nb">local</span><span class="w"> </span><span class="nv">bytes</span><span class="o">=</span><span class="nv">$1</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$bytes</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">1073741824</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;scale=2; </span><span class="nv">$bytes</span><span class="s2">/1073741824&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span><span class="s2"> GB&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$bytes</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">1048576</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;scale=2; </span><span class="nv">$bytes</span><span class="s2">/1048576&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span><span class="s2"> MB&quot;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$bytes</span><span class="w"> </span>-gt<span class="w"> </span><span class="m">1024</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;scale=2; </span><span class="nv">$bytes</span><span class="s2">/1024&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>bc<span class="k">)</span><span class="s2"> KB&quot;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">bytes</span><span class="si">}</span><span class="s2"> B&quot;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="o">}</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="c1"># Check SentinelOne network connections</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SentinelOne Network Connections ===&quot;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>netstat<span class="w"> </span>-tupln<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-10
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="c1"># Monitor network interface statistics</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== Network Interface Statistics ===&quot;</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/proc/net/dev<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Interface | RX Bytes | TX Bytes | RX Packets | TX Packets&quot;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;----------|----------|----------|------------|------------&quot;</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="w">    </span>cat<span class="w"> </span>/proc/net/dev<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;eth0|ens|enp|wlan&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nv">IFS</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>-r<span class="w"> </span>interface<span class="w"> </span>stats<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="w">        </span><span class="nv">interface</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$interface</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="k">)</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="w">        </span><span class="nv">stats_array</span><span class="o">=(</span><span class="nv">$stats</span><span class="o">)</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="w">        </span><span class="nv">rx_bytes</span><span class="o">=</span><span class="si">${</span><span class="nv">stats_array</span><span class="p">[0]</span><span class="si">}</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="w">        </span><span class="nv">rx_packets</span><span class="o">=</span><span class="si">${</span><span class="nv">stats_array</span><span class="p">[1]</span><span class="si">}</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">        </span><span class="nv">tx_bytes</span><span class="o">=</span><span class="si">${</span><span class="nv">stats_array</span><span class="p">[8]</span><span class="si">}</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">        </span><span class="nv">tx_packets</span><span class="o">=</span><span class="si">${</span><span class="nv">stats_array</span><span class="p">[9]</span><span class="si">}</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">        </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;%-9s | %-8s | %-8s | %-10s | %-11s\n&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">            </span><span class="s2">&quot;</span><span class="nv">$interface</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="w">            </span><span class="s2">&quot;</span><span class="k">$(</span>bytes_to_human<span class="w"> </span><span class="nv">$rx_bytes</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="w">            </span><span class="s2">&quot;</span><span class="k">$(</span>bytes_to_human<span class="w"> </span><span class="nv">$tx_bytes</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a><span class="w">            </span><span class="s2">&quot;</span><span class="nv">$rx_packets</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="w">            </span><span class="s2">&quot;</span><span class="nv">$tx_packets</span><span class="s2">&quot;</span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="w">    </span><span class="k">done</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="k">fi</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a><span class="c1"># Check SentinelOne cloud connectivity</span>
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== SentinelOne Cloud Connectivity ===&quot;</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a><span class="nv">CLOUD_ENDPOINTS</span><span class="o">=(</span>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="w">    </span><span class="s2">&quot;api.sentinelone.net&quot;</span>
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a><span class="w">    </span><span class="s2">&quot;updates.sentinelone.net&quot;</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a><span class="w">    </span><span class="s2">&quot;telemetry.sentinelone.net&quot;</span>
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a><span class="o">)</span>
+<a id="__codelineno-3-52" name="__codelineno-3-52" href="#__codelineno-3-52"></a>
+<a id="__codelineno-3-53" name="__codelineno-3-53" href="#__codelineno-3-53"></a><span class="k">for</span><span class="w"> </span>endpoint<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">CLOUD_ENDPOINTS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-3-54" name="__codelineno-3-54" href="#__codelineno-3-54"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span>-W<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$endpoint</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="p">&amp;</span>/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-3-55" name="__codelineno-3-55" href="#__codelineno-3-55"></a><span class="w">        </span><span class="nv">RTT</span><span class="o">=</span><span class="k">$(</span>ping<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="w"> </span>-W<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$endpoint</span><span class="s2">&quot;</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;time=&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/.*time=\([0-9.]*\).*/\1/&#39;</span><span class="k">)</span>
+<a id="__codelineno-3-56" name="__codelineno-3-56" href="#__codelineno-3-56"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ </span><span class="nv">$endpoint</span><span class="s2"> - RTT: </span><span class="si">${</span><span class="nv">RTT</span><span class="si">}</span><span class="s2">ms&quot;</span>
+<a id="__codelineno-3-57" name="__codelineno-3-57" href="#__codelineno-3-57"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-3-58" name="__codelineno-3-58" href="#__codelineno-3-58"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ </span><span class="nv">$endpoint</span><span class="s2"> - UNREACHABLE&quot;</span>
+<a id="__codelineno-3-59" name="__codelineno-3-59" href="#__codelineno-3-59"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-3-60" name="__codelineno-3-60" href="#__codelineno-3-60"></a><span class="k">done</span>
+<a id="__codelineno-3-61" name="__codelineno-3-61" href="#__codelineno-3-61"></a>
+<a id="__codelineno-3-62" name="__codelineno-3-62" href="#__codelineno-3-62"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n=== Monitoring Complete ===&quot;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c"># SentinelOne Bandwidth Monitoring Script for Windows</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">Write-Host</span> <span class="s2">&quot;=== SENTINELONE BANDWIDTH MONITORING (Windows) ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c"># Function to convert bytes to human readable format</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">function</span> <span class="nb">Convert-BytesToHuman</span> <span class="p">{</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">param</span><span class="p">(</span><span class="no">[long]</span><span class="nv">$bytes</span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="k">if</span> <span class="p">(</span><span class="nv">$bytes</span> <span class="o">-gt</span> <span class="n">1GB</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="k">return</span> <span class="s2">&quot;{0:N2} GB&quot;</span> <span class="o">-f</span> <span class="p">(</span><span class="nv">$bytes</span> <span class="p">/</span> <span class="n">1GB</span><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="p">}</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>    <span class="k">elseif</span> <span class="p">(</span><span class="nv">$bytes</span> <span class="o">-gt</span> <span class="n">1MB</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>        <span class="k">return</span> <span class="s2">&quot;{0:N2} MB&quot;</span> <span class="o">-f</span> <span class="p">(</span><span class="nv">$bytes</span> <span class="p">/</span> <span class="n">1MB</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="p">}</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="k">elseif</span> <span class="p">(</span><span class="nv">$bytes</span> <span class="o">-gt</span> <span class="n">1KB</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>        <span class="k">return</span> <span class="s2">&quot;{0:N2} KB&quot;</span> <span class="o">-f</span> <span class="p">(</span><span class="nv">$bytes</span> <span class="p">/</span> <span class="n">1KB</span><span class="p">)</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="p">}</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>        <span class="k">return</span> <span class="s2">&quot;$bytes B&quot;</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="p">}</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">}</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="c"># Check SentinelOne network connections</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== SentinelOne Network Connections ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="nv">$SentinelProcesses</span> <span class="p">=</span> <span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">ProcessName</span> <span class="o">-like</span> <span class="s2">&quot;*Sentinel*&quot;</span><span class="p">}</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$SentinelProcesses</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>    <span class="nb">Get-NetTCPConnection</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>        <span class="nv">$_</span><span class="p">.</span><span class="n">OwningProcess</span> <span class="n">-in</span> <span class="nv">$SentinelProcesses</span><span class="p">.</span><span class="n">Id</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>    <span class="p">}</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">LocalAddress</span><span class="p">,</span> <span class="n">LocalPort</span><span class="p">,</span> <span class="n">RemoteAddress</span><span class="p">,</span> <span class="n">RemotePort</span><span class="p">,</span> <span class="n">State</span> <span class="p">|</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>    <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="p">}</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="c"># Monitor network interface statistics</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== Network Interface Statistics ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="nb">Get-NetAdapterStatistics</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>    <span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-notlike</span> <span class="s2">&quot;*Loopback*&quot;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-notlike</span> <span class="s2">&quot;*Tunnel*&quot;</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="p">}</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> 
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a>    <span class="p">@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&quot;RX Bytes&quot;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nb">Convert-BytesToHuman</span> <span class="nv">$_</span><span class="p">.</span><span class="n">ReceivedBytes</span><span class="p">}},</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a>    <span class="p">@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&quot;TX Bytes&quot;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nb">Convert-BytesToHuman</span> <span class="nv">$_</span><span class="p">.</span><span class="n">SentBytes</span><span class="p">}},</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a>    <span class="n">ReceivedUnicastPackets</span><span class="p">,</span> <span class="n">SentUnicastPackets</span> <span class="p">|</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="c"># Check SentinelOne cloud connectivity</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== SentinelOne Cloud Connectivity ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="nv">$CloudEndpoints</span> <span class="p">=</span> <span class="p">@(</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a>    <span class="s2">&quot;api.sentinelone.net&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a>    <span class="s2">&quot;updates.sentinelone.net&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a>    <span class="s2">&quot;telemetry.sentinelone.net&quot;</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="p">)</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a>
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="k">foreach</span> <span class="p">(</span><span class="nv">$endpoint</span> <span class="k">in</span> <span class="nv">$CloudEndpoints</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a>    <span class="k">try</span> <span class="p">{</span>
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a>        <span class="nv">$ping</span> <span class="p">=</span> <span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="nv">$endpoint</span> <span class="n">-Port</span> <span class="n">443</span> <span class="n">-InformationLevel</span> <span class="n">Quiet</span>
+<a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a>        <span class="k">if</span> <span class="p">(</span><span class="nv">$ping</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a>            <span class="nv">$latency</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="nv">$endpoint</span> <span class="n">-InformationLevel</span> <span class="n">Detailed</span><span class="p">).</span><span class="n">PingReplyDetails</span><span class="p">.</span><span class="n">RoundtripTime</span>
+<a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a>            <span class="nb">Write-Host</span> <span class="s2">&quot;✅ $endpoint - RTT: ${latency}ms&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+<a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a>        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a>            <span class="nb">Write-Host</span> <span class="s2">&quot;❌ $endpoint - UNREACHABLE&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Red</span>
+<a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a>        <span class="p">}</span>
+<a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a>    <span class="p">}</span>
+<a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a>    <span class="k">catch</span> <span class="p">{</span>
+<a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a>        <span class="nb">Write-Host</span> <span class="s2">&quot;❌ $endpoint - ERROR: </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">Exception</span><span class="p">.</span><span class="n">Message</span><span class="p">)</span><span class="s2">&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Red</span>
+<a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a>    <span class="p">}</span>
+<a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a><span class="p">}</span>
+<a id="__codelineno-4-63" name="__codelineno-4-63" href="#__codelineno-4-63"></a>
+<a id="__codelineno-4-64" name="__codelineno-4-64" href="#__codelineno-4-64"></a><span class="c"># Check bandwidth utilization using performance counters</span>
+<a id="__codelineno-4-65" name="__codelineno-4-65" href="#__codelineno-4-65"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== Current Bandwidth Utilization ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Yellow</span>
+<a id="__codelineno-4-66" name="__codelineno-4-66" href="#__codelineno-4-66"></a><span class="k">try</span> <span class="p">{</span>
+<a id="__codelineno-4-67" name="__codelineno-4-67" href="#__codelineno-4-67"></a>    <span class="nv">$networkCounters</span> <span class="p">=</span> <span class="nb">Get-Counter</span> <span class="s2">&quot;\Network Interface(*)\Bytes Total/sec&quot;</span> <span class="n">-SampleInterval</span> <span class="n">1</span> <span class="n">-MaxSamples</span> <span class="n">3</span>
+<a id="__codelineno-4-68" name="__codelineno-4-68" href="#__codelineno-4-68"></a>    <span class="nv">$networkCounters</span><span class="p">.</span><span class="n">CounterSamples</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span>
+<a id="__codelineno-4-69" name="__codelineno-4-69" href="#__codelineno-4-69"></a>        <span class="nv">$_</span><span class="p">.</span><span class="n">InstanceName</span> <span class="o">-notlike</span> <span class="s2">&quot;*Loopback*&quot;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="n">InstanceName</span> <span class="o">-notlike</span> <span class="s2">&quot;*Tunnel*&quot;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="n">CookedValue</span> <span class="o">-gt</span> <span class="n">0</span>
+<a id="__codelineno-4-70" name="__codelineno-4-70" href="#__codelineno-4-70"></a>    <span class="p">}</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">InstanceName</span><span class="p">,</span> 
+<a id="__codelineno-4-71" name="__codelineno-4-71" href="#__codelineno-4-71"></a>        <span class="p">@{</span><span class="n">Name</span><span class="p">=</span><span class="s2">&quot;Bytes/sec&quot;</span><span class="p">;</span><span class="n">Expression</span><span class="p">={</span><span class="nb">Convert-BytesToHuman</span> <span class="nv">$_</span><span class="p">.</span><span class="n">CookedValue</span><span class="p">}}</span> <span class="p">|</span>
+<a id="__codelineno-4-72" name="__codelineno-4-72" href="#__codelineno-4-72"></a>    <span class="nb">Format-Table</span> <span class="n">-AutoSize</span>
+<a id="__codelineno-4-73" name="__codelineno-4-73" href="#__codelineno-4-73"></a><span class="p">}</span>
+<a id="__codelineno-4-74" name="__codelineno-4-74" href="#__codelineno-4-74"></a><span class="k">catch</span> <span class="p">{</span>
+<a id="__codelineno-4-75" name="__codelineno-4-75" href="#__codelineno-4-75"></a>    <span class="nb">Write-Host</span> <span class="s2">&quot;Unable to retrieve network performance counters: </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">Exception</span><span class="p">.</span><span class="n">Message</span><span class="p">)</span><span class="s2">&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Red</span>
+<a id="__codelineno-4-76" name="__codelineno-4-76" href="#__codelineno-4-76"></a><span class="p">}</span>
+<a id="__codelineno-4-77" name="__codelineno-4-77" href="#__codelineno-4-77"></a>
+<a id="__codelineno-4-78" name="__codelineno-4-78" href="#__codelineno-4-78"></a><span class="nb">Write-Host</span> <span class="s2">&quot;\n=== Monitoring Complete ===&quot;</span> <span class="n">-ForegroundColor</span> <span class="n">Green</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># Cross-platform SentinelOne network monitoring</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>detect_os<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;linux-gnu&quot;</span>*<span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;linux&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;darwin&quot;</span>*<span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;macos&quot;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="k">elif</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;msys&quot;</span><span class="w"> </span><span class="o">]]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;cygwin&quot;</span><span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;windows&quot;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;unknown&quot;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="o">}</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="nv">OS</span><span class="o">=</span><span class="k">$(</span>detect_os<span class="k">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== SENTINELONE NETWORK MONITORING - </span><span class="nv">$OS</span><span class="s2"> ===&quot;</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">case</span><span class="w"> </span><span class="nv">$OS</span><span class="w"> </span><span class="k">in</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="s2">&quot;linux&quot;</span><span class="o">)</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Running Linux network monitoring...&quot;</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">        </span>netstat<span class="w"> </span>-tupln<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">        </span>ss<span class="w"> </span>-tuln<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>:443
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">    </span><span class="s2">&quot;macos&quot;</span><span class="o">)</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Running macOS network monitoring...&quot;</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">        </span>netstat<span class="w"> </span>-anp<span class="w"> </span>tcp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">        </span>lsof<span class="w"> </span>-i<span class="w"> </span>-P<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>sentinel
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">    </span><span class="s2">&quot;windows&quot;</span><span class="o">)</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;For Windows, please run the PowerShell script above&quot;</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">    </span>*<span class="o">)</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Unsupported operating system: </span><span class="nv">$OSTYPE</span><span class="s2">&quot;</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Please use platform-specific commands&quot;</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="w">        </span><span class="p">;;</span>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="k">esac</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="bandwidth-optimization-throttling">⚙️ Bandwidth Optimization &amp; Throttling</h2>
+<h3 id="optimization-strategies">📊 Optimization Strategies</h3>
+<pre class="mermaid"><code>flowchart TB
+    subgraph "Bandwidth Optimization Framework"
+        subgraph "High-Level Controls"
+            GLOBAL["Global Throttling&lt;br/&gt;Organization Level"]
+            SITE["Site-Based Limits&lt;br/&gt;Per Location"]
+            GROUP["Group Policies&lt;br/&gt;Endpoint Groups"]
+        end
+
+        subgraph "Traffic Shaping"
+            PRIORITY["Priority Queuing&lt;br/&gt;Critical First"]
+            SCHEDULING["Update Scheduling&lt;br/&gt;Off-Hours"]
+            COMPRESSION["Data Compression&lt;br/&gt;Reduce Size"]
+        end
+
+        subgraph "Monitoring &amp; Alerts"
+            THRESHOLDS["Usage Thresholds&lt;br/&gt;Limits"]
+            ALERTS["Bandwidth Alerts&lt;br/&gt;Notifications"]
+            REPORTS["Usage Reports&lt;br/&gt;Analytics"]
+        end
+
+        GLOBAL --&gt; PRIORITY
+        SITE --&gt; SCHEDULING
+        GROUP --&gt; COMPRESSION
+
+        PRIORITY --&gt; THRESHOLDS
+        SCHEDULING --&gt; ALERTS
+        COMPRESSION --&gt; REPORTS
+    end
+
+    style GLOBAL fill:#e3f2fd
+    style PRIORITY fill:#f3e5f5
+    style THRESHOLDS fill:#fff3e0</code></pre>
+<h3 id="console-bandwidth-configuration">⚙️ Console Bandwidth Configuration</h3>
+<p><strong>1. Global Bandwidth Limits</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Console → Settings → Network → Bandwidth Control
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>┌─────────────────────────────────────────┐
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>│ Upload Limit: [50] KB/s per endpoint    │
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>│ Download Limit: [100] KB/s per endpoint │
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>│ Burst Allowance: [500] KB (5 seconds)   │
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>│ Apply to: ☑️ All Sites                 │
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>└─────────────────────────────────────────┘
+</code></pre></div></p>
+<p><strong>2. Scheduled Updates</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Console → Policies → Update Schedule
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>┌─────────────────────────────────────────┐
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>│ Signature Updates: 02:00-04:00 daily   │
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>│ Policy Updates: Immediate               │
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>│ Agent Updates: Maintenance window only  │
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>│ Large Downloads: Weekend only           │
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>└─────────────────────────────────────────┘
+</code></pre></div></p>
+<p><strong>3. Traffic Prioritization</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Priority Level | Traffic Type        | Bandwidth %
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>━━━━━━━━━━━━━━━┼━━━━━━━━━━━━━━━━━━━━━┼━━━━━━━━━━━━
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>HIGH          | Security Events     | 40%
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>MEDIUM        | Telemetry Data      | 30%
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>LOW           | Signature Updates   | 20%
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>BULK          | Log Forwarding      | 10%
+</code></pre></div></p>
+<hr />
+<h2 id="bandwidth-usage-patterns">📊 Bandwidth Usage Patterns</h2>
+<h3 id="typical-daily-patterns">🕐 Typical Daily Patterns</h3>
+<pre class="mermaid"><code>gantt
+    title SentinelOne Daily Bandwidth Pattern
+    dateFormat  HH:mm
+    axisFormat %H:%M
+
+    section Low Usage
+    Heartbeat Only    :active, 00:00, 06:00
+
+    section Business Hours
+    Normal Telemetry  :active, 06:00, 18:00
+
+    section Peak Activity
+    Event Processing  :crit, 09:00, 11:00
+    Event Processing  :crit, 14:00, 16:00
+
+    section Maintenance
+    Signature Updates :done, 02:00, 04:00
+    Log Processing    :active, 18:00, 22:00
+
+    section Night Mode
+    Minimal Activity  :active, 22:00, 24:00</code></pre>
+<h3 id="bandwidth-monitoring-metrics">📈 Bandwidth Monitoring Metrics</h3>
+<table class="metrics-table">
+<thead>
+<tr>
+<th>Time Period</th>
+<th>Expected Usage</th>
+<th>Peak Allowance</th>
+<th>Alert Threshold</th>
+<th>Action Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business Hours</td>
+<td>20-50 KB/s</td>
+<td>100 KB/s</td>
+<td>> 150 KB/s</td>
+<td><span class="status-warning">⚠️ Monitor</span></td>
+</tr>
+<tr>
+<td>Off Hours</td>
+<td>5-10 KB/s</td>
+<td>200 KB/s</td>
+<td>> 300 KB/s</td>
+<td><span class="status-success">✅ Updates</span></td>
+</tr>
+<tr>
+<td>Update Window</td>
+<td>1-5 MB/s</td>
+<td>10 MB/s</td>
+<td>> 15 MB/s</td>
+<td><span class="status-error">❌ Throttle</span></td>
+</tr>
+<tr>
+<td>Security Event</td>
+<td>100-500 KB/s</td>
+<td>1 MB/s</td>
+<td>> 2 MB/s</td>
+<td><span class="status-warning">⚠️ Priority</span></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+<h2 id="bandwidth-troubleshooting">🔧 Bandwidth Troubleshooting</h2>
+<h3 id="common-issues-solutions">🚨 Common Issues &amp; Solutions</h3>
+<pre class="mermaid"><code>flowchart TD
+    subgraph "Bandwidth Issues Troubleshooting"
+        ISSUE["High Bandwidth Usage&lt;br/&gt;Detected"]
+
+        subgraph "Investigation Steps"
+            CHECK_EVENTS["Check Security Events&lt;br/&gt;Threat Activity"]
+            VERIFY_UPDATES["Verify Update Schedule&lt;br/&gt;Signature Downloads"]
+            ANALYZE_LOGS["Analyze Traffic Logs&lt;br/&gt;Connection Patterns"]
+        end
+
+        subgraph "Resolution Actions"
+            THROTTLE["Apply Throttling&lt;br/&gt;Limit Bandwidth"]
+            RESCHEDULE["Reschedule Updates&lt;br/&gt;Off-peak Hours"]
+            EXCLUDE["Exclude Non-critical&lt;br/&gt;Reduce Traffic"]
+        end
+
+        subgraph "Validation"
+            MONITOR["Monitor Impact&lt;br/&gt;Measure Results"]
+            ADJUST["Adjust Settings&lt;br/&gt;Fine-tune"]
+            DOCUMENT["Document Changes&lt;br/&gt;Record Actions"]
+        end
+
+        ISSUE --&gt; CHECK_EVENTS
+        ISSUE --&gt; VERIFY_UPDATES
+        ISSUE --&gt; ANALYZE_LOGS
+
+        CHECK_EVENTS --&gt; THROTTLE
+        VERIFY_UPDATES --&gt; RESCHEDULE
+        ANALYZE_LOGS --&gt; EXCLUDE
+
+        THROTTLE --&gt; MONITOR
+        RESCHEDULE --&gt; ADJUST
+        EXCLUDE --&gt; DOCUMENT
+    end
+
+    style ISSUE fill:#ffcdd2
+    style CHECK_EVENTS fill:#fff3e0
+    style MONITOR fill:#e8f5e8</code></pre>
+<h3 id="bandwidth-troubleshooting-script">🛠️ Bandwidth Troubleshooting Script</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🔍 SentinelOne Bandwidth Troubleshooting&quot;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;===========================================&quot;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># Function to check bandwidth usage</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>check_bandwidth<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📊 Current Bandwidth Usage:&quot;</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="c1"># Check active connections</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">    </span><span class="nv">CONNECTIONS</span><span class="o">=</span><span class="k">$(</span>netstat<span class="w"> </span>-tupln<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="k">)</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   Active Connections: </span><span class="nv">$CONNECTIONS</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="c1"># Check data transfer (if available)</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>iftop<span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   Running iftop analysis (10 seconds)...&quot;</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span>timeout<span class="w"> </span>10s<span class="w"> </span>iftop<span class="w"> </span>-t<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span><span class="w"> </span>-i<span class="w"> </span>any<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;(Total|Peak)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-2
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">    </span><span class="c1"># Check network utilization</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-f<span class="w"> </span>/proc/net/dev<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   Interface utilization:&quot;</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">        </span>cat<span class="w"> </span>/proc/net/dev<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;eth0|ens|enp&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-3
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="o">}</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="c1"># Function to identify high usage periods</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>identify_peak_usage<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n🕐 Peak Usage Analysis:&quot;</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="w">    </span><span class="c1"># Check system load</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   System Load: </span><span class="k">$(</span>uptime<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span>-F<span class="s1">&#39;load average:&#39;</span><span class="w"> </span><span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a><span class="w">    </span><span class="c1"># Check if updates are running</span>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a><span class="w">    </span><span class="nv">UPDATE_PROCESSES</span><span class="o">=</span><span class="k">$(</span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;(update|download)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="k">)</span>
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   Update Processes: </span><span class="nv">$UPDATE_PROCESSES</span><span class="s2">&quot;</span>
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a>
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a><span class="w">    </span><span class="c1"># Check disk I/O (which might indicate large downloads)</span>
+<a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>iostat<span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   Disk I/O Activity:&quot;</span>
+<a id="__codelineno-9-40" name="__codelineno-9-40" href="#__codelineno-9-40"></a><span class="w">        </span>iostat<span class="w"> </span>-x<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;(Device|avg)&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-2
+<a id="__codelineno-9-41" name="__codelineno-9-41" href="#__codelineno-9-41"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-9-42" name="__codelineno-9-42" href="#__codelineno-9-42"></a><span class="o">}</span>
+<a id="__codelineno-9-43" name="__codelineno-9-43" href="#__codelineno-9-43"></a>
+<a id="__codelineno-9-44" name="__codelineno-9-44" href="#__codelineno-9-44"></a><span class="c1"># Function to suggest optimizations</span>
+<a id="__codelineno-9-45" name="__codelineno-9-45" href="#__codelineno-9-45"></a>suggest_optimizations<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-9-46" name="__codelineno-9-46" href="#__codelineno-9-46"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n💡 Optimization Suggestions:&quot;</span>
+<a id="__codelineno-9-47" name="__codelineno-9-47" href="#__codelineno-9-47"></a>
+<a id="__codelineno-9-48" name="__codelineno-9-48" href="#__codelineno-9-48"></a><span class="w">    </span><span class="c1"># Check current time</span>
+<a id="__codelineno-9-49" name="__codelineno-9-49" href="#__codelineno-9-49"></a><span class="w">    </span><span class="nv">CURRENT_HOUR</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+%H<span class="k">)</span>
+<a id="__codelineno-9-50" name="__codelineno-9-50" href="#__codelineno-9-50"></a>
+<a id="__codelineno-9-51" name="__codelineno-9-51" href="#__codelineno-9-51"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$CURRENT_HOUR</span><span class="w"> </span>-ge<span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$CURRENT_HOUR</span><span class="w"> </span>-le<span class="w"> </span><span class="m">18</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-9-52" name="__codelineno-9-52" href="#__codelineno-9-52"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   ⏰ Business hours detected - consider limiting non-critical updates&quot;</span>
+<a id="__codelineno-9-53" name="__codelineno-9-53" href="#__codelineno-9-53"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-9-54" name="__codelineno-9-54" href="#__codelineno-9-54"></a><span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   🌙 Off-hours detected - good time for updates and maintenance&quot;</span>
+<a id="__codelineno-9-55" name="__codelineno-9-55" href="#__codelineno-9-55"></a><span class="w">    </span><span class="k">fi</span>
+<a id="__codelineno-9-56" name="__codelineno-9-56" href="#__codelineno-9-56"></a>
+<a id="__codelineno-9-57" name="__codelineno-9-57" href="#__codelineno-9-57"></a><span class="w">    </span><span class="c1"># Check available bandwidth</span>
+<a id="__codelineno-9-58" name="__codelineno-9-58" href="#__codelineno-9-58"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;   🔧 Recommended actions:&quot;</span>
+<a id="__codelineno-9-59" name="__codelineno-9-59" href="#__codelineno-9-59"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;      - Schedule signature updates during maintenance window&quot;</span>
+<a id="__codelineno-9-60" name="__codelineno-9-60" href="#__codelineno-9-60"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;      - Enable bandwidth throttling during business hours&quot;</span>
+<a id="__codelineno-9-61" name="__codelineno-9-61" href="#__codelineno-9-61"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;      - Configure burst allowances for security events&quot;</span>
+<a id="__codelineno-9-62" name="__codelineno-9-62" href="#__codelineno-9-62"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;      - Monitor and set appropriate thresholds&quot;</span>
+<a id="__codelineno-9-63" name="__codelineno-9-63" href="#__codelineno-9-63"></a><span class="o">}</span>
+<a id="__codelineno-9-64" name="__codelineno-9-64" href="#__codelineno-9-64"></a>
+<a id="__codelineno-9-65" name="__codelineno-9-65" href="#__codelineno-9-65"></a><span class="c1"># Run analysis</span>
+<a id="__codelineno-9-66" name="__codelineno-9-66" href="#__codelineno-9-66"></a>check_bandwidth
+<a id="__codelineno-9-67" name="__codelineno-9-67" href="#__codelineno-9-67"></a>identify_peak_usage
+<a id="__codelineno-9-68" name="__codelineno-9-68" href="#__codelineno-9-68"></a>suggest_optimizations
+<a id="__codelineno-9-69" name="__codelineno-9-69" href="#__codelineno-9-69"></a>
+<a id="__codelineno-9-70" name="__codelineno-9-70" href="#__codelineno-9-70"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;\n===========================================&quot;</span>
+<a id="__codelineno-9-71" name="__codelineno-9-71" href="#__codelineno-9-71"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📊 For detailed performance analysis, see: [Performance Testing](../testing/kategori-e-performance.md)&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="related-testing-integration">🔗 Related Testing &amp; Integration</h2>
+<div class="admonition info">
+<p class="admonition-title">Network &amp; Performance Testing References</p>
+<ul>
+<li><strong><a href="../../testing/kategori-f-integration/">Kategori F - Integration Testing</a></strong>: Network connectivity and SIEM integration testing</li>
+<li><strong><a href="../../testing/kategori-e-performance/">Kategori E - Performance Impact Testing</a></strong>: Network performance impact assessment</li>
+<li><strong><a href="../../testing/cross-platform/cross-platform-testing/">Cross-Platform Network Testing</a></strong>: Unified network performance validation</li>
+<li><strong><a href="../../integration/third-party-integration/">Third-Party Integration</a></strong>: Network requirements for SIEM and external tool integration</li>
+</ul>
+</div>
+<hr />
+<h2 id="bandwidth-monitoring-checklist">📋 Bandwidth Monitoring Checklist</h2>
+<div class="demo-checklist">
+<h4>Daily Bandwidth Monitoring</h4>
+<ul>
+<li>[ ] Check console bandwidth dashboard</li>
+<li>[ ] Verify normal traffic patterns</li>
+<li>[ ] Monitor peak usage periods</li>
+<li>[ ] Review alert notifications</li>
+<li>[ ] Validate cloud connectivity</li>
+<li>[ ] Check throttling effectiveness</li>
+</ul>
+</div>
+
+<div class="demo-checklist">
+<h4>Weekly Network Optimization</h4>
+<ul>
+<li>[ ] Analyze weekly traffic trends</li>
+<li>[ ] Review update schedules</li>
+<li>[ ] Adjust bandwidth limits if needed</li>
+<li>[ ] Document any network issues</li>
+<li>[ ] Plan capacity for growth</li>
+<li>[ ] Test network performance</li>
+</ul>
+</div>
+
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1102,7 +2668,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1140,11 +2706,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1195,6 +2756,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>

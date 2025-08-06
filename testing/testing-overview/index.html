@@ -12,13 +12,13 @@
         <meta name="author" content="Salman Mustapa">
       
       
-        <link rel="canonical" href="https://salman-mustapa.github.io/s1-docs/installation/edr-exclusion/">
+        <link rel="canonical" href="https://salman-mustapa.github.io/s1-docs/testing/testing-overview/">
       
       
-        <link rel="prev" href="../edr-install/">
+        <link rel="prev" href="../../security/offline-detection-response/">
       
       
-        <link rel="next" href="../sensor-update/">
+        <link rel="next" href="../kategori-a-realtime/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>File/Folder/App Exclusion from EDR - Dokumentasi SentinelOne EDR</title>
+        <title>Testing Overview - Dokumentasi SentinelOne EDR</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#konfigurasi-filefolderapp-exclusions" class="md-skip">
+        <a href="#testing-validasi-sentinelone-edr" class="md-skip">
           Lewati ke isi
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              File/Folder/App Exclusion from EDR
+              Testing Overview
             
           </span>
         </div>
@@ -248,13 +248,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../edr-install/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../installation/edr-install/" class="md-tabs__link">
           
   
   
@@ -350,11 +348,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../testing/testing-overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -532,31 +532,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -569,7 +566,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Installation and Configuration
@@ -583,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../edr-install/" class="md-nav__link">
+      <a href="../../installation/edr-install/" class="md-nav__link">
         
   
   
@@ -603,32 +600,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    File/Folder/App Exclusion from EDR
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../installation/edr-exclusion/" class="md-nav__link">
         
   
   
@@ -639,218 +614,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Daftar isi
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#implementasi-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementasi Exclusions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Implementasi Exclusions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-akses-menu-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Akses Menu Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-tipe-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Tipe Exclusions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Tipe Exclusions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#file-path-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      File Path Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#folder-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Folder Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#process-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Process Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-hash-based-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Hash-based Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-exclusions-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      Common Exclusions List
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Exclusions List">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#database-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Database Applications
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      Development Tools
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#backup-solutions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Backup Solutions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#error-troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Error Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-exclusion-not-applied" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error: "Exclusion not applied"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-performance-impact-detected" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error: "Performance impact detected"
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-hash-mismatch" class="md-nav__link">
-    <span class="md-ellipsis">
-      Error: "Hash mismatch"
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validasi-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validasi Exclusions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Validasi Exclusions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#test-exclusion-effectiveness" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Exclusion Effectiveness
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitor-impact" class="md-nav__link">
-    <span class="md-ellipsis">
-      Monitor Impact
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -863,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sensor-update/" class="md-nav__link">
+      <a href="../../installation/sensor-update/" class="md-nav__link">
         
   
   
@@ -1282,28 +1045,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1316,7 +1082,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Testing & Validation
@@ -1327,10 +1093,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../testing/testing-overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1341,6 +1129,296 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scope Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Target
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment Focus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#struktur-pengujian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Struktur Pengujian
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Struktur Pengujian">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-a-proteksi-real-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 Pengujian Kategori A: Proteksi Real-Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-b-skenario-offline" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Pengujian Kategori B: Skenario Offline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-c-operational-resilience" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Pengujian Kategori C: Operational Resilience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-d-security-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Pengujian Kategori D: Security Hardening
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-e-performance-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Pengujian Kategori E: Performance Impact
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-f-integration-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Pengujian Kategori F: Integration Testing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeline-pengujian-demonstrasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeline Pengujian Demonstrasi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Timeline Pengujian Demonstrasi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-preparation-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 1: Preparation &amp; Baseline
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-core-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 2: Core Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-advanced-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 3: Advanced Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-4-documentation-demo-prep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 4: Documentation &amp; Demo Prep
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kriteria-keberhasilan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kriteria Keberhasilan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kriteria Keberhasilan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gold-standard-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gold Standard Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-impact-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Impact Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumentasi-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dokumentasi Deliverables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dokumentasi Deliverables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-technical-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Technical Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-executive-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Executive Presentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-demo-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Demo Materials
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-specific-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform-Specific Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Categories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1353,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+      <a href="../kategori-a-realtime/" class="md-nav__link">
         
   
   
@@ -1376,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+      <a href="../kategori-b-offline/" class="md-nav__link">
         
   
   
@@ -1399,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+      <a href="../kategori-c-operational/" class="md-nav__link">
         
   
   
@@ -1422,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+      <a href="../kategori-d-security/" class="md-nav__link">
         
   
   
@@ -1445,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+      <a href="../kategori-e-performance/" class="md-nav__link">
         
   
   
@@ -1468,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+      <a href="../kategori-f-integration/" class="md-nav__link">
         
   
   
@@ -1497,10 +1575,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1509,7 +1590,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
         
           
-          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="">
             
   
   
@@ -1536,7 +1617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+      <a href="../windows/windows-overview/" class="md-nav__link">
         
   
   
@@ -1559,7 +1640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+      <a href="../windows/windows-offline/" class="md-nav__link">
         
   
   
@@ -1582,7 +1663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+      <a href="../windows/windows-performance/" class="md-nav__link">
         
   
   
@@ -1605,7 +1686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+      <a href="../windows/windows-enterprise/" class="md-nav__link">
         
   
   
@@ -1642,10 +1723,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1654,7 +1738,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
         
           
-          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="">
             
   
   
@@ -1681,7 +1765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+      <a href="../linux/linux-overview/" class="md-nav__link">
         
   
   
@@ -1704,7 +1788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+      <a href="../linux/linux-offline/" class="md-nav__link">
         
   
   
@@ -1727,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+      <a href="../linux/linux-performance/" class="md-nav__link">
         
   
   
@@ -1750,7 +1834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+      <a href="../linux/linux-containers/" class="md-nav__link">
         
   
   
@@ -1781,7 +1865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+      <a href="../cross-platform/cross-platform-testing/" class="md-nav__link">
         
   
   
@@ -1853,70 +1937,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#implementasi-exclusions" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Implementasi Exclusions
+      Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Implementasi Exclusions">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scope Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope Testing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-akses-menu-exclusions" class="md-nav__link">
+  <a href="#platform-target" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Akses Menu Exclusions
+      Platform Target
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-tipe-exclusions" class="md-nav__link">
+  <a href="#environment-focus" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Tipe Exclusions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Tipe Exclusions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#file-path-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      File Path Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#folder-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Folder Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#process-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Process Exclusions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-hash-based-exclusions" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Hash-based Exclusions
+      Environment Focus
     </span>
   </a>
   
@@ -1928,37 +1979,64 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#common-exclusions-list" class="md-nav__link">
+  <a href="#struktur-pengujian" class="md-nav__link">
     <span class="md-ellipsis">
-      Common Exclusions List
+      Struktur Pengujian
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Common Exclusions List">
+    <nav class="md-nav" aria-label="Struktur Pengujian">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#database-applications" class="md-nav__link">
+  <a href="#pengujian-kategori-a-proteksi-real-time" class="md-nav__link">
     <span class="md-ellipsis">
-      Database Applications
+      🔥 Pengujian Kategori A: Proteksi Real-Time
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#development-tools" class="md-nav__link">
+  <a href="#pengujian-kategori-b-skenario-offline" class="md-nav__link">
     <span class="md-ellipsis">
-      Development Tools
+      🌐 Pengujian Kategori B: Skenario Offline
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#backup-solutions" class="md-nav__link">
+  <a href="#pengujian-kategori-c-operational-resilience" class="md-nav__link">
     <span class="md-ellipsis">
-      Backup Solutions
+      🛠️ Pengujian Kategori C: Operational Resilience
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-d-security-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Pengujian Kategori D: Security Hardening
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-e-performance-impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Pengujian Kategori E: Performance Impact
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pengujian-kategori-f-integration-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 Pengujian Kategori F: Integration Testing
     </span>
   </a>
   
@@ -1970,37 +2048,46 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#error-troubleshooting" class="md-nav__link">
+  <a href="#timeline-pengujian-demonstrasi" class="md-nav__link">
     <span class="md-ellipsis">
-      Error Troubleshooting
+      Timeline Pengujian Demonstrasi
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Error Troubleshooting">
+    <nav class="md-nav" aria-label="Timeline Pengujian Demonstrasi">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-exclusion-not-applied" class="md-nav__link">
+  <a href="#week-1-preparation-baseline" class="md-nav__link">
     <span class="md-ellipsis">
-      Error: "Exclusion not applied"
+      Week 1: Preparation &amp; Baseline
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-performance-impact-detected" class="md-nav__link">
+  <a href="#week-2-core-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Error: "Performance impact detected"
+      Week 2: Core Testing
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-hash-mismatch" class="md-nav__link">
+  <a href="#week-3-advanced-testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Error: "Hash mismatch"
+      Week 3: Advanced Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-4-documentation-demo-prep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 4: Documentation &amp; Demo Prep
     </span>
   </a>
   
@@ -2012,28 +2099,103 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#validasi-exclusions" class="md-nav__link">
+  <a href="#kriteria-keberhasilan" class="md-nav__link">
     <span class="md-ellipsis">
-      Validasi Exclusions
+      Kriteria Keberhasilan
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Validasi Exclusions">
+    <nav class="md-nav" aria-label="Kriteria Keberhasilan">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#test-exclusion-effectiveness" class="md-nav__link">
+  <a href="#gold-standard-metrics" class="md-nav__link">
     <span class="md-ellipsis">
-      Test Exclusion Effectiveness
+      Gold Standard Metrics
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#monitor-impact" class="md-nav__link">
+  <a href="#business-impact-validation" class="md-nav__link">
     <span class="md-ellipsis">
-      Monitor Impact
+      Business Impact Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumentasi-deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dokumentasi Deliverables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dokumentasi Deliverables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-technical-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Technical Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-executive-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Executive Presentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-demo-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Demo Materials
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platform-specific-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform-Specific Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Categories
     </span>
   </a>
   
@@ -2063,117 +2225,182 @@
   
 
 
-<h1 id="konfigurasi-filefolderapp-exclusions">Konfigurasi File/Folder/App Exclusions</h1>
-<p>Panduan teknis untuk mengatur exclusion dan mencegah false positive pada SentinelOne EDR.</p>
-<h2 id="implementasi-exclusions">Implementasi Exclusions</h2>
-<h3 id="1-akses-menu-exclusions">1. Akses Menu Exclusions</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Console &gt; Settings &gt; Exclusions &gt; Add New
+<h1 id="testing-validasi-sentinelone-edr">Testing &amp; Validasi SentinelOne EDR</h1>
+<h2 id="overview">Overview</h2>
+<p>Dokumentasi lengkap untuk testing dan validasi SentinelOne EDR pada <strong>Windows Server</strong> dan <strong>Linux Server</strong> dengan fokus pada proteksi maksimal dan anomali handling. Semua pengujian dirancang untuk demonstrasi komprehensif kepada stakeholder.</p>
+<h2 id="scope-testing">Scope Testing</h2>
+<h3 id="platform-target">Platform Target</h3>
+<ul>
+<li>✅ <strong>Windows Server</strong> (2019, 2022, Core)</li>
+<li>✅ <strong>Linux Server</strong> (RHEL, Ubuntu Server, CentOS)</li>
+<li>⚠️ <strong>macOS</strong> (Monitoring only - endpoint biasa)</li>
+</ul>
+<h3 id="environment-focus">Environment Focus</h3>
+<ul>
+<li><strong>Production Server Protection</strong></li>
+<li><strong>Critical Infrastructure Security</strong></li>
+<li><strong>High-Availability Systems</strong></li>
+<li><strong>Mission-Critical Applications</strong></li>
+</ul>
+<h2 id="struktur-pengujian">Struktur Pengujian</h2>
+<h3 id="pengujian-kategori-a-proteksi-real-time">🔥 Pengujian Kategori A: Proteksi Real-Time</h3>
+<ul>
+<li><strong>A1</strong>: Malware Detection &amp; Response</li>
+<li><strong>A2</strong>: Behavioral Analysis Testing</li>
+<li><strong>A3</strong>: Zero-Day Threat Simulation</li>
+<li><strong>A4</strong>: Fileless Attack Prevention</li>
+</ul>
+<h3 id="pengujian-kategori-b-skenario-offline">🌐 Pengujian Kategori B: Skenario Offline</h3>
+<ul>
+<li><strong>B1</strong>: Offline Malware Detection</li>
+<li><strong>B2</strong>: Offline Uninstall Attempts</li>
+<li><strong>B3</strong>: Network Disconnection Response</li>
+<li><strong>B4</strong>: Cached Policy Enforcement</li>
+</ul>
+<h3 id="pengujian-kategori-c-operational-resilience">🛠️ Pengujian Kategori C: Operational Resilience</h3>
+<ul>
+<li><strong>C1</strong>: Service Recovery Testing</li>
+<li><strong>C2</strong>: Resource Exhaustion Scenarios</li>
+<li><strong>C3</strong>: System Reboot Validation</li>
+<li><strong>C4</strong>: Update Failure Recovery</li>
+</ul>
+<h3 id="pengujian-kategori-d-security-hardening">🔒 Pengujian Kategori D: Security Hardening</h3>
+<ul>
+<li><strong>D1</strong>: Tamper Protection Testing</li>
+<li><strong>D2</strong>: Privilege Escalation Prevention</li>
+<li><strong>D3</strong>: Agent Self-Protection</li>
+<li><strong>D4</strong>: Configuration Integrity</li>
+</ul>
+<h3 id="pengujian-kategori-e-performance-impact">📊 Pengujian Kategori E: Performance Impact</h3>
+<ul>
+<li><strong>E1</strong>: CPU/Memory Utilization</li>
+<li><strong>E2</strong>: Disk I/O Impact</li>
+<li><strong>E3</strong>: Network Latency Testing</li>
+<li><strong>E4</strong>: Application Performance</li>
+</ul>
+<h3 id="pengujian-kategori-f-integration-testing">🔄 Pengujian Kategori F: Integration Testing</h3>
+<ul>
+<li><strong>F1</strong>: SIEM Integration</li>
+<li><strong>F2</strong>: Active Directory Integration</li>
+<li><strong>F3</strong>: Third-party Tool Compatibility</li>
+<li><strong>F4</strong>: API Functionality</li>
+</ul>
+<h2 id="timeline-pengujian-demonstrasi">Timeline Pengujian Demonstrasi</h2>
+<h3 id="week-1-preparation-baseline">Week 1: Preparation &amp; Baseline</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Day 1-2: Environment Setup
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Day 3-4: Baseline Performance
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Day 5-7: Documentation Prep
 </code></pre></div>
-<h3 id="2-tipe-exclusions">2. Tipe Exclusions</h3>
-<h4 id="file-path-exclusions">File Path Exclusions</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Windows Example</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\Y</span>ourApp<span class="se">\*</span>.exe
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>C:<span class="se">\T</span>emp<span class="se">\*</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Linux Example</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>/opt/yourapp/*
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>/tmp/*
+<h3 id="week-2-core-testing">Week 2: Core Testing</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Day 1-2: Kategori A (Real-Time Protection)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Day 3-4: Kategori B (Offline Scenarios)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Day 5-7: Kategori C (Operational Resilience)
 </code></pre></div>
-<h4 id="folder-exclusions">Folder Exclusions</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Windows</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\D</span>atabase<span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>C:<span class="se">\L</span>ogs<span class="se">\</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># Linux</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>/var/log/
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>/opt/database/
+<h3 id="week-3-advanced-testing">Week 3: Advanced Testing</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Day 1-2: Kategori D (Security Hardening)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Day 3-4: Kategori E (Performance Impact)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Day 5-7: Kategori F (Integration Testing)
 </code></pre></div>
-<h4 id="process-exclusions">Process Exclusions</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Process name</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>mysql.exe
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>postgres
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>java.exe
+<h3 id="week-4-documentation-demo-prep">Week 4: Documentation &amp; Demo Prep</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Day 1-3: Results Compilation
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Day 4-5: Demo Preparation
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Day 6-7: Stakeholder Presentation
 </code></pre></div>
-<h3 id="3-hash-based-exclusions">3. Hash-based Exclusions</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># SHA1 hash untuk file tertentu</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>SHA1:<span class="w"> </span>a1b2c3d4e5f6...
-</code></pre></div>
-<h2 id="common-exclusions-list">Common Exclusions List</h2>
-<h3 id="database-applications">Database Applications</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># MySQL</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\M</span>ySQL<span class="se">\*</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>/var/lib/mysql/*
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># PostgreSQL</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\P</span>ostgreSQL<span class="se">\*</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>/var/lib/postgresql/*
-</code></pre></div>
-<h3 id="development-tools">Development Tools</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Visual Studio</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\M</span>icrosoft<span class="w"> </span>Visual<span class="w"> </span>Studio<span class="se">\*</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Git</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\G</span>it<span class="se">\*</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>/usr/bin/git
-</code></pre></div>
-<h3 id="backup-solutions">Backup Solutions</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Veeam</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\V</span>eeam<span class="se">\*</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># CommVault</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>C:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="se">\C</span>ommVault<span class="se">\*</span>
-</code></pre></div>
-<h2 id="error-troubleshooting">Error Troubleshooting</h2>
-<h3 id="error-exclusion-not-applied">Error: "Exclusion not applied"</h3>
-<p><strong>Penyebab:</strong>
-- Path salah
-- Agent belum sync
-- Policy conflict</p>
-<p><strong>Solusi:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Verify agent connection</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sentinelctl<span class="w"> </span>status
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Force policy update</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>sentinelctl<span class="w"> </span>management<span class="w"> </span>update-policy
-</code></pre></div></p>
-<h3 id="error-performance-impact-detected">Error: "Performance impact detected"</h3>
-<p><strong>Penyebab:</strong>
-- Over-exclusion
-- Wildcards terlalu luas</p>
-<p><strong>Solusi:</strong>
-- Review exclusion list
-- Gunakan path specific
-- Hapus exclusion yang tidak perlu</p>
-<h3 id="error-hash-mismatch">Error: "Hash mismatch"</h3>
-<p><strong>Penyebab:</strong>
-- File berubah setelah hash dibuat
-- Hash calculation error</p>
-<p><strong>Solusi:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Recalculate hash</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Windows</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>certutil<span class="w"> </span>-hashfile<span class="w"> </span><span class="s2">&quot;C:\path\to\file.exe&quot;</span><span class="w"> </span>SHA1
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># Linux</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>sha1sum<span class="w"> </span>/path/to/file
-</code></pre></div></p>
-<h2 id="validasi-exclusions">Validasi Exclusions</h2>
-<h3 id="test-exclusion-effectiveness">Test Exclusion Effectiveness</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Check if file is excluded</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sentinelctl<span class="w"> </span>exclusions<span class="w"> </span><span class="nb">test</span><span class="w"> </span><span class="s2">&quot;C:\path\to\file.exe&quot;</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># List active exclusions</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>sentinelctl<span class="w"> </span>exclusions<span class="w"> </span>list
-</code></pre></div>
-<h3 id="monitor-impact">Monitor Impact</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Check scanning activity</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sentinelctl<span class="w"> </span>logs<span class="w"> </span>scan<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-100
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Monitor CPU usage</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>sentinelctl<span class="w"> </span>stats<span class="w"> </span>cpu
-</code></pre></div>
+<h2 id="kriteria-keberhasilan">Kriteria Keberhasilan</h2>
+<h3 id="gold-standard-metrics">Gold Standard Metrics</h3>
+<table>
+<thead>
+<tr>
+<th>Metrik</th>
+<th>Windows Server</th>
+<th>Linux Server</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detection Rate</td>
+<td>&gt;99.5%</td>
+<td>&gt;99.5%</td>
+<td>&gt;99%</td>
+</tr>
+<tr>
+<td>Response Time</td>
+<td>&lt;3s</td>
+<td>&lt;3s</td>
+<td>&lt;5s</td>
+</tr>
+<tr>
+<td>False Positive</td>
+<td>&lt;0.5%</td>
+<td>&lt;0.5%</td>
+<td>&lt;1%</td>
+</tr>
+<tr>
+<td>CPU Impact</td>
+<td>&lt;5%</td>
+<td>&lt;5%</td>
+<td>&lt;10%</td>
+</tr>
+<tr>
+<td>Memory Impact</td>
+<td>&lt;200MB</td>
+<td>&lt;150MB</td>
+<td>&lt;500MB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="business-impact-validation">Business Impact Validation</h3>
+<ul>
+<li>✅ Zero service interruption during normal operations</li>
+<li>✅ Minimal performance degradation</li>
+<li>✅ Complete offline protection capability</li>
+<li>✅ Rapid threat response and containment</li>
+<li>✅ Comprehensive audit trail for compliance</li>
+</ul>
+<h2 id="dokumentasi-deliverables">Dokumentasi Deliverables</h2>
+<h3 id="1-technical-documentation">1. Technical Documentation</h3>
+<ul>
+<li>Detailed test procedures per kategori</li>
+<li>Results and findings report</li>
+<li>Performance benchmarking data</li>
+<li>Configuration recommendations</li>
+</ul>
+<h3 id="2-executive-presentation">2. Executive Presentation</h3>
+<ul>
+<li>Executive summary dashboard</li>
+<li>Risk assessment matrix</li>
+<li>ROI justification</li>
+<li>Implementation roadmap</li>
+</ul>
+<h3 id="3-demo-materials">3. Demo Materials</h3>
+<ul>
+<li>Live demonstration scripts</li>
+<li>Video recordings of key tests</li>
+<li>Before/after comparisons</li>
+<li>Incident response workflows</li>
+</ul>
+<h2 id="quick-navigation">Quick Navigation</h2>
+<h3 id="platform-specific-testing">Platform-Specific Testing</h3>
+<ul>
+<li><a href="../windows/windows-overview/">Windows Server Testing</a></li>
+<li><a href="../linux/linux-overview/">Linux Server Testing</a></li>
+<li><a href="../cross-platform/cross-platform-testing/">Cross-Platform Scenarios</a></li>
+</ul>
+<h3 id="testing-categories">Testing Categories</h3>
+<ul>
+<li><a href="../kategori-a-realtime/">Kategori A: Real-Time Protection</a></li>
+<li><a href="../kategori-b-offline/">Kategori B: Offline Scenarios</a></li>
+<li><a href="../kategori-c-operational/">Kategori C: Operational Resilience</a></li>
+<li><a href="../kategori-d-security/">Kategori D: Security Hardening</a></li>
+<li><a href="../kategori-e-performance/">Kategori E: Performance Impact</a></li>
+<li><a href="../kategori-f-integration/">Kategori F: Integration Testing</a></li>
+</ul>
 <hr />
-<p><em>Untuk bantuan lebih lanjut, silakan hubungi tim keamanan Anda.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<div class="admonition success">
+<p class="admonition-title">Demo Ready Checklist</p>
+<p>Semua pengujian dirancang untuk memberikan confidence penuh kepada stakeholder bahwa SentinelOne EDR memberikan proteksi maksimal untuk infrastruktur server kritis.</p>
+</div>
 
 
 
@@ -2194,7 +2421,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     

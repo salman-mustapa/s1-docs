@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -227,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -405,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -907,20 +1025,485 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atur-deteksi" class="md-nav__link">
+  <a href="#arsitektur-deteksi-ancaman" class="md-nav__link">
     <span class="md-ellipsis">
-      Atur Deteksi
+      🎯 Arsitektur Deteksi Ancaman
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#strategi-deteksi" class="md-nav__link">
+  <a href="#konfigurasi-deteksi-melalui-management-console" class="md-nav__link">
     <span class="md-ellipsis">
-      Strategi Deteksi
+      🔧 Konfigurasi Deteksi Melalui Management Console
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔧 Konfigurasi Deteksi Melalui Management Console">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-akses-pengaturan-deteksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Akses Pengaturan Deteksi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-konfigurasi-detection-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Konfigurasi Detection Modes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Konfigurasi Detection Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mode-proteksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mode Proteksi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pengaturan-sensitivitas-deteksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pengaturan Sensitivitas Deteksi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Pengaturan Sensitivitas Deteksi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tingkat-sensitivitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tingkat Sensitivitas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konfigurasi-detection-rules-via-sentinelctl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Konfigurasi Detection Rules via sentinelctl
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Konfigurasi Detection Rules via sentinelctl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-melihat-konfigurasi-deteksi-saat-ini" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Melihat Konfigurasi Deteksi Saat Ini
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mengatur-detection-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Mengatur Detection Sensitivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mengelola-detection-exclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mengelola Detection Exclusions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-detection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ Advanced Detection Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎛️ Advanced Detection Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-behavioral-analysis-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Behavioral Analysis Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Behavioral Analysis Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#behavioral-indicators-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavioral Indicators Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-behavioral-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Behavioral Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-machine-learning-model-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Machine Learning Model Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-network-detection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Network Detection Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-response-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Detection Response Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Detection Response Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-response-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automated Response Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Automated Response Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengatur-response-per-threat-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mengatur Response per Threat Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-alert-and-notification-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Alert and Notification Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Alert and Notification Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#siem-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      SIEM Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-performance-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Detection Performance Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Detection Performance Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-monitoring-detection-effectiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Monitoring Detection Effectiveness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-performance-impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Performance Impact Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-hunting-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Threat Hunting Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Threat Hunting Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-custom-hunting-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Custom Hunting Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-automated-threat-hunting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Automated Threat Hunting Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Detection Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Detection Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-false-positive-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. False Positive Reduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-coverage-gap-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Coverage Gap Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-dan-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation dan Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation dan Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-detection-testing-dengan-mitre-attck" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Detection Testing dengan MITRE ATT&amp;CK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-detection-validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Detection Validation Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Detection Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teknis-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teknis Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-strategi-deteksi-yang-efektif" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Strategi Deteksi yang Efektif
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-monitoring-dan-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Monitoring dan Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-incident-response-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Incident Response Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-detection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Detection Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnostic Commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -986,6 +1569,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1013,20 +2144,485 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#atur-deteksi" class="md-nav__link">
+  <a href="#arsitektur-deteksi-ancaman" class="md-nav__link">
     <span class="md-ellipsis">
-      Atur Deteksi
+      🎯 Arsitektur Deteksi Ancaman
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#strategi-deteksi" class="md-nav__link">
+  <a href="#konfigurasi-deteksi-melalui-management-console" class="md-nav__link">
     <span class="md-ellipsis">
-      Strategi Deteksi
+      🔧 Konfigurasi Deteksi Melalui Management Console
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔧 Konfigurasi Deteksi Melalui Management Console">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-akses-pengaturan-deteksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Akses Pengaturan Deteksi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-konfigurasi-detection-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Konfigurasi Detection Modes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Konfigurasi Detection Modes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mode-proteksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mode Proteksi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pengaturan-sensitivitas-deteksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pengaturan Sensitivitas Deteksi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Pengaturan Sensitivitas Deteksi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tingkat-sensitivitas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tingkat Sensitivitas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konfigurasi-detection-rules-via-sentinelctl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Konfigurasi Detection Rules via sentinelctl
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Konfigurasi Detection Rules via sentinelctl">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-melihat-konfigurasi-deteksi-saat-ini" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Melihat Konfigurasi Deteksi Saat Ini
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mengatur-detection-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Mengatur Detection Sensitivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mengelola-detection-exclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mengelola Detection Exclusions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-detection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ Advanced Detection Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎛️ Advanced Detection Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-behavioral-analysis-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Behavioral Analysis Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Behavioral Analysis Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#behavioral-indicators-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavioral Indicators Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-behavioral-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Behavioral Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-machine-learning-model-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Machine Learning Model Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-network-detection-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Network Detection Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-response-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚨 Detection Response Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 Detection Response Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-response-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automated Response Actions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Automated Response Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengatur-response-per-threat-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mengatur Response per Threat Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-alert-and-notification-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Alert and Notification Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Alert and Notification Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#siem-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      SIEM Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-performance-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Detection Performance Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Detection Performance Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-monitoring-detection-effectiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Monitoring Detection Effectiveness
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-performance-impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Performance Impact Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-hunting-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Threat Hunting Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Threat Hunting Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-custom-hunting-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Custom Hunting Queries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-automated-threat-hunting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Automated Threat Hunting Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Detection Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Detection Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-false-positive-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. False Positive Reduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-coverage-gap-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Coverage Gap Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-dan-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation dan Testing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation dan Testing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-detection-testing-dengan-mitre-attck" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Detection Testing dengan MITRE ATT&amp;CK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-detection-validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Detection Validation Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Detection Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teknis-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teknis Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operational Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-strategi-deteksi-yang-efektif" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Strategi Deteksi yang Efektif
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-monitoring-dan-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Monitoring dan Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-incident-response-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Incident Response Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-detection-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Detection Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnostic-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagnostic Commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1050,38 +2646,515 @@
 
 
 <h1 id="konfigurasi-deteksi-ancaman-di-sentinelone">Konfigurasi Deteksi Ancaman di SentinelOne</h1>
-<p>Panduan ini menjelaskan cara mendeteksi ancaman dan mengatur aturan deteksi pada SentinelOne.</p>
-<h2 id="atur-deteksi">Atur Deteksi</h2>
-<ol>
-<li><strong>Masuk ke Menu Threat Detection</strong></li>
-<li>
-<p>Navigasi ke <strong>Security</strong> &gt; <strong>Threat Detection</strong></p>
-</li>
-<li>
-<p><strong>Set Sensitivitas</strong></p>
-</li>
-<li>
-<p>"<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg></span>" Set pengaturan sensitivitas sesuai kebutuhan.</p>
-</li>
-<li>
-<p><strong>Review dan Simpan</strong></p>
-</li>
-<li>Pastikan semua pengaturan sudah sesuai sebelum menyimpan.</li>
-</ol>
-<h2 id="strategi-deteksi">Strategi Deteksi</h2>
+<p>Panduan komprehensif untuk mengkonfigurasi, mengelola, dan mengoptimalkan sistem deteksi ancaman SentinelOne EDR.</p>
+<hr />
+<h2 id="arsitektur-deteksi-ancaman">🎯 Arsitektur Deteksi Ancaman</h2>
+<pre class="mermaid"><code>flowchart TB
+    subgraph "Threat Detection Engine"
+        STATIC["Static Analysis&lt;br/&gt;File Signatures"]
+        DYNAMIC["Dynamic Analysis&lt;br/&gt;Behavioral Engine"]
+        HEURISTIC["Heuristic Analysis&lt;br/&gt;Pattern Recognition"]
+        ML["Machine Learning&lt;br/&gt;AI-based Detection"]
+    end
+
+    subgraph "Detection Sources"
+        FILES["File Operations&lt;br/&gt;Real-time Scanning"]
+        NETWORK["Network Traffic&lt;br/&gt;Communication Analysis"]
+        PROCESS["Process Behavior&lt;br/&gt;Execution Monitoring"]
+        REGISTRY["Registry Changes&lt;br/&gt;System Modifications"]
+    end
+
+    subgraph "Response Actions"
+        QUARANTINE["Quarantine&lt;br/&gt;Isolate Threats"]
+        TERMINATE["Terminate&lt;br/&gt;Stop Processes"]
+        ALERT["Alert Generation&lt;br/&gt;Notify Analysts"]
+        ROLLBACK["Rollback&lt;br/&gt;Undo Changes"]
+    end
+
+    FILES --&gt; STATIC
+    FILES --&gt; DYNAMIC
+    NETWORK --&gt; HEURISTIC
+    PROCESS --&gt; DYNAMIC
+    REGISTRY --&gt; HEURISTIC
+
+    STATIC --&gt; ML
+    DYNAMIC --&gt; ML
+    HEURISTIC --&gt; ML
+
+    ML --&gt; QUARANTINE
+    ML --&gt; TERMINATE
+    ML --&gt; ALERT
+    ML --&gt; ROLLBACK
+
+    style ML fill:#e3f2fd
+    style QUARANTINE fill:#e8f5e8
+    style ALERT fill:#fff3e0</code></pre>
+<hr />
+<h2 id="konfigurasi-deteksi-melalui-management-console">🔧 Konfigurasi Deteksi Melalui Management Console</h2>
+<h3 id="1-akses-pengaturan-deteksi">1. Akses Pengaturan Deteksi</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Console Navigation:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Management Console &gt; Sentinels &gt; [Select Site/Group] &gt; Policies &gt; Threat Detection
+</code></pre></div>
+<h3 id="2-konfigurasi-detection-modes">2. Konfigurasi Detection Modes</h3>
+<h4 id="mode-proteksi">Mode Proteksi</h4>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Deskripsi</th>
+<th>Penggunaan</th>
+<th>Dampak Performa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Detect Only</strong></td>
+<td>Hanya deteksi, tidak blocking</td>
+<td>Testing, compliance</td>
+<td>Minimal</td>
+</tr>
+<tr>
+<td><strong>Protect</strong></td>
+<td>Deteksi + blocking otomatis</td>
+<td>Production (recommended)</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>Advanced</strong></td>
+<td>Full protection + advanced features</td>
+<td>High-security environments</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Konfigurasi melalui Console:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Policies &gt; Protection Mode
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>┌─ Detection Mode: Protect
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├─ Real-time Protection: Enabled
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├─ Behavioral Analysis: Enabled
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>└─ Cloud Intelligence: Enabled
+</code></pre></div></p>
+<h3 id="3-pengaturan-sensitivitas-deteksi">3. Pengaturan Sensitivitas Deteksi</h3>
+<h4 id="tingkat-sensitivitas">Tingkat Sensitivitas</h4>
+<p><strong>Low Sensitivity (Recommended for Production):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Threshold Settings:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>┌─ False Positive Rate: &lt; 0.1%
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├─ Detection Confidence: &gt; 90%
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├─ Behavioral Score: &gt; 8.0
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>└─ Machine Learning Threshold: Conservative
+</code></pre></div></p>
+<p><strong>Medium Sensitivity (Balanced):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Threshold Settings:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>┌─ False Positive Rate: &lt; 0.5%
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├─ Detection Confidence: &gt; 85%
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├─ Behavioral Score: &gt; 6.5
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>└─ Machine Learning Threshold: Moderate
+</code></pre></div></p>
+<p><strong>High Sensitivity (Security-focused):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Threshold Settings:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>┌─ False Positive Rate: &lt; 1.0%
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├─ Detection Confidence: &gt; 80%
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├─ Behavioral Score: &gt; 5.0
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>└─ Machine Learning Threshold: Aggressive
+</code></pre></div></p>
+<hr />
+<h2 id="konfigurasi-detection-rules-via-sentinelctl">⚙️ Konfigurasi Detection Rules via sentinelctl</h2>
+<h3 id="1-melihat-konfigurasi-deteksi-saat-ini">1. Melihat Konfigurasi Deteksi Saat Ini</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Linux/macOS</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>policy<span class="w"> </span>show<span class="w"> </span>--section<span class="w"> </span>detection
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Windows</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="s2">&quot;C:\Program Files\SentinelOne\Sentinel Agent\SentinelCtl.exe&quot;</span><span class="w"> </span>policy<span class="w"> </span>show<span class="w"> </span>--section<span class="w"> </span>detection
+</code></pre></div>
+<h3 id="2-mengatur-detection-sensitivity">2. Mengatur Detection Sensitivity</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Set detection sensitivity level</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>sensitivity<span class="w"> </span>--level<span class="w"> </span>medium
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Enable/disable specific detection types</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--type<span class="w"> </span>behavioral
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--type<span class="w"> </span>static
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--type<span class="w"> </span>heuristic
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># Configure detection thresholds</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>threshold<span class="w"> </span>--behavioral<span class="w"> </span><span class="m">7</span>.0<span class="w"> </span>--confidence<span class="w"> </span><span class="m">85</span>
+</code></pre></div>
+<h3 id="3-mengelola-detection-exclusions">3. Mengelola Detection Exclusions</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Add process exclusion</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>exclusions<span class="w"> </span>add<span class="w"> </span>--type<span class="w"> </span>process<span class="w"> </span>--value<span class="w"> </span><span class="s2">&quot;trusted_app.exe&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Add path exclusion</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>exclusions<span class="w"> </span>add<span class="w"> </span>--type<span class="w"> </span>path<span class="w"> </span>--value<span class="w"> </span><span class="s2">&quot;/opt/trusted_software/*&quot;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># Add hash exclusion</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>exclusions<span class="w"> </span>add<span class="w"> </span>--type<span class="w"> </span><span class="nb">hash</span><span class="w"> </span>--value<span class="w"> </span><span class="s2">&quot;sha1:a1b2c3d4e5f6...&quot;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># List all exclusions</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>exclusions<span class="w"> </span>list
+</code></pre></div>
+<hr />
+<h2 id="advanced-detection-configuration">🎛️ Advanced Detection Configuration</h2>
+<h3 id="1-behavioral-analysis-tuning">1. Behavioral Analysis Tuning</h3>
+<h4 id="behavioral-indicators-configuration">Behavioral Indicators Configuration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Configure behavioral detection parameters</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>behavioral<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s2">{</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="s2">    &#39;process_injection&#39;: {</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="s2">        &#39;enabled&#39;: true,</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="s2">        &#39;sensitivity&#39;: &#39;medium&#39;,</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="s2">        &#39;threshold&#39;: 7.5</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="s2">    },</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="s2">    &#39;credential_access&#39;: {</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="s2">        &#39;enabled&#39;: true,</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="s2">        &#39;sensitivity&#39;: &#39;high&#39;,</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="s2">        &#39;threshold&#39;: 8.0</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="s2">    },</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="s2">    &#39;lateral_movement&#39;: {</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="s2">        &#39;enabled&#39;: true,</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="s2">        &#39;sensitivity&#39;: &#39;medium&#39;,</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="s2">        &#39;threshold&#39;: 7.0</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="s2">    },</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="s2">    &#39;persistence&#39;: {</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="s2">        &#39;enabled&#39;: true,</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="s2">        &#39;sensitivity&#39;: &#39;high&#39;,</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="s2">        &#39;threshold&#39;: 8.5</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="s2">    }</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="s2">}&quot;</span>
+</code></pre></div>
+<h4 id="custom-behavioral-rules">Custom Behavioral Rules</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="nt">&quot;custom_rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Suspicious PowerShell Activity&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Detect encoded PowerShell commands&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">            </span><span class="nt">&quot;conditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">                </span><span class="p">{</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">                    </span><span class="nt">&quot;process_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;powershell.exe&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">                    </span><span class="nt">&quot;command_line_contains&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;-EncodedCommand&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">                    </span><span class="nt">&quot;parent_process_not&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;explorer.exe&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cmd.exe&quot;</span><span class="p">]</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">            </span><span class="p">],</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;alert_and_log&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">            </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">            </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Unusual Network Beaconing&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">            </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Detect consistent outbound connections&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">            </span><span class="nt">&quot;conditions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">                </span><span class="p">{</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">                    </span><span class="nt">&quot;network_frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&gt; 10 connections per minute&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">                    </span><span class="nt">&quot;destination_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;external&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">                    </span><span class="nt">&quot;duration&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&gt; 5 minutes&quot;</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="w">            </span><span class="p">],</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">            </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;alert&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">            </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;medium&quot;</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="2-machine-learning-model-tuning">2. Machine Learning Model Tuning</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Configure ML detection parameters</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>ml<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="s2">{</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="s2">    &#39;model_update_frequency&#39;: &#39;24h&#39;,</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="s2">    &#39;confidence_threshold&#39;: 0.85,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="s2">    &#39;false_positive_learning&#39;: true,</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="s2">    &#39;local_learning&#39;: true,</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="s2">    &#39;cloud_intelligence&#39;: true</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="s2">}&quot;</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="c1"># View ML model status</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>ml<span class="w"> </span>status
+</code></pre></div>
+<h3 id="3-network-detection-configuration">3. Network Detection Configuration</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Configure network monitoring</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>network<span class="w"> </span>--enable
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Set network detection parameters</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>network<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="s2">{</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="s2">    &#39;monitor_dns&#39;: true,</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="s2">    &#39;monitor_http&#39;: true,</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="s2">    &#39;monitor_ssl&#39;: true,</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="s2">    &#39;deep_packet_inspection&#39;: false,</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="s2">    &#39;c2_detection&#39;: true,</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="s2">    &#39;data_exfiltration_detection&#39;: true</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="s2">}&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="detection-response-configuration">🚨 Detection Response Configuration</h2>
+<h3 id="1-automated-response-actions">1. Automated Response Actions</h3>
+<h4 id="mengatur-response-per-threat-type">Mengatur Response per Threat Type</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Configure response actions</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>response<span class="w"> </span>configure<span class="w"> </span>--threat-type<span class="w"> </span>malware<span class="w"> </span>--action<span class="w"> </span>quarantine
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>response<span class="w"> </span>configure<span class="w"> </span>--threat-type<span class="w"> </span>suspicious<span class="w"> </span>--action<span class="w"> </span>alert
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>response<span class="w"> </span>configure<span class="w"> </span>--threat-type<span class="w"> </span>pua<span class="w"> </span>--action<span class="w"> </span>log
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1"># Advanced response configuration</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>response<span class="w"> </span>advanced<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="s2">{</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="s2">    &#39;malware&#39;: {</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="s2">        &#39;action&#39;: &#39;quarantine_and_rollback&#39;,</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="s2">        &#39;notify&#39;: true,</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="s2">        &#39;isolate_endpoint&#39;: false</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="s2">    },</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="s2">    &#39;ransomware&#39;: {</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="s2">        &#39;action&#39;: &#39;terminate_and_quarantine&#39;,</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="s2">        &#39;notify&#39;: true,</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="s2">        &#39;isolate_endpoint&#39;: true,</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="s2">        &#39;backup_files&#39;: true</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="s2">    },</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="s2">    &#39;lateral_movement&#39;: {</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="s2">        &#39;action&#39;: &#39;alert_and_monitor&#39;,</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="s2">        &#39;notify&#39;: true,</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="s2">        &#39;isolate_endpoint&#39;: false,</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="s2">        &#39;collect_forensics&#39;: true</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="s2">    }</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="s2">}&quot;</span>
+</code></pre></div>
+<h3 id="2-alert-and-notification-configuration">2. Alert and Notification Configuration</h3>
+<h4 id="siem-integration">SIEM Integration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Configure SIEM forwarding</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>siem<span class="w"> </span>--type<span class="w"> </span>splunk<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="s2">{</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="s2">    &#39;endpoint&#39;: &#39;https://splunk.company.com:8088&#39;,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="s2">    &#39;token&#39;: &#39;your-hec-token&#39;,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="s2">    &#39;index&#39;: &#39;sentinelone&#39;,</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="s2">    &#39;source&#39;: &#39;sentinelone_edr&#39;,</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="s2">    &#39;sourcetype&#39;: &#39;sentinelone:threat&#39;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="s2">}&quot;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="c1"># Configure email notifications</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>notifications<span class="w"> </span>email<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="s2">{</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="s2">    &#39;smtp_server&#39;: &#39;mail.company.com&#39;,</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="s2">    &#39;port&#39;: 587,</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="s2">    &#39;username&#39;: &#39;alerts@company.com&#39;,</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="s2">    &#39;recipients&#39;: [</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="s2">        &#39;security-team@company.com&#39;,</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="s2">        &#39;soc@company.com&#39;</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="s2">    ],</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="s2">    &#39;severity_threshold&#39;: &#39;medium&#39;</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="s2">}&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="detection-performance-monitoring">📊 Detection Performance Monitoring</h2>
+<h3 id="1-monitoring-detection-effectiveness">1. Monitoring Detection Effectiveness</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Detection statistics</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>stats<span class="w"> </span>detection<span class="w"> </span>--period<span class="w"> </span>24h
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># Output example:</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>Detection<span class="w"> </span>Statistics<span class="w"> </span><span class="o">(</span>Last<span class="w"> </span><span class="m">24</span><span class="w"> </span>hours<span class="o">)</span>:
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>┌────────────────────┬─────────┬─────────────┬──────────────┐
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>│<span class="w"> </span>Detection<span class="w"> </span>Type<span class="w">     </span>│<span class="w"> </span>Count<span class="w">   </span>│<span class="w"> </span>True<span class="w"> </span>Pos.<span class="w">   </span>│<span class="w"> </span>False<span class="w"> </span>Pos.<span class="w">   </span>│
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>├────────────────────┼─────────┼─────────────┼──────────────┤
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>│<span class="w"> </span>Static<span class="w"> </span>Analysis<span class="w">    </span>│<span class="w"> </span><span class="m">1</span>,247<span class="w">   </span>│<span class="w"> </span><span class="m">1</span>,245<span class="w">       </span>│<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="o">(</span><span class="m">0</span>.16%<span class="o">)</span><span class="w">    </span>│
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>│<span class="w"> </span>Behavioral<span class="w">         </span>│<span class="w"> </span><span class="m">89</span><span class="w">      </span>│<span class="w"> </span><span class="m">85</span><span class="w">          </span>│<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">(</span><span class="m">4</span>.49%<span class="o">)</span><span class="w">    </span>│
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>│<span class="w"> </span>Machine<span class="w"> </span>Learning<span class="w">   </span>│<span class="w"> </span><span class="m">156</span><span class="w">     </span>│<span class="w"> </span><span class="m">152</span><span class="w">         </span>│<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">(</span><span class="m">2</span>.56%<span class="o">)</span><span class="w">    </span>│
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>│<span class="w"> </span>Heuristic<span class="w">         </span>│<span class="w"> </span><span class="m">234</span><span class="w">     </span>│<span class="w"> </span><span class="m">230</span><span class="w">         </span>│<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="o">(</span><span class="m">1</span>.71%<span class="o">)</span><span class="w">    </span>│
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>└────────────────────┴─────────┴─────────────┴──────────────┘
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>Total<span class="w"> </span>Detections:<span class="w"> </span><span class="m">1</span>,726
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>Overall<span class="w"> </span>Accuracy:<span class="w"> </span><span class="m">98</span>.2%
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>False<span class="w"> </span>Positive<span class="w"> </span>Rate:<span class="w"> </span><span class="m">0</span>.8%
+</code></pre></div>
+<h3 id="2-performance-impact-assessment">2. Performance Impact Assessment</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Detection performance impact</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>performance<span class="w"> </span>detection
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>Detection<span class="w"> </span>Performance<span class="w"> </span>Impact:
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>┌─────────────────────┬─────────────┬─────────────┐
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>│<span class="w"> </span>Metric<span class="w">              </span>│<span class="w"> </span>Average<span class="w">     </span>│<span class="w"> </span>Peak<span class="w">        </span>│
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>├─────────────────────┼─────────────┼─────────────┤
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>│<span class="w"> </span>CPU<span class="w"> </span>Usage<span class="w">           </span>│<span class="w"> </span><span class="m">3</span>.2%<span class="w">        </span>│<span class="w"> </span><span class="m">8</span>.1%<span class="w">        </span>│
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>│<span class="w"> </span>Memory<span class="w"> </span>Usage<span class="w">        </span>│<span class="w"> </span><span class="m">245</span><span class="w"> </span>MB<span class="w">      </span>│<span class="w"> </span><span class="m">312</span><span class="w"> </span>MB<span class="w">      </span>│
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>│<span class="w"> </span>Disk<span class="w"> </span>I/O<span class="w">            </span>│<span class="w"> </span><span class="m">2</span>.1<span class="w"> </span>MB/s<span class="w">    </span>│<span class="w"> </span><span class="m">15</span>.8<span class="w"> </span>MB/s<span class="w">   </span>│
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>│<span class="w"> </span>Detection<span class="w"> </span>Latency<span class="w">   </span>│<span class="w"> </span><span class="m">1</span>.2s<span class="w">        </span>│<span class="w"> </span><span class="m">3</span>.8s<span class="w">        </span>│
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>└─────────────────────┴─────────────┴─────────────┘
+</code></pre></div>
+<hr />
+<h2 id="threat-hunting-integration">🔍 Threat Hunting Integration</h2>
+<h3 id="1-custom-hunting-queries">1. Custom Hunting Queries</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">-- Deep Visibility Query Examples</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="c1">-- Detect suspicious process chains</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span><span class="w"> </span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span><span class="n">cmdline</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%powershell%&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdline</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%-enc%&#39;</span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">   </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">cmdline</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%wmic%&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdline</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%process%&#39;</span><span class="p">)</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">   </span><span class="k">AND</span><span class="w"> </span><span class="n">parent_name</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;explorer.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cmd.exe&#39;</span><span class="p">)</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">timestamp</span><span class="w"> </span><span class="k">DESC</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="c1">-- Identify lateral movement attempts</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">src_ip</span><span class="p">,</span><span class="w"> </span><span class="n">dst_ip</span><span class="p">,</span><span class="w"> </span><span class="n">dst_port</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">connection_count</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="k">FROM</span><span class="w"> </span><span class="n">network_connections</span><span class="w"> </span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">dst_port</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">135</span><span class="p">,</span><span class="w"> </span><span class="mi">139</span><span class="p">,</span><span class="w"> </span><span class="mi">445</span><span class="p">,</span><span class="w"> </span><span class="mi">3389</span><span class="p">)</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">src_ip</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">dst_ip</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="k">timestamp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">NOW</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="s1">&#39;1 hour&#39;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">src_ip</span><span class="p">,</span><span class="w"> </span><span class="n">dst_ip</span><span class="p">,</span><span class="w"> </span><span class="n">dst_port</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">connection_count</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="2-automated-threat-hunting-rules">2. Automated Threat Hunting Rules</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># Deploy custom hunting rules</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>deploy<span class="w"> </span>--rule-file<span class="w"> </span>custom_hunting_rules.json
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1"># Schedule automated hunting</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>schedule<span class="w"> </span>--rule<span class="w"> </span><span class="s2">&quot;lateral_movement_detection&quot;</span><span class="w"> </span>--interval<span class="w"> </span><span class="s2">&quot;1h&quot;</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>schedule<span class="w"> </span>--rule<span class="w"> </span><span class="s2">&quot;credential_dumping&quot;</span><span class="w"> </span>--interval<span class="w"> </span><span class="s2">&quot;30m&quot;</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1"># View hunting results</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>results<span class="w"> </span>--rule<span class="w"> </span><span class="s2">&quot;lateral_movement_detection&quot;</span><span class="w"> </span>--last<span class="w"> </span>24h
+</code></pre></div>
+<hr />
+<h2 id="detection-optimization">📈 Detection Optimization</h2>
+<h3 id="1-false-positive-reduction">1. False Positive Reduction</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># Analyze false positives</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>analytics<span class="w"> </span>false-positives<span class="w"> </span>--period<span class="w"> </span>7d
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1"># Add whitelist based on analysis</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>whitelist<span class="w"> </span>add<span class="w"> </span>--process<span class="w"> </span><span class="s2">&quot;legitimate_app.exe&quot;</span><span class="w"> </span>--reason<span class="w"> </span><span class="s2">&quot;Business application&quot;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>whitelist<span class="w"> </span>add<span class="w"> </span>--hash<span class="w"> </span><span class="s2">&quot;sha256:abc123...&quot;</span><span class="w"> </span>--reason<span class="w"> </span><span class="s2">&quot;Signed company binary&quot;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1"># Tune detection sensitivity based on environment</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>detection<span class="w"> </span>tune<span class="w"> </span>--environment<span class="w"> </span>production<span class="w"> </span>--target-fp-rate<span class="w"> </span><span class="m">0</span>.1
+</code></pre></div>
+<h3 id="2-coverage-gap-analysis">2. Coverage Gap Analysis</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Identify detection gaps</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>analytics<span class="w"> </span>gaps<span class="w"> </span>--assess-coverage
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># Coverage report example:</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>Detection<span class="w"> </span>Coverage<span class="w"> </span>Assessment:
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>┌──────────────────────┬─────────────┬─────────────┐
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>│<span class="w"> </span>Attack<span class="w"> </span>Technique<span class="w">     </span>│<span class="w"> </span>Coverage<span class="w">    </span>│<span class="w"> </span>Confidence<span class="w">  </span>│
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>├──────────────────────┼─────────────┼─────────────┤
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>│<span class="w"> </span>T1055<span class="w"> </span>Process<span class="w"> </span>Inj.<span class="w">   </span>│<span class="w"> </span><span class="m">95</span>%<span class="w">         </span>│<span class="w"> </span>High<span class="w">        </span>│
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>│<span class="w"> </span>T1003<span class="w"> </span>Credential<span class="w">     </span>│<span class="w"> </span><span class="m">89</span>%<span class="w">         </span>│<span class="w"> </span>High<span class="w">        </span>│
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>│<span class="w"> </span>T1021<span class="w"> </span>Remote<span class="w"> </span>Svc.<span class="w">    </span>│<span class="w"> </span><span class="m">78</span>%<span class="w">         </span>│<span class="w"> </span>Medium<span class="w">      </span>│
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>│<span class="w"> </span>T1027<span class="w"> </span>Obfuscation<span class="w">    </span>│<span class="w"> </span><span class="m">67</span>%<span class="w">         </span>│<span class="w"> </span>Medium<span class="w">      </span>│
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>│<span class="w"> </span>T1090<span class="w"> </span>Proxy<span class="w">          </span>│<span class="w"> </span><span class="m">45</span>%<span class="w">         </span>│<span class="w"> </span>Low<span class="w">         </span>│
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>└──────────────────────┴─────────────┴─────────────┘
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>Recommendations:
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>•<span class="w"> </span>Enable<span class="w"> </span>network<span class="w"> </span>monitoring<span class="w"> </span><span class="k">for</span><span class="w"> </span>T1090<span class="w"> </span>coverage
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>•<span class="w"> </span>Deploy<span class="w"> </span>additional<span class="w"> </span>behavioral<span class="w"> </span>rules<span class="w"> </span><span class="k">for</span><span class="w"> </span>T1027
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>•<span class="w"> </span>Consider<span class="w"> </span>third-party<span class="w"> </span>integration<span class="w"> </span><span class="k">for</span><span class="w"> </span>T1021
+</code></pre></div>
+<hr />
+<h2 id="validation-dan-testing">✅ Validation dan Testing</h2>
+<h3 id="1-detection-testing-dengan-mitre-attck">1. Detection Testing dengan MITRE ATT&amp;CK</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Run MITRE ATT&amp;CK evaluation</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span><span class="nb">test</span><span class="w"> </span>mitre<span class="w"> </span>--framework<span class="w"> </span>att<span class="p">&amp;</span>ck<span class="w"> </span>--techniques<span class="w"> </span>T1055,T1003,T1021
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># Automated red team simulation</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span><span class="nb">test</span><span class="w"> </span>redteam<span class="w"> </span>--scenario<span class="w"> </span>lateral_movement<span class="w"> </span>--duration<span class="w"> </span>1h
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Purple team exercises</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span><span class="nb">test</span><span class="w"> </span>purple<span class="w"> </span>--playbook<span class="w"> </span><span class="s2">&quot;ransomware_simulation&quot;</span>
+</code></pre></div>
+<h3 id="2-detection-validation-checklist">2. Detection Validation Checklist</h3>
+<h4 id="teknis-validation">Teknis Validation</h4>
 <ul>
-<li><strong>Routine Review</strong></li>
-<li>
-<p>Selalu kaji ulang deteksi ancaman untuk menyesuaikan dengan ancaman baru.</p>
-</li>
-<li>
-<p><strong>Edukasi Tim</strong></p>
-</li>
-<li>Pastikan seluruh tim paham tentang cara kerja deteksi dan respons ancaman.</li>
+<li>[ ] <strong>Static Detection</strong>: File signatures updated dan berfungsi</li>
+<li>[ ] <strong>Behavioral Detection</strong>: Anomaly detection sensitivity optimal</li>
+<li>[ ] <strong>Machine Learning</strong>: Model accuracy &gt; 95%</li>
+<li>[ ] <strong>Network Detection</strong>: Traffic analysis aktif</li>
+<li>[ ] <strong>False Positive Rate</strong>: &lt; 1% untuk environment production</li>
+</ul>
+<h4 id="operational-validation">Operational Validation</h4>
+<ul>
+<li>[ ] <strong>Response Time</strong>: Alert response &lt; 5 minutes</li>
+<li>[ ] <strong>Coverage Assessment</strong>: MITRE ATT&amp;CK coverage &gt; 80%</li>
+<li>[ ] <strong>Integration Testing</strong>: SIEM forwarding berfungsi</li>
+<li>[ ] <strong>Performance Impact</strong>: CPU overhead &lt; 5%</li>
+<li>[ ] <strong>Threat Intelligence</strong>: IOC feeds terintegrasi</li>
 </ul>
 <hr />
-<p><em>Dapatkan pelatihan tambahan jika perlu melalui SentinelOne Academy.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<h2 id="best-practices">🎯 Best Practices</h2>
+<h3 id="1-strategi-deteksi-yang-efektif">1. Strategi Deteksi yang Efektif</h3>
+<div class="admonition tip">
+<p class="admonition-title">Rekomendasi Konfigurasi</p>
+<ul>
+<li><strong>Start Conservative</strong>: Mulai dengan sensitivity rendah, naikkan secara bertahap</li>
+<li><strong>Monitor FP Rate</strong>: Target false positive rate &lt; 0.5% untuk production</li>
+<li><strong>Regular Tuning</strong>: Review dan tune setiap bulan</li>
+<li><strong>Test Before Deploy</strong>: Selalu test di lab environment dulu</li>
+<li><strong>Document Changes</strong>: Catat semua perubahan konfigurasi</li>
+</ul>
+</div>
+<h3 id="2-monitoring-dan-maintenance">2. Monitoring dan Maintenance</h3>
+<div class="admonition warning">
+<p class="admonition-title">Peringatan Penting</p>
+<ul>
+<li><strong>Jangan disable detection</strong> tanpa approval keamanan</li>
+<li><strong>Monitor performance impact</strong> setelah perubahan konfigurasi</li>
+<li><strong>Backup configuration</strong> sebelum melakukan perubahan major</li>
+<li><strong>Regular signature updates</strong> untuk detection effectiveness optimal</li>
+<li><strong>Test disaster recovery</strong> untuk detection system</li>
+</ul>
+</div>
+<h3 id="3-incident-response-integration">3. Incident Response Integration</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># Automated incident creation</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>incident<span class="w"> </span>--system<span class="w"> </span>servicenow<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="s2">{</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="s2">    &#39;endpoint&#39;: &#39;https://company.service-now.com/api&#39;,</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="s2">    &#39;username&#39;: &#39;sentinelone_integration&#39;,</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="s2">    &#39;severity_mapping&#39;: {</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="s2">        &#39;critical&#39;: &#39;P1&#39;,</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="s2">        &#39;high&#39;: &#39;P2&#39;,</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="s2">        &#39;medium&#39;: &#39;P3&#39;,</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="s2">        &#39;low&#39;: &#39;P4&#39;</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="s2">    },</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="s2">    &#39;auto_assign&#39;: true</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="s2">}&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="troubleshooting">🔧 Troubleshooting</h2>
+<h3 id="common-detection-issues">Common Detection Issues</h3>
+<table>
+<thead>
+<tr>
+<th>Masalah</th>
+<th>Penyebab</th>
+<th>Solusi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>High False Positives</strong></td>
+<td>Sensitivity terlalu tinggi</td>
+<td>Turunkan threshold, tambah exclusions</td>
+</tr>
+<tr>
+<td><strong>Missed Detections</strong></td>
+<td>Sensitivity terlalu rendah</td>
+<td>Naikkan sensitivity, update signatures</td>
+</tr>
+<tr>
+<td><strong>Performance Impact</strong></td>
+<td>Detection overhead tinggi</td>
+<td>Optimize rules, disable unused features</td>
+</tr>
+<tr>
+<td><strong>Detection Delay</strong></td>
+<td>Processing queue backup</td>
+<td>Check system resources, tune thresholds</td>
+</tr>
+</tbody>
+</table>
+<h3 id="diagnostic-commands">Diagnostic Commands</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Detection engine status</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>diagnostics<span class="w"> </span>detection
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># Performance analysis</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>diagnostics<span class="w"> </span>performance<span class="w"> </span>--focus<span class="w"> </span>detection
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="c1"># Rule effectiveness analysis</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>diagnostics<span class="w"> </span>rules<span class="w"> </span>--analyze-effectiveness
+</code></pre></div>
+<hr />
+<p><em>Untuk bantuan lebih lanjut dengan konfigurasi deteksi, hubungi Security Team atau rujuk ke SentinelOne Knowledge Base.</em></p>
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1102,7 +3175,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1140,11 +3213,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1195,6 +3263,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>

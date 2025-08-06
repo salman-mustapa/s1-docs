@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -227,17 +229,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Overview
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -343,6 +346,45 @@
   
 
       
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/testing-overview/" class="md-tabs__link">
+          
+  
+  
+  Testing & Validation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../example-images/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contoh Gambar & Visual
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -394,9 +436,27 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -405,7 +465,65 @@
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/sentinelctl-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SentinelCtl Commands
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -930,20 +1048,584 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#memulai-threat-hunting" class="md-nav__link">
+  <a href="#threat-hunting-methodology" class="md-nav__link">
     <span class="md-ellipsis">
-      Memulai Threat Hunting
+      🎯 Threat Hunting Methodology
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
+  <a href="#deep-visibility-query-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Best Practices
+      🔍 Deep Visibility Query Interface
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔍 Deep Visibility Query Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-accessing-sentinelone-deep-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Accessing SentinelOne Deep Visibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-query-syntax-dan-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Query Syntax dan Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Query Syntax dan Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-query-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Query Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-data-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Data Tables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-hunting-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕵️ Threat Hunting Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🕵️ Threat Hunting Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-hunting-for-lateral-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Hunting for Lateral Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario 1: Hunting for Lateral Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-suspicious-remote-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Suspicious Remote Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-credential-access-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Credential Access Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-anomalous-administrative-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Anomalous Administrative Activity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-hunting-for-persistence-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Hunting for Persistence Mechanisms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario 2: Hunting for Persistence Mechanisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-registry-based-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Registry-based Persistence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-scheduled-task-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Scheduled Task Persistence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-service-based-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Service-based Persistence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-hunting-for-data-exfiltration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Hunting for Data Exfiltration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario 3: Hunting for Data Exfiltration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-large-data-transfers" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Large Data Transfers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-suspicious-file-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Suspicious File Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-hunting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Advanced Hunting Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Advanced Hunting Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-behavioral-pattern-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Behavioral Pattern Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Behavioral Pattern Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-chain-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Chain Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-based-anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-based Anomaly Detection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Statistical Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Statistical Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequency-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-hunting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Custom Hunting Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Custom Hunting Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-creating-custom-hunting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Creating Custom Hunting Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Creating Custom Hunting Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-template-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule Template Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-lateral-movement-detection-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Lateral Movement Detection Rule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deploying-custom-rules-via-sentinelctl" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Deploying Custom Rules via sentinelctl
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunting-campaign-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Hunting Campaign Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Hunting Campaign Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-structured-hunting-campaigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Structured Hunting Campaigns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Structured Hunting Campaigns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campaign-planning-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campaign Planning Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campaign-execution-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campaign Execution Commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-threat-intelligence-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Threat Intelligence Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Threat Intelligence Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ioc-based-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      IOC-based Hunting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yara-rule-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      YARA Rule Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigation-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 Investigation and Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Investigation and Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-incident-timeline-reconstruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Incident Timeline Reconstruction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-correlation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Correlation Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunting-metrics-and-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Hunting Metrics and KPIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Hunting Metrics and KPIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-hunting-effectiveness-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Hunting Effectiveness Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-roi-and-impact-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ROI and Impact Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-untuk-threat-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Best Practices untuk Threat Hunting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Best Practices untuk Threat Hunting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-structured-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Structured Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-query-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Query Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-collaborative-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Collaborative Hunting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-and-orchestration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Automation and Orchestration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Automation and Orchestration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-hunting-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automated Hunting Workflows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-integration-dengan-soar-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Integration dengan SOAR Platforms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hunting-program-maturity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hunting Program Maturity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -986,6 +1668,554 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Testing & Validation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Testing & Validation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/testing-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-a-realtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori A - Real-Time Protection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-b-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori B - Offline Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-c-operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori C - Operational Resilience
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-d-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori D - Security Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-e-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori E - Performance Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/kategori-f-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kategori F - Integration Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            Windows Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/windows/windows-enterprise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows Enterprise Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Linux Server Testing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Server Testing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Offline Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Performance Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/linux/linux-containers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Linux Container Testing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/cross-platform/cross-platform-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Platform Scenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contoh Gambar & Visual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1013,20 +2243,584 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#memulai-threat-hunting" class="md-nav__link">
+  <a href="#threat-hunting-methodology" class="md-nav__link">
     <span class="md-ellipsis">
-      Memulai Threat Hunting
+      🎯 Threat Hunting Methodology
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices" class="md-nav__link">
+  <a href="#deep-visibility-query-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      Best Practices
+      🔍 Deep Visibility Query Interface
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔍 Deep Visibility Query Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-accessing-sentinelone-deep-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Accessing SentinelOne Deep Visibility
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-query-syntax-dan-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Query Syntax dan Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Query Syntax dan Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-query-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Query Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-data-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Data Tables
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-hunting-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕵️ Threat Hunting Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🕵️ Threat Hunting Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-hunting-for-lateral-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Hunting for Lateral Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario 1: Hunting for Lateral Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-suspicious-remote-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Suspicious Remote Connections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-credential-access-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Credential Access Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-anomalous-administrative-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Anomalous Administrative Activity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-hunting-for-persistence-mechanisms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Hunting for Persistence Mechanisms
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario 2: Hunting for Persistence Mechanisms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-registry-based-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Registry-based Persistence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-scheduled-task-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Scheduled Task Persistence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-service-based-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Service-based Persistence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-hunting-for-data-exfiltration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Hunting for Data Exfiltration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scenario 3: Hunting for Data Exfiltration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-large-data-transfers" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Large Data Transfers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-suspicious-file-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Suspicious File Operations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-hunting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Advanced Hunting Techniques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Advanced Hunting Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-behavioral-pattern-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Behavioral Pattern Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Behavioral Pattern Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-chain-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Chain Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-based-anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-based Anomaly Detection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-statistical-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Statistical Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Statistical Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frequency-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-hunting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Custom Hunting Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Custom Hunting Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-creating-custom-hunting-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Creating Custom Hunting Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Creating Custom Hunting Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-template-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule Template Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-lateral-movement-detection-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Lateral Movement Detection Rule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-deploying-custom-rules-via-sentinelctl" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Deploying Custom Rules via sentinelctl
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunting-campaign-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      📈 Hunting Campaign Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 Hunting Campaign Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-structured-hunting-campaigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Structured Hunting Campaigns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Structured Hunting Campaigns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#campaign-planning-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campaign Planning Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#campaign-execution-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Campaign Execution Commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-threat-intelligence-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Threat Intelligence Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Threat Intelligence Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ioc-based-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      IOC-based Hunting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yara-rule-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      YARA Rule Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#investigation-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔬 Investigation and Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔬 Investigation and Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-incident-timeline-reconstruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Incident Timeline Reconstruction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-correlation-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Correlation Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hunting-metrics-and-kpis" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Hunting Metrics and KPIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Hunting Metrics and KPIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-hunting-effectiveness-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Hunting Effectiveness Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-roi-and-impact-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. ROI and Impact Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices-untuk-threat-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Best Practices untuk Threat Hunting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Best Practices untuk Threat Hunting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-structured-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Structured Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-query-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Query Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-collaborative-hunting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Collaborative Hunting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automation-and-orchestration" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Automation and Orchestration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Automation and Orchestration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-hunting-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automated Hunting Workflows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-integration-dengan-soar-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Integration dengan SOAR Platforms
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validation Checklist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hunting-program-maturity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hunting Program Maturity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1050,36 +2844,716 @@
 
 
 <h1 id="teknik-threat-hunting-di-sentinelone">Teknik Threat Hunting di SentinelOne</h1>
-<p>Bagaimana melakukan threat hunting proaktif menggunakan SentinelOne untuk mendeteksi ancaman tersembunyi sebelum terjadi insiden.</p>
-<h2 id="memulai-threat-hunting">Memulai Threat Hunting</h2>
-<ol>
-<li><strong>Analisis Data Telemetri</strong></li>
-<li>
-<p>Tentukan pola yang mencurigakan dan non-standar dalam data.</p>
-</li>
-<li>
-<p><strong>Penggunaan Query dan Tools SentinelOne</strong></p>
-</li>
-<li>
-<p>Gunakan query built-in dan external tools untuk mengidentifikasi ancaman.</p>
-</li>
-<li>
-<p><strong>Dokumentasikan Temuan</strong></p>
-</li>
-<li>Catat setiap temuan dan langkah investigasi untuk referensi di masa mendatang.</li>
-<li><strong>Catatan Gambar/Video Here</strong><ul>
-<li>Tambah video cara melakukan query hunting</li>
-</ul>
-</li>
-</ol>
-<h2 id="best-practices">Best Practices</h2>
+<p>Panduan lengkap untuk melakukan threat hunting proaktif menggunakan SentinelOne EDR untuk mendeteksi ancaman tersembunyi dan meningkatkan postur keamanan organisasi.</p>
+<hr />
+<h2 id="threat-hunting-methodology">🎯 Threat Hunting Methodology</h2>
+<pre class="mermaid"><code>flowchart TD
+    subgraph "Threat Hunting Process"
+        INTEL["Threat Intelligence&lt;br/&gt;IOCs, TTPs, Campaigns"]
+        HYPOTHESIS["Hypothesis Formation&lt;br/&gt;What to Hunt For"]
+        COLLECT["Data Collection&lt;br/&gt;Telemetry &amp; Logs"]
+        ANALYZE["Analysis &amp; Investigation&lt;br/&gt;Pattern Recognition"]
+        VALIDATE["Validation&lt;br/&gt;Confirm True Positives"]
+        RESPONSE["Response &amp; Mitigation&lt;br/&gt;Containment Actions"]
+    end
+
+    subgraph "Data Sources"
+        ENDPOINT["Endpoint Telemetry&lt;br/&gt;Process, File, Registry"]
+        NETWORK["Network Data&lt;br/&gt;DNS, HTTP, TLS"]
+        USER["User Behavior&lt;br/&gt;Authentication, Access"]
+        EXTERNAL["External Intelligence&lt;br/&gt;Feeds, Reports"]
+    end
+
+    subgraph "Hunting Techniques"
+        BASELINE["Baseline Deviation&lt;br/&gt;Anomaly Detection"]
+        INDICATORS["IOC Matching&lt;br/&gt;Known Bad Patterns"]
+        BEHAVIOR["Behavioral Analysis&lt;br/&gt;TTP Detection"]
+        CORRELATION["Event Correlation&lt;br/&gt;Timeline Analysis"]
+    end
+
+    INTEL --&gt; HYPOTHESIS
+    HYPOTHESIS --&gt; COLLECT
+    COLLECT --&gt; ANALYZE
+    ANALYZE --&gt; VALIDATE
+    VALIDATE --&gt; RESPONSE
+
+    ENDPOINT --&gt; COLLECT
+    NETWORK --&gt; COLLECT
+    USER --&gt; COLLECT
+    EXTERNAL --&gt; INTEL
+
+    BASELINE --&gt; ANALYZE
+    INDICATORS --&gt; ANALYZE
+    BEHAVIOR --&gt; ANALYZE
+    CORRELATION --&gt; ANALYZE
+
+    style INTEL fill:#e3f2fd
+    style ANALYZE fill:#e8f5e8
+    style RESPONSE fill:#fff3e0</code></pre>
+<hr />
+<h2 id="deep-visibility-query-interface">🔍 Deep Visibility Query Interface</h2>
+<h3 id="1-accessing-sentinelone-deep-visibility">1. Accessing SentinelOne Deep Visibility</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Management Console Navigation:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Console &gt; Visibility &gt; Deep Visibility &gt; Query Builder
+</code></pre></div>
+<p><strong>Alternatif melalui sentinelctl:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Access query interface via CLI</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>query<span class="w"> </span>--interface<span class="w"> </span>deep-visibility
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Run saved queries</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>query<span class="w"> </span>--run<span class="w"> </span><span class="s2">&quot;lateral_movement_hunt&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Export query results</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>query<span class="w"> </span>--run<span class="w"> </span><span class="s2">&quot;suspicious_processes&quot;</span><span class="w"> </span>--export<span class="w"> </span>csv
+</code></pre></div></p>
+<h3 id="2-query-syntax-dan-structure">2. Query Syntax dan Structure</h3>
+<h4 id="basic-query-structure">Basic Query Structure</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Basic SELECT query</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="p">,</span><span class="w"> </span><span class="n">column3</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">FROM</span><span class="w"> </span><span class="k">table_name</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">condition</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">column</span><span class="w"> </span><span class="k">ASC</span><span class="o">/</span><span class="k">DESC</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">LIMIT</span><span class="w"> </span><span class="nb">number</span><span class="p">;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1">-- Time-based filtering</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2024-01-07&#39;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="available-data-tables">Available Data Tables</h4>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Description</th>
+<th>Key Fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>processes</strong></td>
+<td>Process execution data</td>
+<td><code>processName</code>, <code>cmdLine</code>, <code>parentName</code>, <code>user</code></td>
+</tr>
+<tr>
+<td><strong>network</strong></td>
+<td>Network connections</td>
+<td><code>srcIp</code>, <code>dstIp</code>, <code>dstPort</code>, <code>direction</code></td>
+</tr>
+<tr>
+<td><strong>files</strong></td>
+<td>File operations</td>
+<td><code>filePath</code>, <code>fileType</code>, <code>action</code>, <code>hash</code></td>
+</tr>
+<tr>
+<td><strong>registry</strong></td>
+<td>Registry modifications</td>
+<td><code>registryPath</code>, <code>registryKey</code>, <code>action</code></td>
+</tr>
+<tr>
+<td><strong>dns</strong></td>
+<td>DNS queries</td>
+<td><code>dnsRequest</code>, <code>dnsResponse</code>, <code>queryType</code></td>
+</tr>
+<tr>
+<td><strong>events</strong></td>
+<td>Security events</td>
+<td><code>eventType</code>, <code>description</code>, <code>severity</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="threat-hunting-scenarios">🕵️ Threat Hunting Scenarios</h2>
+<h3 id="scenario-1-hunting-for-lateral-movement">Scenario 1: Hunting for Lateral Movement</h3>
+<h4 id="11-suspicious-remote-connections">1.1 Suspicious Remote Connections</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">-- Detect potential lateral movement via RDP/SMB</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">srcIp</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="n">dstIp</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="n">dstPort</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">connection_count</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">MIN</span><span class="p">(</span><span class="n">createdAt</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">first_seen</span><span class="p">,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">MAX</span><span class="p">(</span><span class="n">createdAt</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">last_seen</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">network</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">WHERE</span><span class="w"> </span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="n">dstPort</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">445</span><span class="p">,</span><span class="w"> </span><span class="mi">3389</span><span class="p">,</span><span class="w"> </span><span class="mi">135</span><span class="p">,</span><span class="w"> </span><span class="mi">139</span><span class="p">)</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;OUTGOING&#39;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">srcIp</span><span class="p">,</span><span class="w"> </span><span class="n">dstIp</span><span class="p">,</span><span class="w"> </span><span class="n">dstPort</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">connection_count</span><span class="w"> </span><span class="k">DESC</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="k">LIMIT</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="12-credential-access-patterns">1.2 Credential Access Patterns</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Hunt for credential dumping activities</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="n">cmdLine</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">parentName</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">createdAt</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="n">endpointName</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="p">(</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;rundll32.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%comsvcs%MiniDump%&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;tasklist.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%lsass%&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%sekurlsa%&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%mimikatz%&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">filePath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%procdump%&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%lsass%&#39;</span><span class="p">)</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="p">)</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="13-anomalous-administrative-activity">1.3 Anomalous Administrative Activity</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- Detect unusual administrative tool usage</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="n">cmdLine</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="n">parentName</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">execution_count</span><span class="p">,</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">endpointName</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">endpoint_count</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="n">processName</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;psexec.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;wmic.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;net.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;schtasks.exe&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%powershell%Invoke-Command%&#39;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%wmic%process%&#39;</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="p">)</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="k">AND</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%SYSTEM%&#39;</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">user</span><span class="p">,</span><span class="w"> </span><span class="n">processName</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">endpointName</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">3</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">execution_count</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="scenario-2-hunting-for-persistence-mechanisms">Scenario 2: Hunting for Persistence Mechanisms</h3>
+<h4 id="21-registry-based-persistence">2.1 Registry-based Persistence</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">-- Hunt for registry persistence modifications</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="n">registryPath</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="n">registryKey</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="n">registryValue</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="n">endpointName</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="n">createdAt</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">FROM</span><span class="w"> </span><span class="n">registry</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="n">registryPath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%\\CurrentVersion\\Run%&#39;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">registryPath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%\\CurrentVersion\\RunOnce%&#39;</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">registryPath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%\\Winlogon%&#39;</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">registryPath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%\\Image File Execution Options%&#39;</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">registryPath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%\\Services%&#39;</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="p">)</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="k">AND</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Modified&#39;</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="22-scheduled-task-persistence">2.2 Scheduled Task Persistence</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- Detect suspicious scheduled tasks</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="n">cmdLine</span><span class="p">,</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="n">parentName</span><span class="p">,</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="n">endpointName</span><span class="p">,</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="n">createdAt</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="p">(</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;schtasks.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%create%&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;at.exe&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%Register-ScheduledTask%&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="p">)</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">AND</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%SYSTEM%&#39;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="23-service-based-persistence">2.3 Service-based Persistence</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">-- Hunt for suspicious service installations</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">cmdLine</span><span class="p">,</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="n">parentName</span><span class="p">,</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="n">endpointName</span><span class="p">,</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">    </span><span class="n">createdAt</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">    </span><span class="p">(</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;sc.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%create%&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%New-Service%&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;net.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%service%&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="p">)</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="scenario-3-hunting-for-data-exfiltration">Scenario 3: Hunting for Data Exfiltration</h3>
+<h4 id="31-large-data-transfers">3.1 Large Data Transfers</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1">-- Detect potential data exfiltration</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="n">srcIp</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="n">dstIp</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="n">dstPort</span><span class="p">,</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="k">SUM</span><span class="p">(</span><span class="n">bytesOut</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_bytes_out</span><span class="p">,</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">connection_count</span><span class="p">,</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="n">endpointName</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">FROM</span><span class="w"> </span><span class="n">network</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="k">WHERE</span><span class="w"> </span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">    </span><span class="n">direction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;OUTGOING&#39;</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">dstIp</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;10.%&#39;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">dstIp</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;192.168.%&#39;</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">dstIp</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;172.%&#39;</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">srcIp</span><span class="p">,</span><span class="w"> </span><span class="n">dstIp</span><span class="p">,</span><span class="w"> </span><span class="n">processName</span><span class="p">,</span><span class="w"> </span><span class="n">endpointName</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">SUM</span><span class="p">(</span><span class="n">bytesOut</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100000000</span><span class="w">  </span><span class="c1">-- &gt; 100MB</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">total_bytes_out</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="32-suspicious-file-operations">3.2 Suspicious File Operations</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">-- Hunt for potential data staging</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="n">filePath</span><span class="p">,</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="n">action</span><span class="p">,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="n">fileSize</span><span class="p">,</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">    </span><span class="n">endpointName</span><span class="p">,</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">    </span><span class="n">createdAt</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="k">FROM</span><span class="w"> </span><span class="n">files</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">    </span><span class="p">(</span><span class="n">filePath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%.zip%&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">filePath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%.rar%&#39;</span><span class="w"> </span><span class="k">OR</span><span class="w"> </span><span class="n">filePath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%.7z%&#39;</span><span class="p">)</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">fileSize</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">50000000</span><span class="w">  </span><span class="c1">-- &gt; 50MB</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="p">)</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="k">OR</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">    </span><span class="n">filePath</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%temp%&#39;</span><span class="w"> </span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">fileSize</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100000000</span><span class="w">  </span><span class="c1">-- &gt; 100MB</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">action</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Created&#39;</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="p">)</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">fileSize</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<hr />
+<h2 id="advanced-hunting-techniques">📊 Advanced Hunting Techniques</h2>
+<h3 id="1-behavioral-pattern-analysis">1. Behavioral Pattern Analysis</h3>
+<h4 id="process-chain-analysis">Process Chain Analysis</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">-- Analyze suspicious process execution chains</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">WITH</span><span class="w"> </span><span class="n">ProcessChain</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">        </span><span class="n">p1</span><span class="p">.</span><span class="n">processName</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">parent_process</span><span class="p">,</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">        </span><span class="n">p2</span><span class="p">.</span><span class="n">processName</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">child_process</span><span class="p">,</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="n">p3</span><span class="p">.</span><span class="n">processName</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">grandchild_process</span><span class="p">,</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="n">p1</span><span class="p">.</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">parent_cmd</span><span class="p">,</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">        </span><span class="n">p2</span><span class="p">.</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">child_cmd</span><span class="p">,</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">        </span><span class="n">p3</span><span class="p">.</span><span class="n">cmdLine</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">grandchild_cmd</span><span class="p">,</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">        </span><span class="n">p1</span><span class="p">.</span><span class="n">createdAt</span><span class="p">,</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">        </span><span class="n">p1</span><span class="p">.</span><span class="n">endpointName</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span><span class="w"> </span><span class="n">p1</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="k">JOIN</span><span class="w"> </span><span class="n">processes</span><span class="w"> </span><span class="n">p2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">p1</span><span class="p">.</span><span class="n">processUuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p2</span><span class="p">.</span><span class="n">parentProcessUuid</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">processes</span><span class="w"> </span><span class="n">p3</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">p2</span><span class="p">.</span><span class="n">processUuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p3</span><span class="p">.</span><span class="n">parentProcessUuid</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">p1</span><span class="p">.</span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">)</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="k">FROM</span><span class="w"> </span><span class="n">ProcessChain</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="k">WHERE</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">    </span><span class="n">parent_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;winword.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">child_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;powershell.exe&#39;</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">parent_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;excel.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">child_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;cmd.exe&#39;</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="n">parent_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;outlook.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">child_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;wscript.exe&#39;</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="p">(</span><span class="n">child_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;powershell.exe&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">grandchild_process</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;rundll32.exe&#39;</span><span class="p">)</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="p">)</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h4 id="time-based-anomaly-detection">Time-based Anomaly Detection</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">-- Detect processes running at unusual times</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">execution_count</span><span class="p">,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="k">EXTRACT</span><span class="p">(</span><span class="n">HOUR</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">createdAt</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">execution_hour</span><span class="p">,</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="k">EXTRACT</span><span class="p">(</span><span class="n">DOW</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">createdAt</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">day_of_week</span><span class="p">,</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="n">endpointName</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="k">WHERE</span><span class="w"> </span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">    </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">processName</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="s1">&#39;powershell.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cmd.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;wscript.exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cscript.exe&#39;</span><span class="p">)</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">processName</span><span class="p">,</span><span class="w"> </span><span class="k">EXTRACT</span><span class="p">(</span><span class="n">HOUR</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">createdAt</span><span class="p">),</span><span class="w"> </span><span class="k">EXTRACT</span><span class="p">(</span><span class="n">DOW</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">createdAt</span><span class="p">),</span><span class="w"> </span><span class="n">endpointName</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="k">HAVING</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">    </span><span class="p">(</span><span class="k">EXTRACT</span><span class="p">(</span><span class="n">HOUR</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">createdAt</span><span class="p">)</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">22</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w">  </span><span class="c1">-- Night time</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">    </span><span class="k">OR</span><span class="w"> </span><span class="k">EXTRACT</span><span class="p">(</span><span class="n">DOW</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">createdAt</span><span class="p">)</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w">         </span><span class="c1">-- Weekend</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="p">)</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="k">AND</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">execution_count</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="2-statistical-analysis">2. Statistical Analysis</h3>
+<h4 id="frequency-analysis">Frequency Analysis</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">-- Identify rare but suspicious processes</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">WITH</span><span class="w"> </span><span class="n">ProcessFrequency</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">        </span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">        </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total_executions</span><span class="p">,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">        </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">endpointName</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">endpoint_count</span><span class="p">,</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">        </span><span class="k">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="k">user</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">user_count</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">processName</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="p">)</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">    </span><span class="n">pf</span><span class="p">.</span><span class="n">processName</span><span class="p">,</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">    </span><span class="n">pf</span><span class="p">.</span><span class="n">total_executions</span><span class="p">,</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">    </span><span class="n">pf</span><span class="p">.</span><span class="n">endpoint_count</span><span class="p">,</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">    </span><span class="n">pf</span><span class="p">.</span><span class="n">user_count</span><span class="p">,</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">cmdLine</span><span class="p">,</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">filePath</span><span class="p">,</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">endpointName</span><span class="p">,</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">createdAt</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="k">FROM</span><span class="w"> </span><span class="n">ProcessFrequency</span><span class="w"> </span><span class="n">pf</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">processes</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">pf</span><span class="p">.</span><span class="n">processName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">processName</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="k">WHERE</span><span class="w"> </span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="w">    </span><span class="n">pf</span><span class="p">.</span><span class="n">total_executions</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="mi">10</span><span class="w">  </span><span class="c1">-- Rare processes</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">pf</span><span class="p">.</span><span class="n">endpoint_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w">              </span><span class="c1">-- Only on one endpoint</span>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">createdAt</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">processName</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%.tmp%&#39;</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">filePath</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%\\Windows\\%&#39;</span>
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">pf</span><span class="p">.</span><span class="n">total_executions</span><span class="w"> </span><span class="k">ASC</span><span class="p">;</span>
+</code></pre></div>
+<hr />
+<h2 id="custom-hunting-rules">🎨 Custom Hunting Rules</h2>
+<h3 id="1-creating-custom-hunting-rules">1. Creating Custom Hunting Rules</h3>
+<h4 id="rule-template-structure">Rule Template Structure</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="nt">&quot;rule_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Custom_Hunting_Rule&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Description of what this rule hunts for&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Security Team&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">        </span><span class="nt">&quot;sql&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SELECT * FROM table WHERE condition&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">        </span><span class="nt">&quot;timeframe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;24h&quot;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="nt">&quot;schedule&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1h&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">        </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">    </span><span class="nt">&quot;actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w">        </span><span class="nt">&quot;alert&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w">        </span><span class="nt">&quot;notify_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;security@company.com&quot;</span><span class="p">],</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w">        </span><span class="nt">&quot;create_incident&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="example-lateral-movement-detection-rule">Example: Lateral Movement Detection Rule</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="nt">&quot;rule_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lateral_Movement_Hunt&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Detects potential lateral movement via administrative tools&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SOC Team&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="nt">&quot;severity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;high&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">        </span><span class="nt">&quot;sql&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SELECT user, processName, cmdLine, endpointName, createdAt FROM processes WHERE (processName IN (&#39;psexec.exe&#39;, &#39;wmic.exe&#39;) OR cmdLine LIKE &#39;%powershell%Invoke-Command%&#39;) AND user NOT LIKE &#39;%SYSTEM%&#39; AND createdAt &gt; NOW() - INTERVAL &#39;1 hour&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">        </span><span class="nt">&quot;timeframe&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1h&quot;</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">    </span><span class="nt">&quot;schedule&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">        </span><span class="nt">&quot;frequency&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;15m&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">        </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">    </span><span class="nt">&quot;actions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">        </span><span class="nt">&quot;alert&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">        </span><span class="nt">&quot;notify_email&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;soc@company.com&quot;</span><span class="p">],</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">        </span><span class="nt">&quot;create_incident&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="2-deploying-custom-rules-via-sentinelctl">2. Deploying Custom Rules via sentinelctl</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Deploy custom hunting rule</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>rule<span class="w"> </span>deploy<span class="w"> </span>--file<span class="w"> </span>lateral_movement_hunt.json
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># List active hunting rules</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>rule<span class="w"> </span>list
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="c1"># Enable/disable hunting rule</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>rule<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Lateral_Movement_Hunt&quot;</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>rule<span class="w"> </span>disable<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Lateral_Movement_Hunt&quot;</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="c1"># View rule execution results</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>rule<span class="w"> </span>results<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;Lateral_Movement_Hunt&quot;</span><span class="w"> </span>--last<span class="w"> </span>24h
+</code></pre></div>
+<hr />
+<h2 id="hunting-campaign-management">📈 Hunting Campaign Management</h2>
+<h3 id="1-structured-hunting-campaigns">1. Structured Hunting Campaigns</h3>
+<h4 id="campaign-planning-template">Campaign Planning Template</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nt">campaign_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;APT_Hunting_Campaign_Q1_2024&quot;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Hunt</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">APT</span><span class="nv"> </span><span class="s">techniques</span><span class="nv"> </span><span class="s">based</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">recent</span><span class="nv"> </span><span class="s">threat</span><span class="nv"> </span><span class="s">intelligence&quot;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nt">start_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2024-01-01&quot;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="nt">end_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2024-03-31&quot;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="nt">objectives</span><span class="p">:</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hunt for lateral movement techniques</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Identify persistence mechanisms</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Detect data exfiltration attempts</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Validate detection coverage</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="nt">hypotheses</span><span class="p">:</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Adversaries are using WMI for lateral movement</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Persistence is established via scheduled tasks</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data is staged in temp directories before exfiltration</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="nt">queries</span><span class="p">:</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">lateral_movement_wmi.sql</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">persistence_schtasks.sql</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_staging_temp.sql</span>
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a>
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="nt">schedule</span><span class="p">:</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w">  </span><span class="nt">daily_hunts</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;lateral_movement_wmi&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;persistence_schtasks&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w">  </span><span class="nt">weekly_hunts</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;data_staging_temp&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a><span class="w">  </span><span class="nt">ad_hoc_hunts</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;custom_ioc_search&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a>
+<a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a><span class="nt">reporting</span><span class="p">:</span>
+<a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a><span class="w">  </span><span class="nt">frequency</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;weekly&quot;</span>
+<a id="__codelineno-17-29" name="__codelineno-17-29" href="#__codelineno-17-29"></a><span class="w">  </span><span class="nt">stakeholders</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;CISO&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;SOC</span><span class="nv"> </span><span class="s">Manager&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;Incident</span><span class="nv"> </span><span class="s">Response&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-17-30" name="__codelineno-17-30" href="#__codelineno-17-30"></a><span class="w">  </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;executive_summary&quot;</span>
+</code></pre></div>
+<h4 id="campaign-execution-commands">Campaign Execution Commands</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># Initialize hunting campaign</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>campaign<span class="w"> </span>create<span class="w"> </span>--config<span class="w"> </span>apt_hunting_q1.yaml
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1"># Execute campaign hunts</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>campaign<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;APT_Hunting_Campaign_Q1_2024&quot;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1"># Generate campaign report</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>campaign<span class="w"> </span>report<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;APT_Hunting_Campaign_Q1_2024&quot;</span><span class="w"> </span>--format<span class="w"> </span>pdf
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="c1"># Export campaign results</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>campaign<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;APT_Hunting_Campaign_Q1_2024&quot;</span><span class="w"> </span>--format<span class="w"> </span>json
+</code></pre></div>
+<h3 id="2-threat-intelligence-integration">2. Threat Intelligence Integration</h3>
+<h4 id="ioc-based-hunting">IOC-based Hunting</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Import threat intelligence IOCs</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threat-intel<span class="w"> </span>import<span class="w"> </span>--feed<span class="w"> </span>misp<span class="w"> </span>--url<span class="w"> </span>https://misp.company.com/feeds
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>threat-intel<span class="w"> </span>import<span class="w"> </span>--file<span class="w"> </span>apt_iocs.json
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="c1"># Run IOC hunting across endpoints</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>ioc-search<span class="w"> </span>--indicators-file<span class="w"> </span>latest_iocs.txt
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="c1"># Automated IOC hunting</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>schedule<span class="w"> </span>--type<span class="w"> </span>ioc-match<span class="w"> </span>--interval<span class="w"> </span>4h<span class="w"> </span>--feed<span class="w"> </span>misp
+</code></pre></div>
+<h4 id="yara-rule-integration">YARA Rule Integration</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Deploy YARA rules for hunting</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>yara<span class="w"> </span>deploy<span class="w"> </span>--rule-file<span class="w"> </span>custom_hunt_rules.yar
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># Run YARA-based memory hunting</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>yara<span class="w"> </span>scan<span class="w"> </span>--target<span class="w"> </span>memory<span class="w"> </span>--rule-name<span class="w"> </span><span class="s2">&quot;apt_memory_hunt&quot;</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Scheduled YARA hunts</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>schedule<span class="w"> </span>--type<span class="w"> </span>yara<span class="w"> </span>--rule-name<span class="w"> </span><span class="s2">&quot;malware_hunt&quot;</span><span class="w"> </span>--interval<span class="w"> </span>24h
+</code></pre></div>
+<hr />
+<h2 id="investigation-and-analysis">🔬 Investigation and Analysis</h2>
+<h3 id="1-incident-timeline-reconstruction">1. Incident Timeline Reconstruction</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1">-- Reconstruct timeline for specific endpoint</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span><span class="s1">&#39;PROCESS&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">event_type</span><span class="p">,</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">    </span><span class="n">processName</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">description</span><span class="p">,</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">    </span><span class="n">cmdLine</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">details</span><span class="p">,</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="w">    </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="w">    </span><span class="n">createdAt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">timestamp</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="k">FROM</span><span class="w"> </span><span class="n">processes</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">endpointName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;ENDPOINT-001&#39;</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2024-01-15 08:00:00&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2024-01-15 18:00:00&#39;</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="w">    </span><span class="s1">&#39;NETWORK&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">event_type</span><span class="p">,</span>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a><span class="w">    </span><span class="n">CONCAT</span><span class="p">(</span><span class="n">dstIp</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">dstPort</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">description</span><span class="p">,</span>
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a><span class="w">    </span><span class="n">CONCAT</span><span class="p">(</span><span class="s1">&#39;Direction: &#39;</span><span class="p">,</span><span class="w"> </span><span class="n">direction</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;, Bytes: &#39;</span><span class="p">,</span><span class="w"> </span><span class="n">bytesOut</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">details</span><span class="p">,</span>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a><span class="w">    </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a><span class="w">    </span><span class="n">createdAt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">timestamp</span>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a><span class="k">FROM</span><span class="w"> </span><span class="n">network</span>
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">endpointName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;ENDPOINT-001&#39;</span>
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2024-01-15 08:00:00&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2024-01-15 18:00:00&#39;</span>
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a><span class="k">SELECT</span><span class="w"> </span>
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a><span class="w">    </span><span class="s1">&#39;FILE&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">event_type</span><span class="p">,</span>
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a><span class="w">    </span><span class="n">filePath</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">description</span><span class="p">,</span>
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a><span class="w">    </span><span class="n">CONCAT</span><span class="p">(</span><span class="s1">&#39;Action: &#39;</span><span class="p">,</span><span class="w"> </span><span class="n">action</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;, Size: &#39;</span><span class="p">,</span><span class="w"> </span><span class="n">fileSize</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">details</span><span class="p">,</span>
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a><span class="w">    </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">user</span><span class="p">,</span>
+<a id="__codelineno-21-31" name="__codelineno-21-31" href="#__codelineno-21-31"></a><span class="w">    </span><span class="n">createdAt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">timestamp</span>
+<a id="__codelineno-21-32" name="__codelineno-21-32" href="#__codelineno-21-32"></a><span class="k">FROM</span><span class="w"> </span><span class="n">files</span>
+<a id="__codelineno-21-33" name="__codelineno-21-33" href="#__codelineno-21-33"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">endpointName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;ENDPOINT-001&#39;</span>
+<a id="__codelineno-21-34" name="__codelineno-21-34" href="#__codelineno-21-34"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">createdAt</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2024-01-15 08:00:00&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2024-01-15 18:00:00&#39;</span>
+<a id="__codelineno-21-35" name="__codelineno-21-35" href="#__codelineno-21-35"></a>
+<a id="__codelineno-21-36" name="__codelineno-21-36" href="#__codelineno-21-36"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">timestamp</span><span class="w"> </span><span class="k">ASC</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="2-correlation-analysis">2. Correlation Analysis</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Correlate events across multiple endpoints</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>correlate<span class="w"> </span>--timeframe<span class="w"> </span>1h<span class="w"> </span>--events<span class="w"> </span><span class="s2">&quot;process,network,file&quot;</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># Cross-endpoint correlation</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>correlate<span class="w"> </span>--pattern<span class="w"> </span>lateral_movement<span class="w"> </span>--endpoints<span class="w"> </span><span class="s2">&quot;ENDPOINT-001,ENDPOINT-002&quot;</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="c1"># User behavior correlation</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>correlate<span class="w"> </span>--user<span class="w"> </span><span class="s2">&quot;admin@company.com&quot;</span><span class="w"> </span>--timeframe<span class="w"> </span>24h
+</code></pre></div>
+<hr />
+<h2 id="hunting-metrics-and-kpis">📊 Hunting Metrics and KPIs</h2>
+<h3 id="1-hunting-effectiveness-metrics">1. Hunting Effectiveness Metrics</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Generate hunting statistics</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>stats<span class="w"> </span>--period<span class="w"> </span>30d
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># Example output:</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>Hunting<span class="w"> </span>Statistics<span class="w"> </span><span class="o">(</span>Last<span class="w"> </span><span class="m">30</span><span class="w"> </span>days<span class="o">)</span>:
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>┌─────────────────────┬────────┬──────────────┬─────────────┐
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>│<span class="w"> </span>Metric<span class="w">              </span>│<span class="w"> </span>Count<span class="w">  </span>│<span class="w"> </span>Percentage<span class="w">   </span>│<span class="w"> </span>Trend<span class="w">       </span>│
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>├─────────────────────┼────────┼──────────────┼─────────────┤
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>│<span class="w"> </span>Total<span class="w"> </span>Hunts<span class="w">         </span>│<span class="w"> </span><span class="m">456</span><span class="w">    </span>│<span class="w"> </span>-<span class="w">            </span>│<span class="w"> </span>↑<span class="w"> </span>+12%<span class="w">      </span>│
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>│<span class="w"> </span>Successful<span class="w"> </span>Hunts<span class="w">    </span>│<span class="w"> </span><span class="m">89</span><span class="w">     </span>│<span class="w"> </span><span class="m">19</span>.5%<span class="w">        </span>│<span class="w"> </span>↑<span class="w"> </span>+8%<span class="w">       </span>│
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>│<span class="w"> </span>True<span class="w"> </span>Positives<span class="w">      </span>│<span class="w"> </span><span class="m">67</span><span class="w">     </span>│<span class="w"> </span><span class="m">14</span>.7%<span class="w">        </span>│<span class="w"> </span>↑<span class="w"> </span>+15%<span class="w">      </span>│
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>│<span class="w"> </span>False<span class="w"> </span>Positives<span class="w">     </span>│<span class="w"> </span><span class="m">22</span><span class="w">     </span>│<span class="w"> </span><span class="m">4</span>.8%<span class="w">         </span>│<span class="w"> </span>↓<span class="w"> </span>-5%<span class="w">       </span>│
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>│<span class="w"> </span>New<span class="w"> </span>IOCs<span class="w"> </span>Generated<span class="w">  </span>│<span class="w"> </span><span class="m">34</span><span class="w">     </span>│<span class="w"> </span>-<span class="w">            </span>│<span class="w"> </span>↑<span class="w"> </span>+20%<span class="w">      </span>│
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>│<span class="w"> </span>Incidents<span class="w"> </span>Created<span class="w">   </span>│<span class="w"> </span><span class="m">12</span><span class="w">     </span>│<span class="w"> </span><span class="m">2</span>.6%<span class="w">         </span>│<span class="w"> </span>↑<span class="w"> </span>+25%<span class="w">      </span>│
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>└─────────────────────┴────────┴──────────────┴─────────────┘
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>Top<span class="w"> </span>Hunting<span class="w"> </span>Categories:
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>•<span class="w"> </span>Lateral<span class="w"> </span>Movement:<span class="w"> </span><span class="m">28</span><span class="w"> </span>successful<span class="w"> </span>hunts
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>•<span class="w"> </span>Persistence:<span class="w"> </span><span class="m">19</span><span class="w"> </span>successful<span class="w"> </span>hunts<span class="w">  </span>
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>•<span class="w"> </span>Credential<span class="w"> </span>Access:<span class="w"> </span><span class="m">15</span><span class="w"> </span>successful<span class="w"> </span>hunts
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>•<span class="w"> </span>Data<span class="w"> </span>Exfiltration:<span class="w"> </span><span class="m">12</span><span class="w"> </span>successful<span class="w"> </span>hunts
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>•<span class="w"> </span>Command<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>Control:<span class="w"> </span><span class="m">8</span><span class="w"> </span>successful<span class="w"> </span>hunts
+</code></pre></div>
+<h3 id="2-roi-and-impact-metrics">2. ROI and Impact Metrics</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># Calculate hunting ROI</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>metrics<span class="w"> </span>roi<span class="w"> </span>--period<span class="w"> </span>quarterly
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># Time-to-detection improvements</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>metrics<span class="w"> </span>ttd<span class="w"> </span>--baseline<span class="w"> </span><span class="m">2024</span>-Q1<span class="w"> </span>--current<span class="w"> </span><span class="m">2024</span>-Q2
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="c1"># Coverage assessment</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>metrics<span class="w"> </span>coverage<span class="w"> </span>--framework<span class="w"> </span>mitre-attack
+</code></pre></div>
+<hr />
+<h2 id="best-practices-untuk-threat-hunting">🎯 Best Practices untuk Threat Hunting</h2>
+<h3 id="1-structured-approach">1. Structured Approach</h3>
+<div class="admonition tip">
+<p class="admonition-title">Hunting Methodology</p>
 <ul>
-<li><strong>Pemantauan Berkelanjutan</strong></li>
-<li>Lakukan hunting rutin untuk menambah lapisan keamanan tambahan.</li>
+<li><strong>Start with Intelligence</strong>: Base hunts on current threat landscape</li>
+<li><strong>Hypothesis-Driven</strong>: Form clear hypotheses before hunting</li>
+<li><strong>Data-First Approach</strong>: Understand your data sources and limitations</li>
+<li><strong>Document Everything</strong>: Keep detailed logs of hunts and findings</li>
+<li><strong>Iterate and Improve</strong>: Refine techniques based on results</li>
+</ul>
+</div>
+<h3 id="2-query-optimization">2. Query Optimization</h3>
+<div class="admonition warning">
+<p class="admonition-title">Performance Considerations</p>
+<ul>
+<li><strong>Use time bounds</strong>: Always include time filters in queries</li>
+<li><strong>Index awareness</strong>: Understand which fields are indexed</li>
+<li><strong>Limit result sets</strong>: Use LIMIT to prevent overwhelming results</li>
+<li><strong>Test in dev</strong>: Always test complex queries in non-production first</li>
+<li><strong>Monitor performance</strong>: Watch for queries that impact system performance</li>
+</ul>
+</div>
+<h3 id="3-collaborative-hunting">3. Collaborative Hunting</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Share hunting queries with team</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>query<span class="w"> </span>share<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;lateral_movement_hunt&quot;</span><span class="w"> </span>--team<span class="w"> </span>soc
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="c1"># Collaborative hunting sessions</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>session<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;apt_hunt&quot;</span><span class="w"> </span>--participants<span class="w"> </span><span class="s2">&quot;analyst1,analyst2&quot;</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="c1"># Knowledge sharing</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>knowledge<span class="w"> </span><span class="nb">export</span><span class="w"> </span>--format<span class="w"> </span>wiki
+</code></pre></div>
+<hr />
+<h2 id="automation-and-orchestration">🔧 Automation and Orchestration</h2>
+<h3 id="1-automated-hunting-workflows">1. Automated Hunting Workflows</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Python script for automated hunting</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="c1">#!/usr/bin/env python3</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">run_hunting_campaign</span><span class="p">():</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Execute daily hunting campaign&quot;&quot;&quot;</span>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>    <span class="c1"># Define hunting queries</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>    <span class="n">hunts</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>        <span class="s2">&quot;lateral_movement_detection&quot;</span><span class="p">,</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>        <span class="s2">&quot;credential_access_hunt&quot;</span><span class="p">,</span> 
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>        <span class="s2">&quot;persistence_mechanisms&quot;</span><span class="p">,</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>        <span class="s2">&quot;data_staging_hunt&quot;</span>
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>    <span class="p">]</span>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>    <span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>
+<a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a>    <span class="k">for</span> <span class="n">hunt</span> <span class="ow">in</span> <span class="n">hunts</span><span class="p">:</span>
+<a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running hunt: </span><span class="si">{</span><span class="n">hunt</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a>
+<a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a>        <span class="c1"># Execute hunt via sentinelctl</span>
+<a id="__codelineno-26-24" name="__codelineno-26-24" href="#__codelineno-26-24"></a>        <span class="n">cmd</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;sentinelctl hunting run --name </span><span class="si">{</span><span class="n">hunt</span><span class="si">}</span><span class="s2"> --format json&quot;</span>
+<a id="__codelineno-26-25" name="__codelineno-26-25" href="#__codelineno-26-25"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-26-26" name="__codelineno-26-26" href="#__codelineno-26-26"></a>
+<a id="__codelineno-26-27" name="__codelineno-26-27" href="#__codelineno-26-27"></a>        <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-26-28" name="__codelineno-26-28" href="#__codelineno-26-28"></a>            <span class="n">hunt_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+<a id="__codelineno-26-29" name="__codelineno-26-29" href="#__codelineno-26-29"></a>            <span class="n">results</span><span class="p">[</span><span class="n">hunt</span><span class="p">]</span> <span class="o">=</span> <span class="n">hunt_data</span>
+<a id="__codelineno-26-30" name="__codelineno-26-30" href="#__codelineno-26-30"></a>
+<a id="__codelineno-26-31" name="__codelineno-26-31" href="#__codelineno-26-31"></a>            <span class="c1"># Check for positive hits</span>
+<a id="__codelineno-26-32" name="__codelineno-26-32" href="#__codelineno-26-32"></a>            <span class="k">if</span> <span class="n">hunt_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hit_count&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-26-33" name="__codelineno-26-33" href="#__codelineno-26-33"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🚨 Positive hits in </span><span class="si">{</span><span class="n">hunt</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">hunt_data</span><span class="p">[</span><span class="s1">&#39;hit_count&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-34" name="__codelineno-26-34" href="#__codelineno-26-34"></a>                <span class="n">send_alert</span><span class="p">(</span><span class="n">hunt</span><span class="p">,</span> <span class="n">hunt_data</span><span class="p">)</span>
+<a id="__codelineno-26-35" name="__codelineno-26-35" href="#__codelineno-26-35"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-26-36" name="__codelineno-26-36" href="#__codelineno-26-36"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Error in hunt </span><span class="si">{</span><span class="n">hunt</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-37" name="__codelineno-26-37" href="#__codelineno-26-37"></a>
+<a id="__codelineno-26-38" name="__codelineno-26-38" href="#__codelineno-26-38"></a>    <span class="k">return</span> <span class="n">results</span>
+<a id="__codelineno-26-39" name="__codelineno-26-39" href="#__codelineno-26-39"></a>
+<a id="__codelineno-26-40" name="__codelineno-26-40" href="#__codelineno-26-40"></a><span class="k">def</span><span class="w"> </span><span class="nf">send_alert</span><span class="p">(</span><span class="n">hunt_name</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<a id="__codelineno-26-41" name="__codelineno-26-41" href="#__codelineno-26-41"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Send alert for positive hunting results&quot;&quot;&quot;</span>
+<a id="__codelineno-26-42" name="__codelineno-26-42" href="#__codelineno-26-42"></a>    <span class="c1"># Implementation for alerting (email, Slack, etc.)</span>
+<a id="__codelineno-26-43" name="__codelineno-26-43" href="#__codelineno-26-43"></a>    <span class="k">pass</span>
+<a id="__codelineno-26-44" name="__codelineno-26-44" href="#__codelineno-26-44"></a>
+<a id="__codelineno-26-45" name="__codelineno-26-45" href="#__codelineno-26-45"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-26-46" name="__codelineno-26-46" href="#__codelineno-26-46"></a>    <span class="n">results</span> <span class="o">=</span> <span class="n">run_hunting_campaign</span><span class="p">()</span>
+<a id="__codelineno-26-47" name="__codelineno-26-47" href="#__codelineno-26-47"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hunting campaign completed. Total hunts: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="2-integration-dengan-soar-platforms">2. Integration dengan SOAR Platforms</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># Integrate with Phantom/SOAR</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>integration<span class="w"> </span>soar<span class="w"> </span>--platform<span class="w"> </span>phantom<span class="w"> </span>--config<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="s2">{</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="s2">    &#39;endpoint&#39;: &#39;https://phantom.company.com&#39;,</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="s2">    &#39;api_key&#39;: &#39;your-api-key&#39;,</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="s2">    &#39;auto_create_containers&#39;: true,</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="s2">    &#39;severity_mapping&#39;: {</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="s2">        &#39;high&#39;: &#39;high&#39;,</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="s2">        &#39;medium&#39;: &#39;medium&#39;,</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="s2">        &#39;low&#39;: &#39;informational&#39;</span>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="s2">    }</span>
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="s2">}&quot;</span>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="c1"># Trigger SOAR playbooks from hunting results</span>
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>sudo<span class="w"> </span>sentinelctl<span class="w"> </span>hunting<span class="w"> </span>action<span class="w"> </span>--result-id<span class="w"> </span>hunt-123<span class="w"> </span>--soar-playbook<span class="w"> </span><span class="s2">&quot;investigate_lateral_movement&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="validation-checklist">✅ Validation Checklist</h2>
+<h3 id="hunting-program-maturity">Hunting Program Maturity</h3>
+<ul>
+<li>[ ] <strong>Threat Intelligence Integration</strong>: IOC feeds aktif dan terupdate</li>
+<li>[ ] <strong>Custom Query Library</strong>: Repository query hunting yang terorganisir</li>
+<li>[ ] <strong>Automated Hunts</strong>: Hunting otomatis untuk TTPs umum</li>
+<li>[ ] <strong>Metrics and Reporting</strong>: KPI hunting dilacak dan dilaporkan</li>
+<li>[ ] <strong>Team Training</strong>: Analyst terlatih dalam teknik hunting</li>
+<li>[ ] <strong>Tool Proficiency</strong>: Tim mahir menggunakan Deep Visibility</li>
+<li>[ ] <strong>Documentation</strong>: Prosedur dan playbook hunting terdokumentasi</li>
+</ul>
+<h3 id="technical-validation">Technical Validation</h3>
+<ul>
+<li>[ ] <strong>Query Performance</strong>: Semua query berjalan dalam waktu &lt; 30 detik</li>
+<li>[ ] <strong>Data Coverage</strong>: Telemetry lengkap dari semua critical assets</li>
+<li>[ ] <strong>False Positive Rate</strong>: FP rate hunting &lt; 10%</li>
+<li>[ ] <strong>Detection Coverage</strong>: Coverage MITRE ATT&amp;CK &gt; 70%</li>
+<li>[ ] <strong>Integration Testing</strong>: SIEM/SOAR integration berfungsi</li>
 </ul>
 <hr />
-<p><em>Pastikan untuk tetap update dengan taktik ancaman terbaru untuk meningkatkan efektivitas hunting.</em></p>
-<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span></em></p>
+<p><em>Untuk advanced hunting techniques dan custom development, hubungi Security Team atau rujuk ke SentinelOne Developer Documentation.</em></p>
+<p><em>Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span></em></p>
 
 
 
@@ -1100,7 +3574,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="5 Agustus 2025 14:54:15 UTC">5 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
   </span>
 
     
@@ -1138,11 +3612,6 @@
     <div class="md-copyright__highlight">
       <p>
   © 2025 <a href="https://github.com/salman-mustapa" target="_blank">Salman Mustapa</a>. All rights reserved.
-  <br>
-  <small>
-    🚀 Developed with <a href="https://www.warp.dev/" target="_blank">Warp Terminal</a> & 
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
-  </small>
   <br>
   <small>
     Licensed under <a href="https://github.com/salman-mustapa/s1-docs/blob/main/LICENSE" target="_blank">MIT License</a>
@@ -1193,6 +3662,8 @@
     
     
       <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/mermaid.js"></script>
       
     
   </body>
