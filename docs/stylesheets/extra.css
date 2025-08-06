@@ -10,16 +10,45 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     min-width: 100%;
-    min-height: 400px;
     overflow: visible;
+    /* Remove fixed min-height - let content determine height */
 }
 
-/* Large Integration Diagrams - Make them bigger and more readable */
+/* Smart diagram sizing based on content */
 .mermaid svg {
     width: 100% !important;
     height: auto !important;
+    max-width: 100%;
+    /* Dynamic sizing instead of fixed min dimensions */
+}
+
+/* Specific sizing for different diagram types */
+/* Horizontal flowcharts (LR direction) - more width, less height */
+.mermaid svg[data-direction="LR"],
+.mermaid svg g[data-direction="LR"] {
     min-width: 800px;
+    min-height: 300px;
+}
+
+/* Vertical flowcharts (TB direction) - more height */
+.mermaid svg[data-direction="TB"],
+.mermaid svg g[data-direction="TB"] {
+    min-width: 600px;
+    min-height: 500px;
+}
+
+/* Complex diagrams (many nodes) - larger sizing */
+.mermaid:has(svg .node:nth-child(10)) svg {
+    min-width: 900px;
     min-height: 600px;
+}
+
+/* Fallback for browsers that don't support :has() */
+@supports not selector(:has(*)) {
+    .mermaid svg {
+        min-width: 700px;
+        min-height: 400px;
+    }
 }
 
 /* Flowchart specific styling for better readability */
@@ -148,6 +177,63 @@ img {
     overflow-x: auto;
     padding: 10px;
     margin: 20px 0;
+}
+
+/* Compact diagram for horizontal layouts */
+.diagram-compact {
+    overflow-x: auto;
+    padding: 15px;
+    margin: 15px 0;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.diagram-compact .mermaid {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    min-height: auto !important;
+}
+
+.diagram-compact .mermaid svg {
+    min-width: 600px;
+    min-height: 250px !important;
+    max-height: 400px;
+}
+
+[data-md-color-scheme="slate"] .diagram-compact {
+    background: #2d2d2d;
+    border-color: #444;
+}
+
+/* Horizontal diagram specific styling */
+.diagram-horizontal {
+    overflow-x: auto;
+    padding: 10px;
+    margin: 15px 0;
+    background: #fafbfc;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+.diagram-horizontal .mermaid {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    min-height: auto !important;
+}
+
+.diagram-horizontal .mermaid svg {
+    min-width: 700px;
+    min-height: 200px !important;
+    max-height: 350px;
+}
+
+[data-md-color-scheme="slate"] .diagram-horizontal {
+    background: #1a1a1a;
+    border-color: #333;
 }
 
 /* Testing scenario boxes */

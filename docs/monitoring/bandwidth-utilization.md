@@ -4,6 +4,8 @@
 
 Bandwidth monitoring SentinelOne EDR melibatkan **pemahaman pola traffic** antara endpoint dan SentinelOne cloud untuk optimasi jaringan dan mencegah bottleneck.
 
+<div class="diagram-horizontal">
+
 ```mermaid
 flowchart LR
     subgraph "Endpoint"
@@ -30,6 +32,8 @@ flowchart LR
     style INBOUND fill:#e8f5e8
 ```
 
+</div>
+
 ## 📊 Traffic Categories & Bandwidth Usage
 
 <div class="testing-scenario">
@@ -47,6 +51,8 @@ flowchart LR
 
 ### 🎯 Management Console Workflow
 
+<div class="diagram-compact">
+
 ```mermaid
 flowchart LR
     A[Access Console] --> B[Network Analytics]
@@ -57,6 +63,8 @@ flowchart LR
     style A fill:#e3f2fd
     style E fill:#fff3e0
 ```
+
+</div>
 
 **Console Monitoring Steps:**
 

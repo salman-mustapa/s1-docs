@@ -60,6 +60,8 @@ flowchart TB
 
 ### 📊 Console-Based Monitoring (Management Console)
 
+<div class="diagram-horizontal">
+
 ```mermaid
 flowchart LR
     A[Login to Console] --> B[Navigate to Sentinels]
@@ -70,6 +72,8 @@ flowchart LR
     style A fill:#e3f2fd
     style E fill:#ffebee
 ```
+
+</div>
 
 **Step-by-Step Console Monitoring:**
 
