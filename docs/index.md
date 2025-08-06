@@ -6,7 +6,7 @@ Selamat datang di dokumentasi lengkap SentinelOne EDR. Panduan ini dirancang khu
 
 <div class="grid cards" markdown>
 
--   :material-terminal:{ .lg .middle } **Command Reference**
+-   **💻 Command Reference**
 
     ---
 
@@ -14,7 +14,7 @@ Selamat datang di dokumentasi lengkap SentinelOne EDR. Panduan ini dirancang khu
 
     [:octicons-arrow-right-24: Command Reference](commands/sentinelctl-reference.md)
 
--   :material-download:{ .lg .middle } **Installation & Configuration**
+-   **⬇️ Installation & Configuration**
 
     ---
 
@@ -22,7 +22,7 @@ Selamat datang di dokumentasi lengkap SentinelOne EDR. Panduan ini dirancang khu
 
     [:octicons-arrow-right-24: Mulai Instalasi](installation/edr-install.md)
 
--   :material-monitor:{ .lg .middle } **System Monitoring**
+-   **📊 System Monitoring**
 
     ---
 
@@ -30,7 +30,7 @@ Selamat datang di dokumentasi lengkap SentinelOne EDR. Panduan ini dirancang khu
 
     [:octicons-arrow-right-24: Monitor Sistem](monitoring/resource-utilization.md)
 
--   :material-cog:{ .lg .middle } **Management**
+-   **⚙️ Management**
 
     ---
 
@@ -38,7 +38,7 @@ Selamat datang di dokumentasi lengkap SentinelOne EDR. Panduan ini dirancang khu
 
     [:octicons-arrow-right-24: Management](management/uninstall-edr.md)
 
--   :material-link-variant:{ .lg .middle } **Integration**
+-   **🔌 Integration**
 
     ---
 
@@ -46,7 +46,7 @@ Selamat datang di dokumentasi lengkap SentinelOne EDR. Panduan ini dirancang khu
 
     [:octicons-arrow-right-24: Integration](integration/third-party-integration.md)
 
--   :material-security:{ .lg .middle } **Security Operations**
+-   **🛡️ Security Operations**
 
     ---
 
