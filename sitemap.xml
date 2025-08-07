@@ -2,122 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/example-images/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/commands/sentinelctl-reference/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/installation/edr-exclusion/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/installation/edr-install/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/installation/sensor-update/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/integration/third-party-integration/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/management/uninstall-edr/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/monitoring/bandwidth-utilization/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/monitoring/resource-utilization/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://salman-mustapa.github.io/s1-docs/overview/sentinelone-terminology/</loc>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/security/offline-detection-response/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/security/real-time-telemetry/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/security/threat-detection/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/security/threat-hunting/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/kategori-a-realtime/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/kategori-b-offline/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/kategori-c-operational/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/kategori-d-security/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/kategori-e-performance/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/kategori-f-integration/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://salman-mustapa.github.io/s1-docs/testing/quarantine-configuration/</loc>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/testing-overview/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/cross-platform/cross-platform-testing/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/linux/linux-containers/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/linux/linux-offline/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/linux/linux-overview/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/linux/linux-performance/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/windows/windows-enterprise/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/windows/windows-offline/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/windows/windows-overview/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
     <url>
          <loc>https://salman-mustapa.github.io/s1-docs/testing/windows/windows-performance/</loc>
-         <lastmod>2025-08-06</lastmod>
+         <lastmod>2025-08-07</lastmod>
     </url>
 </urlset>

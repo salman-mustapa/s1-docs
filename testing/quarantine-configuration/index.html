@@ -12,13 +12,13 @@
         <meta name="author" content="Salman Mustapa">
       
       
-        <link rel="canonical" href="https://salman-mustapa.github.io/s1-docs/testing/kategori-c-operational/">
+        <link rel="canonical" href="https://salman-mustapa.github.io/s1-docs/testing/quarantine-configuration/">
       
       
-        <link rel="prev" href="../kategori-b-offline/">
+        <link rel="prev" href="../testing-overview/">
       
       
-        <link rel="next" href="../kategori-d-security/">
+        <link rel="next" href="../kategori-a-realtime/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Kategori C - Operational Resilience - Dokumentasi SentinelOne EDR</title>
+        <title>Manual Quarantine Configuration - Dokumentasi SentinelOne EDR</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kategori-c-operational-resilience-testing" class="md-skip">
+        <a href="#konfigurasi-manual-quarantine-menghindari-auto-kill" class="md-skip">
           Lewati ke isi
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Kategori C - Operational Resilience
+              Manual Quarantine Configuration
             
           </span>
         </div>
@@ -1139,10 +1139,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../quarantine-configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Manual Quarantine Configuration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1153,6 +1175,368 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masalah-dengan-auto-kill-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Masalah dengan Auto-Kill Default
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Masalah dengan Auto-Kill Default">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#risiko-auto-kill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risiko Auto-Kill
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keuntungan-manual-quarantine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keuntungan Manual Quarantine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konfigurasi-yang-diperlukan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konfigurasi yang Diperlukan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konfigurasi yang Diperlukan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automatic-responses-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automatic Responses Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-validation-action-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Validation Action Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ui-configuration-scan-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. UI Configuration - Scan History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-konfigurasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementasi Konfigurasi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementasi Konfigurasi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#langkah-1-backup-konfigurasi-existing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Langkah 1: Backup Konfigurasi Existing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langkah-2-edit-konfigurasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Langkah 2: Edit Konfigurasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langkah-3-validasi-konfigurasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Langkah 3: Validasi Konfigurasi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-manual-quarantine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow Manual Quarantine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow Manual Quarantine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-threat-detection-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Threat Detection Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-console-management-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Console Management Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#console-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Console Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Console Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengakses-quarantine-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mengakses Quarantine Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-mitigation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Mitigation Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing &amp; Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing &amp; Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-scenario-1-malware-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Scenario 1: Malware Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-scenario-2-false-positive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Scenario 2: False Positive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-scenario-3-critical-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Scenario 3: Critical Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-alerting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring &amp; Alerting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring &amp; Alerting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics-to-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Metrics to Monitor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alert-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alert Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Do's ✅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don'ts ❌
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-1-quarantine-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue 1: Quarantine Not Working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-2-console-access-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue 2: Console Access Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-3-high-false-positive-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue 3: High False Positive Rate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1208,32 +1592,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Kategori C - Operational Resilience
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../kategori-c-operational/" class="md-nav__link">
         
   
   
@@ -1244,371 +1606,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Daftar isi
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      Overview
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c1-service-recovery-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      🛠️ C1: Service Recovery Testing
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ C1: Service Recovery Testing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c11-service-termination-and-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      C1.1: Service Termination and Recovery
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c12-configuration-corruption-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      C1.2: Configuration Corruption Recovery
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c2-resource-exhaustion-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚡ C2: Resource Exhaustion Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚡ C2: Resource Exhaustion Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c21-cpu-stress-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      C2.1: CPU Stress Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c22-memory-pressure-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      C2.2: Memory Pressure Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c23-disk-space-exhaustion" class="md-nav__link">
-    <span class="md-ellipsis">
-      C2.3: Disk Space Exhaustion
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c3-system-reboot-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔄 C3: System Reboot Validation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔄 C3: System Reboot Validation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c31-normal-reboot-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      C3.1: Normal Reboot Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c32-forced-shutdown-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      C3.2: Forced Shutdown Recovery
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c4-update-failure-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 C4: Update Failure Recovery
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 C4: Update Failure Recovery">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c41-interrupted-update-simulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      C4.1: Interrupted Update Simulation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c42-rollback-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      C4.2: Rollback Validation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operational-resilience-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      📊 Operational Resilience Metrics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📊 Operational Resilience Metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-performance-indicators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Performance Indicators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validation-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validation Checklist
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Validation Checklist">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#service-resilience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Service Resilience
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#system-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Integration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demo-presentation-points" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demo Presentation Points
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Demo Presentation Points">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#executive-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Executive Summary
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#technical-demonstrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Demonstrations
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      Next Steps
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2067,322 +2064,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#c1-service-recovery-testing" class="md-nav__link">
+  <a href="#masalah-dengan-auto-kill-default" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ C1: Service Recovery Testing
+      Masalah dengan Auto-Kill Default
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ C1: Service Recovery Testing">
+    <nav class="md-nav" aria-label="Masalah dengan Auto-Kill Default">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tujuan-testing" class="md-nav__link">
+  <a href="#risiko-auto-kill" class="md-nav__link">
     <span class="md-ellipsis">
-      Tujuan Testing
+      Risiko Auto-Kill
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#test-scenarios" class="md-nav__link">
+  <a href="#keuntungan-manual-quarantine" class="md-nav__link">
     <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c11-service-termination-and-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      C1.1: Service Termination and Recovery
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c12-configuration-corruption-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      C1.2: Configuration Corruption Recovery
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c2-resource-exhaustion-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      ⚡ C2: Resource Exhaustion Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚡ C2: Resource Exhaustion Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c21-cpu-stress-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      C2.1: CPU Stress Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c22-memory-pressure-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      C2.2: Memory Pressure Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c23-disk-space-exhaustion" class="md-nav__link">
-    <span class="md-ellipsis">
-      C2.3: Disk Space Exhaustion
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c3-system-reboot-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔄 C3: System Reboot Validation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔄 C3: System Reboot Validation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c31-normal-reboot-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      C3.1: Normal Reboot Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c32-forced-shutdown-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      C3.2: Forced Shutdown Recovery
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c4-update-failure-recovery" class="md-nav__link">
-    <span class="md-ellipsis">
-      🔧 C4: Update Failure Recovery
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 C4: Update Failure Recovery">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tujuan-testing_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tujuan Testing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#test-scenarios_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Test Scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Test Scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#c41-interrupted-update-simulation" class="md-nav__link">
-    <span class="md-ellipsis">
-      C4.1: Interrupted Update Simulation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#c42-rollback-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      C4.2: Rollback Validation
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operational-resilience-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      📊 Operational Resilience Metrics
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📊 Operational Resilience Metrics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#key-performance-indicators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Performance Indicators
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validation-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      Validation Checklist
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Validation Checklist">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#service-resilience" class="md-nav__link">
-    <span class="md-ellipsis">
-      Service Resilience
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#system-integration" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Integration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demo-presentation-points" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demo Presentation Points
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Demo Presentation Points">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#executive-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Executive Summary
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#technical-demonstrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Technical Demonstrations
+      Keuntungan Manual Quarantine
     </span>
   </a>
   
@@ -2394,11 +2097,302 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#konfigurasi-yang-diperlukan" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Steps
+      Konfigurasi yang Diperlukan
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Konfigurasi yang Diperlukan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automatic-responses-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Automatic Responses Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-validation-action-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Validation Action Setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ui-configuration-scan-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. UI Configuration - Scan History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasi-konfigurasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementasi Konfigurasi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementasi Konfigurasi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#langkah-1-backup-konfigurasi-existing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Langkah 1: Backup Konfigurasi Existing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langkah-2-edit-konfigurasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Langkah 2: Edit Konfigurasi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langkah-3-validasi-konfigurasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Langkah 3: Validasi Konfigurasi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-manual-quarantine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow Manual Quarantine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workflow Manual Quarantine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-threat-detection-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Threat Detection Flow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-console-management-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Console Management Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#console-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Console Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Console Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mengakses-quarantine-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mengakses Quarantine Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-mitigation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Mitigation Actions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing &amp; Validation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing &amp; Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-scenario-1-malware-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Scenario 1: Malware Detection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-scenario-2-false-positive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Scenario 2: False Positive
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-scenario-3-critical-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Scenario 3: Critical Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-alerting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring &amp; Alerting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring &amp; Alerting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics-to-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Metrics to Monitor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alert-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alert Configuration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Do's ✅
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#donts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don'ts ❌
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-1-quarantine-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue 1: Quarantine Not Working
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-2-console-access-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue 2: Console Access Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-3-high-false-positive-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue 3: High False Positive Rate
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2421,313 +2415,236 @@
   
 
 
-<h1 id="kategori-c-operational-resilience-testing">Kategori C: Operational Resilience Testing</h1>
+<h1 id="konfigurasi-manual-quarantine-menghindari-auto-kill">Konfigurasi Manual Quarantine - Menghindari Auto-Kill</h1>
 <h2 id="overview">Overview</h2>
-<p>Testing kemampuan SentinelOne EDR dalam mempertahankan operasional dan pulih dari berbagai kondisi stres, failure, dan anomali sistem yang mungkin terjadi di production environment.</p>
-<hr />
-<h2 id="c1-service-recovery-testing">🛠️ C1: Service Recovery Testing</h2>
-<h3 id="tujuan-testing">Tujuan Testing</h3>
-<p>Memvalidasi kemampuan self-healing dan automatic recovery SentinelOne setelah service interruption atau failure.</p>
-<h3 id="test-scenarios">Test Scenarios</h3>
-<h4 id="c11-service-termination-and-recovery">C1.1: Service Termination and Recovery</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># Test 1: Force stop SentinelOne services</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">Stop-Service</span> <span class="n">-Name</span> <span class="s2">&quot;SentinelAgent&quot;</span> <span class="n">-Force</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">Stop-Service</span> <span class="n">-Name</span> <span class="s2">&quot;SentinelHelperService&quot;</span> <span class="n">-Force</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c"># Monitor automatic recovery</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">Get-Service</span> <span class="n">-Name</span> <span class="s2">&quot;*Sentinel*&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Status</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">Start-Sleep</span> <span class="n">-Seconds</span> <span class="n">30</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">Get-Service</span> <span class="n">-Name</span> <span class="s2">&quot;*Sentinel*&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">Status</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c"># Expected Results:</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c"># - Services automatically restart within 30 seconds</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c"># - No data loss or configuration corruption</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c"># - Protection capabilities immediately restored</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c"># - Event logging captures recovery process</span>
-</code></pre></div></p>
-<p><strong>Linux Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Test 1: Kill SentinelOne processes</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>sentinelone-agent
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span><span class="k">$(</span>pidof<span class="w"> </span>sentinelone-agent<span class="k">)</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># Monitor automatic recovery  </span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="s1">&#39;systemctl status sentinelone-agent&#39;</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="c1"># Expected Results:</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># - Process automatically restarts</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># - Service recovery logged to syslog</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># - Agent reconnects to management console</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># - Protection status maintained</span>
-</code></pre></div></p>
-<h4 id="c12-configuration-corruption-recovery">C1.2: Configuration Corruption Recovery</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c"># Simulate configuration corruption</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">$configPath</span> <span class="p">=</span> <span class="s2">&quot;C:\Program Files\SentinelOne\Sentinel Agent\config\&quot;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">Copy-Item</span> <span class="s2">&quot;$configPath\agent.conf&quot;</span> <span class="s2">&quot;$configPath\agent.conf.backup&quot;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="s2">&quot;corrupted_config_data&quot;</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="s2">&quot;$configPath\agent.conf&quot;</span> <span class="n">-Encoding</span> <span class="n">ASCII</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c"># Restart service and monitor recovery</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nb">Restart-Service</span> <span class="n">-Name</span> <span class="s2">&quot;SentinelAgent&quot;</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nb">Start-Sleep</span> <span class="n">-Seconds</span> <span class="n">60</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c"># Validate recovery</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">sentinelctl</span> <span class="n">status</span>
-</code></pre></div></p>
-<p><strong>Linux Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Simulate configuration corruption</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>cp<span class="w"> </span>/etc/sentinelone/agent.conf<span class="w"> </span>/etc/sentinelone/agent.conf.backup
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;corrupted_config_data&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/sentinelone/agent.conf
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Restart and monitor recovery</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>sentinelone-agent
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>sleep<span class="w"> </span><span class="m">60</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Validate recovery</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status
-</code></pre></div></p>
-<hr />
-<h2 id="c2-resource-exhaustion-scenarios">⚡ C2: Resource Exhaustion Scenarios</h2>
-<h3 id="tujuan-testing_1">Tujuan Testing</h3>
-<p>Testing behavior SentinelOne dalam kondisi resource exhaustion (CPU, Memory, Disk).</p>
-<h3 id="test-scenarios_1">Test Scenarios</h3>
-<h4 id="c21-cpu-stress-testing">C2.1: CPU Stress Testing</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c"># Create CPU stress using PowerShell</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">1</span><span class="p">..</span><span class="n">8</span> <span class="p">|</span> <span class="k">ForEach</span><span class="n">-Object</span> <span class="p">{</span> 
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="nb">Start-Job</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> 
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="k">while</span><span class="p">(</span><span class="nv">$true</span><span class="p">)</span> <span class="p">{</span> 
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>            <span class="n">1</span><span class="p">..</span><span class="n">100000</span> <span class="p">|</span> <span class="k">ForEach</span><span class="n">-Object</span> <span class="p">{</span> <span class="nv">$null</span> <span class="p">=</span> <span class="nv">$_</span> <span class="p">*</span> <span class="nv">$_</span> <span class="p">}</span> 
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="p">}</span> 
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">}</span> 
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c"># Monitor SentinelOne performance during stress</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">while</span><span class="p">(</span><span class="nv">$true</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="nb">Get-Process</span> <span class="n">-Name</span> <span class="s2">&quot;*Sentinel*&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">CPU</span><span class="p">,</span> <span class="n">WorkingSet</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="nb">Start-Sleep</span> <span class="n">-Seconds</span> <span class="n">10</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="p">}</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c"># Expected Behavior:</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c"># - Agent maintains reasonable resource usage</span>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="c"># - Protection capabilities remain functional</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="c"># - No service crashes or hangs</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c"># - Performance gracefully degrades if needed</span>
-</code></pre></div></p>
-<p><strong>Linux Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Create CPU stress using stress-ng</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>stress-ng<span class="w"> </span>-y
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>stress-ng<span class="w"> </span>--cpu<span class="w"> </span><span class="m">8</span><span class="w"> </span>--timeout<span class="w"> </span>300s<span class="w"> </span><span class="p">&amp;</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Monitor SentinelOne during stress</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">while</span><span class="w"> </span>true<span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-5
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span>top<span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>pidof<span class="w"> </span>sentinelone-agent<span class="k">)</span><span class="w"> </span>-n<span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span>sleep<span class="w"> </span><span class="m">10</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">done</span>
-</code></pre></div></p>
-<h4 id="c22-memory-pressure-testing">C2.2: Memory Pressure Testing</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c"># Create memory pressure</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">$memoryArray</span> <span class="p">=</span> <span class="p">@()</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">for</span><span class="p">(</span><span class="nv">$i</span><span class="p">=</span><span class="n">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="n">1000</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span> <span class="p">{</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="nv">$memoryArray</span> <span class="p">+=</span> <span class="nb">New-Object</span> <span class="n">byte</span><span class="p">[]</span> <span class="n">10MB</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">}</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c"># Monitor SentinelOne memory usage</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nb">Get-Process</span> <span class="n">-Name</span> <span class="s2">&quot;*Sentinel*&quot;</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">WorkingSet</span><span class="p">,</span> <span class="n">PagedMemorySize</span>
-</code></pre></div></p>
-<p><strong>Linux Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Create memory pressure</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>stress-ng<span class="w"> </span>--vm<span class="w"> </span><span class="m">4</span><span class="w"> </span>--vm-bytes<span class="w"> </span>1G<span class="w"> </span>--timeout<span class="w"> </span>300s<span class="w"> </span><span class="p">&amp;</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Monitor memory usage</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>free<span class="w"> </span>-h
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone
-</code></pre></div></p>
-<h4 id="c23-disk-space-exhaustion">C2.3: Disk Space Exhaustion</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c"># Fill up disk space (carefully!)</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nv">$targetDrive</span> <span class="p">=</span> <span class="s2">&quot;C:&quot;</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nv">$freeSpace</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-WmiObject</span> <span class="n">-Class</span> <span class="n">Win32_LogicalDisk</span> <span class="n">-Filter</span> <span class="s2">&quot;DeviceID=&#39;$targetDrive&#39;&quot;</span><span class="p">).</span><span class="n">FreeSpace</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nv">$fillSize</span> <span class="p">=</span> <span class="nv">$freeSpace</span> <span class="p">-</span> <span class="n">100MB</span>  <span class="c"># Leave 100MB free</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c"># Create large file to consume space</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">fsutil</span> <span class="n">file</span> <span class="n">createnew</span> <span class="s2">&quot;C:\temp\largefile.tmp&quot;</span> <span class="nv">$fillSize</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c"># Monitor SentinelOne behavior</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">sentinelctl</span> <span class="n">status</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">Application</span> <span class="n">-Source</span> <span class="s2">&quot;SentinelOne&quot;</span> <span class="n">-Newest</span> <span class="n">10</span>
-</code></pre></div></p>
-<hr />
-<h2 id="c3-system-reboot-validation">🔄 C3: System Reboot Validation</h2>
-<h3 id="tujuan-testing_2">Tujuan Testing</h3>
-<p>Memvalidasi bahwa SentinelOne proper startup setelah system reboot dan maintain protection state.</p>
-<h3 id="test-scenarios_2">Test Scenarios</h3>
-<h4 id="c31-normal-reboot-testing">C3.1: Normal Reboot Testing</h4>
-<p><strong>Pre-Reboot Documentation:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c"># Windows - Document pre-reboot state</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">sentinelctl</span> <span class="n">status</span> <span class="p">&gt;</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">pre-reboot-status</span><span class="p">.</span><span class="n">txt</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">Get-Service</span> <span class="n">-Name</span> <span class="s2">&quot;*Sentinel*&quot;</span> <span class="p">&gt;</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">pre-reboot-services</span><span class="p">.</span><span class="n">txt</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">Get-Process</span> <span class="n">-Name</span> <span class="s2">&quot;*Sentinel*&quot;</span> <span class="p">&gt;</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">pre-reboot-processes</span><span class="p">.</span><span class="n">txt</span>
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Linux - Document pre-reboot state</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status<span class="w"> </span>&gt;<span class="w"> </span>/tmp/pre-reboot-status.txt
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>systemctl<span class="w"> </span>status<span class="w"> </span>sentinelone-agent<span class="w"> </span>&gt;<span class="w"> </span>/tmp/pre-reboot-services.txt
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>sentinelone<span class="w"> </span>&gt;<span class="w"> </span>/tmp/pre-reboot-processes.txt
-</code></pre></div>
-<p><strong>Reboot and Validation:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c"># Windows - Planned reboot</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">shutdown</span> <span class="p">/</span><span class="nb">r </span><span class="p">/</span><span class="n">t</span> <span class="n">0</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c"># Post-reboot validation (run after restart)</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">sentinelctl</span> <span class="n">status</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="nb">Compare-Object</span> <span class="p">(</span><span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">pre-reboot-status</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span> <span class="p">(</span><span class="n">sentinelctl</span> <span class="n">status</span><span class="p">)</span>
-</code></pre></div></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Linux - Planned reboot</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>reboot
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="c1"># Post-reboot validation</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>diff<span class="w"> </span>/tmp/pre-reboot-status.txt<span class="w"> </span>&lt;<span class="o">(</span>sudo<span class="w"> </span>/opt/sentinelone/bin/sentinelctl<span class="w"> </span>status<span class="o">)</span>
-</code></pre></div>
-<h4 id="c32-forced-shutdown-recovery">C3.2: Forced Shutdown Recovery</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c"># Simulate forced shutdown (power loss)</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c"># WARNING: This will cause ungraceful shutdown</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">wmic</span> <span class="n">os</span> <span class="nb">where </span><span class="n">Primary</span><span class="p">=</span><span class="s1">&#39;TRUE&#39;</span> <span class="n">reboot</span>
-</code></pre></div></p>
-<p><strong>Post-Recovery Validation:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Check for file system corruption recovery</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="c1"># Check SentinelOne integrity</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># Validate all services started properly</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># Confirm protection is active</span>
-</code></pre></div></p>
-<hr />
-<h2 id="c4-update-failure-recovery">🔧 C4: Update Failure Recovery</h2>
-<h3 id="tujuan-testing_3">Tujuan Testing</h3>
-<p>Testing kemampuan recovery ketika update process gagal atau interrupted.</p>
-<h3 id="test-scenarios_3">Test Scenarios</h3>
-<h4 id="c41-interrupted-update-simulation">C4.1: Interrupted Update Simulation</h4>
-<p><strong>Windows Server:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c"># Start update process</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c"># Simulate interruption during update</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="nv">$updateProcess</span> <span class="p">=</span> <span class="nb">Get-Process</span> <span class="n">-Name</span> <span class="s2">&quot;*SentinelUpdate*&quot;</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">if</span><span class="p">(</span><span class="nv">$updateProcess</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="nb">Stop-Process</span> <span class="n">-Id</span> <span class="nv">$updateProcess</span><span class="p">.</span><span class="n">Id</span> <span class="n">-Force</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">}</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
-<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="c"># Monitor recovery process</span>
-<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="n">sentinelctl</span> <span class="n">status</span>
-<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">Application</span> <span class="n">-Source</span> <span class="s2">&quot;SentinelOne&quot;</span> <span class="n">-Newest</span> <span class="n">5</span>
-</code></pre></div></p>
-<h4 id="c42-rollback-validation">C4.2: Rollback Validation</h4>
-<p><strong>Test Rollback Mechanisms:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Document current version</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>sentinelctl<span class="w"> </span>version
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># After failed update, verify:</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="c1"># - System rolled back to previous stable version</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="c1"># - No loss of protection capability</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="c1"># - Configuration integrity maintained</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="c1"># - All services operational</span>
-</code></pre></div></p>
-<hr />
-<h2 id="operational-resilience-metrics">📊 Operational Resilience Metrics</h2>
-<h3 id="key-performance-indicators">Key Performance Indicators</h3>
-<table>
-<thead>
-<tr>
-<th>Test Case</th>
-<th>Recovery Target</th>
-<th>Measurement</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Service Recovery</td>
-<td>&lt;30 seconds</td>
-<td>Service restart time</td>
-</tr>
-<tr>
-<td>CPU Stress Impact</td>
-<td>&lt;25% degradation</td>
-<td>Performance impact</td>
-</tr>
-<tr>
-<td>Memory Usage</td>
-<td>&lt;500MB increase</td>
-<td>Memory overhead</td>
-</tr>
-<tr>
-<td>Boot Time Impact</td>
-<td>&lt;10% increase</td>
-<td>Startup delay</td>
-</tr>
-<tr>
-<td>Update Recovery</td>
-<td>&lt;60 seconds</td>
-<td>Rollback completion</td>
-</tr>
-</tbody>
-</table>
-<h3 id="validation-checklist">Validation Checklist</h3>
-<h4 id="service-resilience">Service Resilience</h4>
+<p>Dokumentasi ini menjelaskan cara mengkonfigurasi SentinelOne EDR agar tidak melakukan auto-kill terhadap threat yang terdeteksi, melainkan melakukan quarantine terlebih dahulu untuk memungkinkan review manual dan mitigasi yang lebih terkontrol.</p>
+<div class="admonition warning">
+<p class="admonition-title">Penting untuk Produksi</p>
+<p>Konfigurasi ini sangat penting untuk lingkungan production server di mana auto-kill dapat menyebabkan downtime yang tidak diinginkan. Dengan quarantine manual, administrator dapat melakukan review dan memutuskan tindakan yang tepat.</p>
+</div>
+<h2 id="masalah-dengan-auto-kill-default">Masalah dengan Auto-Kill Default</h2>
+<h3 id="risiko-auto-kill">Risiko Auto-Kill</h3>
 <ul>
-<li>[ ] <strong>Automatic Recovery</strong>: Services self-heal without intervention</li>
-<li>[ ] <strong>Configuration Integrity</strong>: Settings preserved through failures</li>
-<li>[ ] <strong>Data Consistency</strong>: No data loss during recovery</li>
-<li>[ ] <strong>Performance Maintenance</strong>: Acceptable performance under stress</li>
-<li>[ ] <strong>Monitoring Continuity</strong>: Logging remains functional</li>
+<li>❌ <strong>Service Disruption</strong>: Aplikasi penting bisa terhenti mendadak</li>
+<li>❌ <strong>False Positive Impact</strong>: File legitimate bisa ikut ter-terminate  </li>
+<li>❌ <strong>No Recovery Window</strong>: Tidak ada kesempatan untuk review sebelum action</li>
+<li>❌ <strong>Production Downtime</strong>: Sistem kritis bisa down tanpa warning</li>
 </ul>
-<h4 id="system-integration">System Integration</h4>
+<h3 id="keuntungan-manual-quarantine">Keuntungan Manual Quarantine</h3>
 <ul>
-<li>[ ] <strong>Boot Sequence</strong>: Proper startup order and timing</li>
-<li>[ ] <strong>Resource Management</strong>: Efficient resource utilization</li>
-<li>[ ] <strong>Conflict Resolution</strong>: Handles conflicts with other software</li>
-<li>[ ] <strong>Update Reliability</strong>: Safe and recoverable update process</li>
-<li>[ ] <strong>Rollback Capability</strong>: Reliable fallback mechanisms</li>
+<li>✅ <strong>Controlled Response</strong>: Administrator bisa review threat sebelum action</li>
+<li>✅ <strong>Prevent False Positive</strong>: Hindari terminasi file/aplikasi yang sebenarnya aman</li>
+<li>✅ <strong>Business Continuity</strong>: Operasional tetap berjalan selama review</li>
+<li>✅ <strong>Manual Mitigation</strong>: Pilihan tindakan yang tepat sesuai konteks</li>
 </ul>
-<hr />
-<h2 id="demo-presentation-points">Demo Presentation Points</h2>
-<h3 id="executive-summary">Executive Summary</h3>
+<h2 id="konfigurasi-yang-diperlukan">Konfigurasi yang Diperlukan</h2>
+<h3 id="1-automatic-responses-setting">1. Automatic Responses Setting</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;automaticResponses&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s2">&quot;mitigation.quarantine&quot;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Penjelasan Perubahan:</strong>
+- <strong>Before</strong>: <code>"mitigation.rollbackThreat"</code> (auto-kill/rollback)
+- <strong>After</strong>: <code>"mitigation.quarantine"</code> (quarantine dulu untuk review)</p>
+<h3 id="2-validation-action-setting">2. Validation Action Setting</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;onValidate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;quarantine&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Penjelasan Perubahan:</strong>
+- <strong>Before</strong>: <code>"promoteToMitigate"</code> (langsung mitigasi/kill)
+- <strong>After</strong>: <code>"quarantine"</code> (quarantine untuk review manual)</p>
+<h3 id="3-ui-configuration-scan-history">3. UI Configuration - Scan History</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;uiConfig&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;capabilities&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="nt">&quot;agentDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="nt">&quot;deviceTab&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="nt">&quot;functionalProblem&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="nt">&quot;networkQuarantine&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">      </span><span class="nt">&quot;overview&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">      </span><span class="nt">&quot;quarantineTab&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">      </span><span class="nt">&quot;scanHistory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">      </span><span class="nt">&quot;supportTab&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="nt">&quot;threatsHistory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Penjelasan Menu:</strong>
+- <strong>scanHistory</strong>: <code>true</code> - Memungkinkan admin melihat riwayat scan
+- <strong>quarantineTab</strong>: <code>true</code> - Akses ke quarantine management
+- <strong>overview</strong>: <code>true</code> - Dashboard overview untuk monitoring
+- <strong>threatsHistory</strong>: <code>true</code> - Riwayat threat untuk analisis</p>
+<h2 id="implementasi-konfigurasi">Implementasi Konfigurasi</h2>
+<h3 id="langkah-1-backup-konfigurasi-existing">Langkah 1: Backup Konfigurasi Existing</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Backup file konfigurasi original</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>cp<span class="w"> </span>agent-config.json<span class="w"> </span>agent-config.json.backup.<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d_%H%M%S<span class="k">)</span>
+</code></pre></div>
+<h3 id="langkah-2-edit-konfigurasi">Langkah 2: Edit Konfigurasi</h3>
 <ol>
-<li><strong>"Self-Healing Architecture"</strong></li>
-<li>Automatic recovery from service failures</li>
-<li>No manual intervention required</li>
 <li>
-<p>Maintains protection during stress conditions</p>
+<p><strong>Edit automaticResponses</strong> (line 120-122):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&quot;automaticResponses&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="s2">&quot;mitigation.quarantine&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">],</span>
+</code></pre></div></p>
 </li>
 <li>
-<p><strong>"Production-Ready Reliability"</strong></p>
-</li>
-<li>Handles real-world operational challenges</li>
-<li>Graceful degradation under resource pressure</li>
-<li>
-<p>Robust update and recovery mechanisms</p>
+<p><strong>Edit onValidate</strong> (line 1590):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&quot;onValidate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;quarantine&quot;</span><span class="p">,</span>
+</code></pre></div></p>
 </li>
 <li>
-<p><strong>"Zero Maintenance Overhead"</strong></p>
+<p><strong>Edit UI capabilities</strong> (line 2249-2257):
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">&quot;capabilities&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;agentDetails&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="nt">&quot;deviceTab&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">&quot;functionalProblem&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">&quot;networkQuarantine&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="nt">&quot;overview&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="nt">&quot;quarantineTab&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="nt">&quot;scanHistory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="nt">&quot;supportTab&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="nt">&quot;threatsHistory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">},</span>
+</code></pre></div></p>
 </li>
-<li>Self-monitoring and self-correction</li>
-<li>Proactive issue resolution</li>
-<li>Minimal administrative burden</li>
 </ol>
-<h3 id="technical-demonstrations">Technical Demonstrations</h3>
+<h3 id="langkah-3-validasi-konfigurasi">Langkah 3: Validasi Konfigurasi</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Validasi JSON format</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>json.tool<span class="w"> </span>agent-config.json<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;JSON Valid&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;JSON Invalid&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Restart agent service (sesuai platform)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Windows:</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># Restart-Service &quot;SentinelAgent&quot;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="c1"># Linux:</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># sudo systemctl restart sentinelagent</span>
+</code></pre></div>
+<h2 id="workflow-manual-quarantine">Workflow Manual Quarantine</h2>
+<h3 id="1-threat-detection-flow">1. Threat Detection Flow</h3>
+<pre class="mermaid"><code>graph TD
+    A[File/Process Detected] --&gt; B[Static/Dynamic Analysis]
+    B --&gt; C{Threat Identified?}
+    C --&gt;|Yes| D[QUARANTINE - No Kill]
+    C --&gt;|No| E[Allow Execution]
+    D --&gt; F[Admin Notification]
+    F --&gt; G[Manual Review Required]
+    G --&gt; H{Admin Decision}
+    H --&gt;|Safe| I[Restore from Quarantine]
+    H --&gt;|Malicious| J[Permanent Delete]
+    H --&gt;|Suspicious| K[Further Analysis]</code></pre>
+<h3 id="2-console-management-workflow">2. Console Management Workflow</h3>
+<pre class="mermaid"><code>graph LR
+    A[Quarantine Console] --&gt; B[Review Quarantined Items]
+    B --&gt; C[Analyze Threat Details]
+    C --&gt; D[Check False Positive]
+    D --&gt; E[Make Decision]
+    E --&gt; F[Execute Action]
+    F --&gt; G[Document Decision]</code></pre>
+<h2 id="console-operations">Console Operations</h2>
+<h3 id="mengakses-quarantine-management">Mengakses Quarantine Management</h3>
+<ol>
+<li><strong>Login ke Management Console</strong></li>
+<li><strong>Navigate</strong>: Threats → Quarantine</li>
+<li><strong>Review</strong>: Quarantined files/processes</li>
+<li><strong>Action Options</strong>:</li>
+<li>🔍 <strong>Investigate</strong>: Detail analysis</li>
+<li>✅ <strong>Restore</strong>: Restore jika false positive  </li>
+<li>❌ <strong>Delete</strong>: Hapus permanent jika confirmed malicious</li>
+<li>📋 <strong>Whitelist</strong>: Tambah ke exclusion list</li>
+</ol>
+<h3 id="manual-mitigation-actions">Manual Mitigation Actions</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nt">Available Actions</span><span class="p">:</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">restore</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mengembalikan file dari quarantine</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">delete</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Hapus permanent dari sistem</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">whitelist</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Tambahkan ke daftar pengecualian</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">investigate</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deep analysis dengan tools tambahan</span>
+</code></pre></div>
+<h2 id="testing-validation">Testing &amp; Validation</h2>
+<h3 id="test-scenario-1-malware-detection">Test Scenario 1: Malware Detection</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Simulasi malware detection</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Expected: File di-quarantine, tidak di-kill</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># Admin dapat review dan putuskan tindakan</span>
+</code></pre></div>
+<h3 id="test-scenario-2-false-positive">Test Scenario 2: False Positive</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Simulasi false positive detection  </span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># Expected: File di-quarantine</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># Admin dapat restore setelah review</span>
+</code></pre></div>
+<h3 id="test-scenario-3-critical-process">Test Scenario 3: Critical Process</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Simulasi detection pada critical service</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># Expected: Service tetap running, file di-quarantine</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># No service disruption</span>
+</code></pre></div>
+<h2 id="monitoring-alerting">Monitoring &amp; Alerting</h2>
+<h3 id="key-metrics-to-monitor">Key Metrics to Monitor</h3>
 <ul>
-<li>Live service failure and recovery</li>
-<li>Resource stress testing with monitoring</li>
-<li>Reboot cycle validation</li>
-<li>Update process reliability testing</li>
+<li>📊 <strong>Quarantine Queue</strong>: Jumlah item dalam quarantine</li>
+<li>⏱️ <strong>Response Time</strong>: Waktu dari detection ke quarantine</li>
+<li>🎯 <strong>False Positive Rate</strong>: Rate dari restored items</li>
+<li>🔄 <strong>Manual Actions</strong>: Frequency dari manual interventions</li>
 </ul>
+<h3 id="alert-configuration">Alert Configuration</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">Alerts</span><span class="p">:</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;High</span><span class="nv"> </span><span class="s">Quarantine</span><span class="nv"> </span><span class="s">Volume&quot;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;quarantine_count</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">50&quot;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;notify_admin&quot;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Unreviewed</span><span class="nv"> </span><span class="s">Items&quot;</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;quarantine_age</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">4_hours&quot;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;escalate_notification&quot;</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Critical</span><span class="nv"> </span><span class="s">Process</span><span class="nv"> </span><span class="s">Quarantined&quot;</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;process_type</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">critical&quot;</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">    </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;immediate_notification&quot;</span>
+</code></pre></div>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="dos">Do's ✅</h3>
+<ul>
+<li>Review quarantined items dalam 2-4 jam</li>
+<li>Document semua manual decisions</li>
+<li>Regular review false positive patterns</li>
+<li>Update whitelist berdasarkan legitimate findings</li>
+<li>Monitor quarantine queue size</li>
+</ul>
+<h3 id="donts">Don'ts ❌</h3>
+<ul>
+<li>Jangan biarkan quarantine queue penuh</li>
+<li>Jangan auto-restore tanpa analysis</li>
+<li>Jangan ignore repeated false positives  </li>
+<li>Jangan skip documentation untuk decisions</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="issue-1-quarantine-not-working">Issue 1: Quarantine Not Working</h3>
+<p><strong>Symptoms</strong>: Threats masih di-kill otomatis
+<strong>Solution</strong>: 
+1. Verify <code>automaticResponses</code> setting
+2. Check <code>onValidate</code> configuration<br />
+3. Restart agent service</p>
+<h3 id="issue-2-console-access-issues">Issue 2: Console Access Issues</h3>
+<p><strong>Symptoms</strong>: Tidak bisa akses quarantine tab
+<strong>Solution</strong>:
+1. Verify UI <code>capabilities</code> configuration
+2. Check user permissions di console
+3. Clear browser cache</p>
+<h3 id="issue-3-high-false-positive-rate">Issue 3: High False Positive Rate</h3>
+<p><strong>Symptoms</strong>: Terlalu banyak legitimate files di-quarantine
+<strong>Solution</strong>:
+1. Review dan update exclusion lists
+2. Tune detection sensitivity
+3. Add legitimate applications to whitelist</p>
 <hr />
-<h2 id="next-steps">Next Steps</h2>
-<p>Continue to additional testing categories:
-- <a href="../kategori-d-security/">Kategori D: Security Hardening</a>
-- <a href="../kategori-e-performance/">Kategori E: Performance Impact</a></p>
 <div class="admonition success">
-<p class="admonition-title">Operational Excellence</p>
-<p>Kategori C demonstrates SentinelOne's enterprise-grade reliability and operational resilience essential for mission-critical server environments.</p>
+<p class="admonition-title">Configuration Success</p>
+<p>Dengan konfigurasi ini, SentinelOne EDR akan melakukan quarantine terlebih dahulu alih-alih auto-kill, memberikan administrator kontrol penuh untuk melakukan review dan mitigasi yang tepat sesuai konteks bisnis.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Production Deployment</p>
+<p>Pastikan untuk test konfigurasi ini di environment non-production terlebih dahulu sebelum deploy ke production servers.</p>
 </div>
 
 
@@ -2749,7 +2666,7 @@
     <span class="md-icon" title="Pembaruan terakhir">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 Agustus 2025 14:32:32 UTC">6 Agustus 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="7 Agustus 2025 11:13:31 UTC">7 Agustus 2025</span>
   </span>
 
     
