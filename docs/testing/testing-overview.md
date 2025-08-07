@@ -137,6 +137,9 @@ Day 6-7: Stakeholder Presentation
 - [Kategori E: Performance Impact](kategori-e-performance.md)
 - [Kategori F: Integration Testing](kategori-f-integration.md)
 
+### Configuration & Validation
+- [Manual Quarantine Configuration](quarantine-configuration.md) - **Menghindari Auto-Kill**
+
 ---
 
 !!! success "Demo Ready Checklist"

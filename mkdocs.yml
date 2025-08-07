@@ -60,6 +60,7 @@ nav:
   - Overview:
     - Home: index.md
     - SentinelCtl Commands: commands/sentinelctl-reference.md
+    - SentinelOne Terminology: overview/sentinelone-terminology.md
   - Installation and Configuration:
     - Install EDR to Server/Endpoint: installation/edr-install.md
     - File/Folder/App Exclusion from EDR: installation/edr-exclusion.md
@@ -78,6 +79,7 @@ nav:
     - Offline Detection/Response: security/offline-detection-response.md
   - Testing & Validation:
     - Testing Overview: testing/testing-overview.md
+    - Manual Quarantine Configuration: testing/quarantine-configuration.md
     - Kategori A - Real-Time Protection: testing/kategori-a-realtime.md
     - Kategori B - Offline Scenarios: testing/kategori-b-offline.md
     - Kategori C - Operational Resilience: testing/kategori-c-operational.md
